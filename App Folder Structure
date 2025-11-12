@@ -1,0 +1,172 @@
+🧩 Modular Architecture (Component-Based)
+
+my-app/
+├── public/
+│   └── assets/
+│
+├── src/
+│   ├── modules/
+│   │
+│   │── auth/
+│   │   ├── apis/
+│   │   │   └── auth.api.ts
+│   │   ├── components/
+│   │   │   ├── Login.component.tsx
+│   │   │   └── Signup.component.tsx
+│   │   ├── hooks/
+│   │   │   ├── useAuth.hook.ts
+│   │   │   └── useLogin.hook.ts
+│   │   ├── services/
+│   │   │   └── auth.service.ts
+│   │   ├── slices/
+│   │   │   └── auth.slice.ts
+│   │   ├── types/
+│   │   │   └── auth.type.ts
+│   │   └── pages/
+│   │       ├── Login.page.tsx
+│   │       └── Signup.page.tsx
+│   │
+│   │── products/
+│   │   ├── apis/
+│   │   │   └── product.api.ts
+│   │   ├── components/
+│   │   │   ├── Product.component.tsx
+│   │   │   ├── ProductList.component.tsx
+│   │   │   ├── ProductFilter.component.tsx
+│   │   │   └── ProductDetails.component.tsx
+│   │   ├── hooks/
+│   │   │   ├── useProducts.hook.ts
+│   │   │   ├── useProductFilters.hook.ts
+│   │   │   └── useProductDetails.hook.ts
+│   │   ├── services/
+│   │   │   └── product.service.ts
+│   │   ├── slices/
+│   │   │   └── product.slice.ts
+│   │   ├── types/
+│   │   │   └── product.type.ts
+│   │   └── pages/
+│   │       ├── ProductList.page.tsx
+│   │       └── ProductDetail.page.tsx
+│   │
+│   │── cart/
+│   │   ├── apis/
+│   │   │   └── cart.api.ts
+│   │   ├── components/
+│   │   │   ├── CartItem.component.tsx
+│   │   │   ├── CartSummary.component.tsx
+│   │   │   ├── CartDrawer.component.tsx
+│   │   │   └── EmptyCart.component.tsx
+│   │   ├── hooks/
+│   │   │   ├── useCart.hook.ts
+│   │   │   └── useCartTotals.hook.ts
+│   │   ├── services/
+│   │   │   └── cart.service.ts
+│   │   ├── slices/
+│   │   │   └── cart.slice.ts
+│   │   ├── types/
+│   │   │   └── cart.type.ts
+│   │   └── pages/
+│   │       └── Cart.page.tsx
+│   │
+│   │── checkout/
+│   │   ├── apis/
+│   │   │   └── checkout.api.ts
+│   │   ├── components/
+│   │   │   ├── CheckoutForm.component.tsx
+│   │   │   ├── PaymentSummary.component.tsx
+│   │   │   ├── AddressForm.component.tsx
+│   │   │   └── OrderSuccess.component.tsx
+│   │   ├── hooks/
+│   │   │   ├── useCheckout.hook.ts
+│   │   │   ├── usePayment.hook.ts
+│   │   │   └── useAddress.hook.ts
+│   │   ├── services/
+│   │   │   └── checkout.service.ts
+│   │   ├── slices/
+│   │   │   └── checkout.slice.ts
+│   │   ├── types/
+│   │   │   └── checkout.type.ts
+│   │   └── pages/
+│   │       ├── Checkout.page.tsx
+│   │       └── OrderSummary.page.tsx
+│   │
+│   │── dashboard/
+│   │   ├── apis/
+│   │   │   └── dashboard.api.ts
+│   │   ├── components/
+│   │   │   ├── DashboardStats.component.tsx
+│   │   │   ├── RecentOrders.component.tsx
+│   │   │   ├── SalesChart.component.tsx
+│   │   │   ├── TopProducts.component.tsx
+│   │   │   └── DashboardSidebar.component.tsx
+│   │   ├── hooks/
+│   │   │   ├── useDashboard.hook.ts
+│   │   │   ├── useAnalytics.hook.ts
+│   │   │   └── useSalesData.hook.ts
+│   │   ├── services/
+│   │   │   └── dashboard.service.ts
+│   │   ├── slices/
+│   │   │   └── dashboard.slice.ts
+│   │   ├── types/
+│   │   │   └── dashboard.type.ts
+│   │   └── pages/
+│   │       └── Dashboard.page.tsx
+│   │
+│   ├── shared/
+│   │   ├── ui/
+│   │   │   ├── components/
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Input.tsx
+│   │   │   │   ├── Card.tsx
+│   │   │   │   ├── Modal.tsx
+│   │   │   │   └── Spinner.ts
+│   │   │   └── layout/
+│   │   │       ├── Header.tsx
+│   │   │       ├── Footer.tsx
+│   │   │       ├── Sidebar.tsx
+│   │   │       └── MainLayout.ts
+│   │   ├── hooks/
+│   │   │   └── useLocalStorage.ts
+│   │   ├── utils/
+│   │   │   ├── dateTimeFormatters.ts
+│   │   │   ├── validators.ts
+│   │   │   ├── constants.ts
+│   │   │   └── helpers.ts
+│   │   ├── api/
+│   │   │   ├── shared.api.ts
+│   │   │   ├── endpoints.ts
+│   │   │   └── interceptors.ts
+│   │   └── types/
+│   │       └── common.types.ts
+│   │
+│   ├── core/
+│   │   ├── routes/
+│   │   │   ├── AppRoutes.tsx
+│   │   │   ├── PrivateRoute.tsx
+│   │   │   └── PublicRoute.tsx
+│   │   ├── redux/
+│   │   │   ├── api/
+│   │   │   │   ├── authHeaders.ts
+│   │   │   │   ├── services.ts
+│   │   │   │   └── routes.ts
+│   │   │   └── stores/
+│   │   │       └── store.ts
+│   │   └── config/
+│   │       ├── env.ts
+│   │       └── app.config.ts
+│   │
+│   ├── styles/
+│   │   ├── index.css
+│   │   ├── tailwind.css
+│   │   └── animations.css
+│   │
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── .env
+├── .env.example
+├── index.html
+├── package.json
+├── postcss.config.ts
+├── tailwind.config.ts
+└── vite.config.ts
