@@ -1,0 +1,20 @@
+@import "tailwindcss";
+/* @import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+
+.bg-primary-color {
+  background-color: #003625;
+}
+
+.text-primary-color {
+  color: #000000;
+}
+
+.text-secondary-color {
+  color: #003625;
+}
