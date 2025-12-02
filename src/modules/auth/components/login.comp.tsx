@@ -1,23 +1,19 @@
-import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import LogoImage from "@/assets/images/app_logo.png";
+import useLoginHook from "../hooks/login.hook";
 
 const LoginComp = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false);
 
-  const handleLogin = () => {
-    console.log("Login attempted with:", email);
-  };
-
-  const handleGoogleLogin = () => {
-    console.log("Google login clicked");
-  };
+  // Call all required hooks here
+  const {
+    email, setEmail, password, setPassword,
+    showPassword, setShowPassword,
+    handleSubmitLoginForm, isLoading 
+  } = useLoginHook();
 
   return (
     <div className="w-full overflow-hidden max-w-xl">
@@ -88,8 +84,9 @@ const LoginComp = () => {
           </div>
 
           <button
-            onClick={handleLogin}
-            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer"
+            onClick={handleSubmitLoginForm}
+            disabled={isLoading}
+            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
           >
             <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
               Login
@@ -106,8 +103,9 @@ const LoginComp = () => {
           </div>
 
           <button
-            onClick={handleGoogleLogin}
-            className="w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 cursor-pointer"
+            onClick={() => handleSubmitLoginForm()}
+            disabled={isLoading}
+            className="w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
           >
             <FcGoogle size={20} />
             Google
@@ -120,7 +118,7 @@ const LoginComp = () => {
               type="button"
               className="text-secondary-color font-semibold cursor-pointer"
             >
-              Register New Account
+              { isLoading ? "Please wait..." : "Register New Account" }
             </button>
           </p>
         </div>
