@@ -59,7 +59,7 @@ const VerifyOtpComp = () => {
               onChange={(e) => handleChange(e.target.value, index)}
               maxLength={1}
               placeholder="-"
-              className="
+              className=" 
                 md:w-16 md:h-16 w-12 h-12 border border-gray-300 rounded-2xl
                 text-center text-xl font-bold
                 focus:outline-none focus:border-primary-color
