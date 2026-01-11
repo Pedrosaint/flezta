@@ -1,26 +1,43 @@
+'use client';
+
 import { Eye, EyeOff } from "lucide-react";
 
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import { FcGoogle } from "react-icons/fc";
 import LogoImage from "@/assets/images/app_logo.png";
 import useLoginHook from "../hooks/login.hook";
+import { createAccountRoute } from "../../../core/routes/routeNames";
 
 const LoginComp = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
-  // Call all required hooks here
+  //==== Call all required hooks here ====//
   const {
-    email, setEmail, password, setPassword,
-    showPassword, setShowPassword,
-    handleSubmitLoginForm, isLoading 
+    email,
+    setEmail,
+    password,
+    setPassword,
+    showPassword,
+    setShowPassword,
+    handleSubmitLoginForm,
+    handleGoogleLogin,
+    isLoading,
+    errors,
   } = useLoginHook();
+
+  const scrollToTopSmooth = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
 
   return (
     <div className="w-full overflow-hidden max-w-xl">
       <div className="p-5 md:p-12 flex flex-col justify-center">
         <div className="mb-8 flex justify-center">
           <div className="flex items-center gap-2">
-            <img src={LogoImage} alt="logo" className="w-22 h-22" />
+            <img src={LogoImage.src} alt="logo" className="w-22 h-22" />
           </div>
         </div>
 
@@ -45,6 +62,10 @@ const LoginComp = () => {
               placeholder="Enter your email address"
               className="w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
             />
+
+            {errors.email && (
+              <p className="text-red-500 text-sm pl-3 mt-1">{errors.email}</p>
+            )}
           </div>
 
           <div>
@@ -71,11 +92,20 @@ const LoginComp = () => {
                 )}
               </button>
             </div>
+
+            {errors.password && (
+              <p className="text-red-500 text-sm pl-3 mt-1">
+                {errors.password}
+              </p>
+            )}
           </div>
 
           <div className="text-right -mt-4">
             <button
-              onClick={() => navigate("/auths/forgot_password")}
+              onClick={() => {
+                scrollToTopSmooth();
+                router.push("/auths/forgot_password");
+              }}
               type="button"
               className="text-sm text-secondary-color font-semibold cursor-pointer"
             >
@@ -103,7 +133,7 @@ const LoginComp = () => {
           </div>
 
           <button
-            onClick={() => handleSubmitLoginForm()}
+            onClick={() => handleGoogleLogin()}
             disabled={isLoading}
             className="w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
           >
@@ -114,11 +144,14 @@ const LoginComp = () => {
           <p className="text-center text-sm text-primary-color">
             Don't have an account?{" "}
             <button
-              onClick={() => navigate("/auths/create_account")}
+              onClick={() => {
+                scrollToTopSmooth();
+                router.push(createAccountRoute);
+              }}
               type="button"
               className="text-secondary-color font-semibold cursor-pointer"
             >
-              { isLoading ? "Please wait..." : "Register New Account" }
+              {isLoading ? "Please wait..." : "Register New Account"}
             </button>
           </p>
         </div>

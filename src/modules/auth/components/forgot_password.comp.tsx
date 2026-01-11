@@ -1,17 +1,29 @@
-import { useState } from "react";
+'use client';
+
 import LogoImage from "@/assets/images/app_logo.png";
-import { useNavigate } from "react-router-dom";
+import useForgotPasswordHook from "../hooks/forgotPassword.hook";
+import { loginRoute } from "../../../core/routes/routeNames";
+import { useRouter } from "next/navigation";
 
 const ForgotPasswordComp = () => {
-  const navigate = useNavigate();
-  const [email, setEmail] = useState("");
+  const router = useRouter();
+
+  //=== Call required hooks here ===//
+  const { email, setEmail, handleSubmitForgotPasswordForm, isLoading } =
+    useForgotPasswordHook();
+
+  const scrollToTopSmooth = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="w-full overflow-hidden max-w-xl">
       <div className="p-5 md:p-12 flex flex-col justify-center">
         <div className="mb-8 flex justify-center">
           <div className="flex items-center gap-2">
-            <img src={LogoImage} alt="logo" className="w-22 h-22" />
+            <img src={LogoImage.src} alt="logo" className="w-22 h-22" />
           </div>
         </div>
 
@@ -36,21 +48,43 @@ const ForgotPasswordComp = () => {
             <input
               type="email"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
               className="w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
             />
           </div>
 
-          <button
-            onClick={() => navigate("/auths/verify_otp")}
-            type="button"
-            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer"
-          >
-            <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-              Proceed To Get Code
-            </div>
-          </button>
+          <div className="flex gap-5">
+            <button
+            onClick={() => {
+              scrollToTopSmooth();
+              router.push(loginRoute);
+            }}
+              disabled={isLoading}
+              type="button"
+              className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <div className="w-full bg-secondary-color text-secondary-color py-4 rounded-[14px] font-semibold">
+                {'Back To Login'}
+              </div>
+            </button>
+
+            <button
+              onClick={handleSubmitForgotPasswordForm}
+            // onClick={() => {
+            //   scrollToTopSmooth();
+            //   router.push(verifyOtpRoute);
+            // }}
+              disabled={isLoading}
+              type="button"
+              className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
+                {isLoading ? "Please wait..." : "Proceed To Get Code"}
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>

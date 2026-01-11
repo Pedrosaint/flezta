@@ -1,9 +1,18 @@
-import { useNavigate } from "react-router-dom";
+'use client';
+
+import { useRouter } from "next/navigation";
 import { GoodIcon } from "../../../assets/svg/svg_icon";
+import { loginRoute } from "../../../core/routes/routeNames";
 
 
 const ResetPasswordModal = () => {
-    const navigate = useNavigate();
+  const router = useRouter();
+
+  const scrollToTopSmooth = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-md bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className=" p-2 border backdrop-blur-[10px] border-[#003625] rounded-3xl bg-transparent">
@@ -20,8 +29,11 @@ const ResetPasswordModal = () => {
           </p>
 
           <button
-            onClick={() => navigate("/auths/login")}
-           className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer">
+            onClick={() => {
+              scrollToTopSmooth();
+              router.push(loginRoute);
+            }}
+            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer">
             <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
               Proceed
             </div>

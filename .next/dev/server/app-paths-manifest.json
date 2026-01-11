@@ -1,0 +1,13 @@
+{
+  "/(website)/cart/page": "app/(website)/cart/page.js",
+  "/(website)/checkout/page": "app/(website)/checkout/page.js",
+  "/(website)/home/page": "app/(website)/home/page.js",
+  "/(website)/products/details/[id]/page": "app/(website)/products/details/[id]/page.js",
+  "/(website)/products/page": "app/(website)/products/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auths/create_account/page": "app/auths/create_account/page.js",
+  "/auths/forgot_password/page": "app/auths/forgot_password/page.js",
+  "/auths/login/page": "app/auths/login/page.js",
+  "/auths/verify_otp/page": "app/auths/verify_otp/page.js",
+  "/page": "app/page.js"
+}

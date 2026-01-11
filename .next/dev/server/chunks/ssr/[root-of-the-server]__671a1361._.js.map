@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/modules/checkout/components/shipping_info.comp.tsx"],"sourcesContent":["\r\n\r\nconst ShippingInfoComp = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default ShippingInfoComp\r\n"],"names":[],"mappings":";;;;;;AAEA,MAAM,mBAAmB;IACvB,qBACE,8OAAC;;;;;AAIL;uCAEe"}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/modules/checkout/page/checkout.page.tsx"],"sourcesContent":["import ShippingInfoComp from \"../components/shipping_info.comp\"\r\n\r\n\r\nconst CheckoutPage = () => {\r\n  return (\r\n    <div>\r\n      <ShippingInfoComp />\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default CheckoutPage\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAGA,MAAM,eAAe;IACnB,qBACE,8OAAC;kBACC,cAAA,8OAAC,6KAAgB;;;;;;;;;;AAGvB;uCAEe"}},
+    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/app/%28website%29/checkout/page.tsx"],"sourcesContent":["import CheckoutPage from \"@/modules/checkout/page/checkout.page\"\r\n\r\n\r\nconst Page = () => {\r\n  return (\r\n    <div>\r\n      <CheckoutPage />\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Page\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAGA,MAAM,OAAO;IACX,qBACE,8OAAC;kBACC,cAAA,8OAAC,kKAAY;;;;;;;;;;AAGnB;uCAEe"}}]
+}

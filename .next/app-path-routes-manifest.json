@@ -1,0 +1,17 @@
+{
+  "/(website)/cart/page": "/cart",
+  "/(website)/checkout/page": "/checkout",
+  "/(website)/home/page": "/home",
+  "/(website)/payment/page": "/payment",
+  "/(website)/products/details/[id]/page": "/products/details/[id]",
+  "/(website)/products/page": "/products",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/auths/create_account/page": "/auths/create_account",
+  "/auths/forgot_password/page": "/auths/forgot_password",
+  "/auths/login/page": "/auths/login",
+  "/auths/reset_password/page": "/auths/reset_password",
+  "/auths/verify_otp/page": "/auths/verify_otp",
+  "/buyer_portal/dashboard/page": "/buyer_portal/dashboard",
+  "/page": "/"
+}

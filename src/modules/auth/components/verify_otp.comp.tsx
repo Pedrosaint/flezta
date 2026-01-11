@@ -1,10 +1,21 @@
-import { useNavigate } from "react-router-dom";
+'use client';
+
 import LogoImage from "@/assets/images/app_logo.png";
-import { useState } from "react";
+import useVerifyOtpHook from "../hooks/verifyOtp.hook";
+import { forgotPasswordRoute, resetPasswordRoute } from "../../../core/routes/routeNames";
+import { useRouter } from "next/navigation";
 
 const VerifyOtpComp = () => {
-  const navigate = useNavigate();
-  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+  const router = useRouter();
+
+  const { otp, setOtp, handleSubmitVerifyOtpForm, isLoading } =
+    useVerifyOtpHook();
+
+  const scrollToTopSmooth = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const handleChange = (value: string, index: number) => {
     if (!/^[0-9]?$/.test(value)) return;
@@ -13,18 +24,17 @@ const VerifyOtpComp = () => {
     newOtp[index] = value;
     setOtp(newOtp);
 
-    // auto move to next input
-    if (value && index < 6) {
+    // If user types a number → go to next box
+    if (value && index < 5) {
       const next = document.getElementById(`otp-${index + 1}`);
       next?.focus();
     }
-  };
 
-  const handleVerify = () => {
-    const code = otp.join("");
-    if (code.length !== 6) return;
-    console.log("OTP submitted:", code);
-    navigate("/auths/reset_password");
+    // If user clears input → go back
+    if (!value && index > 0) {
+      const prev = document.getElementById(`otp-${index - 1}`);
+      prev?.focus();
+    }
   };
 
   return (
@@ -32,7 +42,7 @@ const VerifyOtpComp = () => {
       <div className="p-5 md:p-12 flex flex-col justify-center">
         <div className="mb-8 flex justify-center">
           <div className="flex items-center gap-2">
-            <img src={LogoImage} alt="logo" className="w-22 h-22" />
+            <img src={LogoImage.src} alt="logo" className="w-22 h-22" />
           </div>
         </div>
 
@@ -59,23 +69,46 @@ const VerifyOtpComp = () => {
               onChange={(e) => handleChange(e.target.value, index)}
               maxLength={1}
               placeholder="-"
-              className=" 
-                md:w-16 md:h-16 w-12 h-12 border border-gray-300 rounded-2xl
+              className={`
+                md:w-16 md:h-16 w-12 h-12 border rounded-2xl
                 text-center text-xl font-bold
                 focus:outline-none focus:border-primary-color
-              "
+                ${digit
+                  ? "border-[#003625] text-[#003625]"
+                  : "border-gray-300 bg-white text-primary-color"
+                }
+            `}
             />
           ))}
         </div>
 
-        <div className="space-y-5">
+        <div className="flex gap-5">
           <button
-            onClick={handleVerify}
+            onClick={() => {
+              scrollToTopSmooth();
+              router.push(forgotPasswordRoute);
+            }}
+            disabled={isLoading}
             type="button"
-            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer"
+            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <div className="w-full bg-secondary-color text-secondary-color py-4 rounded-[14px] font-semibold">
+              {"Back"}
+            </div>
+          </button>
+
+          <button
+            // onClick={handleSubmitVerifyOtpForm}
+            onClick={() => {
+              scrollToTopSmooth();
+              router.push(resetPasswordRoute);
+            }}
+            disabled={isLoading}
+            type="button"
+            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-              Verify OTP
+              {isLoading ? "Please wait..." : "Verify OTP"}
             </div>
           </button>
         </div>

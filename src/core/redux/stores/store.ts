@@ -1,20 +1,23 @@
+/* eslint-disable no-irregular-whitespace */
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "../../../modules/auth/slices/auth.slice";
+import wishlistReducer from "../../../shared/slice/whishList.slice";
 import api from "../apis/services/api.service";
 
 
 const store = configureStore({
-    reducer: {
-        authState: authReducer,
+  reducer: {
+    authState: authReducer,
+    wishlist: wishlistReducer,
 
-        [api.reducerPath]: api.reducer
-    },
+    [api.reducerPath]: api.reducer,
+    
+  },
 
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-        serializableCheck: false
-    }).concat([
-        api.middleware
-    ]),
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat([api.middleware]),
 });
 
 // Infer the ⁠ RootState ⁠ and ⁠ AppDispatch ⁠ types from the store itself

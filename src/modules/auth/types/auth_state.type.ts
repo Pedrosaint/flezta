@@ -1,6 +1,7 @@
+import IUser from "./login_response.type";
 interface IAuthState {
-    user: any | null;
-    isAuthenticated: boolean;
+  user: IUser | null;
+  isAuthenticated: boolean;
 }
 
 export type { IAuthState };

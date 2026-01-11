@@ -7,8 +7,25 @@ body {
 }
 
 
+/* :root {
+  font-family: var(--font-outfit), sans-serif;
+} */
+
+
 .bg-primary-color {
   background-color: #003625;
+}
+
+.bg-secondary-color {
+  background-color: #DDFFF4;
+}
+
+.bg-tertiary-color {
+  background-color: #FFF4EA;
+}
+
+.thick-background-color {
+  background-color: #051D16;
 }
 
 .text-primary-color {
@@ -17,4 +34,164 @@ body {
 
 .text-secondary-color {
   color: #003625;
+}
+
+.text-tertiary-color {
+  color: #0C0F16;
+}
+
+.text-light-color {
+  color: #4B5563;
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, #e26e00, #fda106);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #e26e00, #fda106);
+}
+
+.hover-gradient-text:hover {
+  background: linear-gradient(to right, #e26e00, #fda106);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ===== Custom Radio Button Style ===== */
+.custom-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-radio:checked {
+  border-color: #FDA106;
+}
+
+.custom-radio:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to right, #e26e00, #fda106);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+
+/* custom radio */
+.radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+/* inner circle */
+.radio::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+   border: 2px solid #111;
+  border-radius: 50%;
+}
+
+/* checked state */
+.radio:checked::before {
+  transform: scale(1);
+}
+
+
+
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.checkbox::before {
+  content: "✓";
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  transform: scale(0);
+  transition: transform 0.15s ease-in-out;
+}
+
+.checkbox:checked::before {
+  transform: scale(1);
+}
+
+
+
+/* ===== Price Range Slider ===== */
+.price-range {
+  position: absolute;
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  bottom: 3px;
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+.price-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 4px solid #003625;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Firefox */
+.price-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #003625;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* ===== Price Input ===== */
+.price-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 1.75rem;
+  border-radius: 0.675rem;
+  border: 1px solid #d1d5db;
+}
+
+.price-input:focus {
+  outline: none;
 }

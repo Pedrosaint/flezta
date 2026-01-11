@@ -1,24 +1,24 @@
+'use client';
+
 import { useState } from "react";
+import Image from "next/image";
 import LogoImage from "@/assets/images/app_logo.png";
 import ResetPasswordModal from "../modal/reset_password.modal";
 import { Eye, EyeOff } from "lucide-react";
+import useResetPasswordHook from "../hooks/resetPassword.hook";
 
 const ResetPasswordComp = () => {
-    const [password, setPassword] = useState("");
-    const [showPassword, setShowPassword] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
 
-    const [confirmPassword, setConfirmPassword] = useState("");
-    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-    const [modalOpen, setModalOpen] = useState(false);
-
+  const { password, setPassword, confirmPassword, setConfirmPassword, showPassword, setShowPassword, showConfirmPassword, setShowConfirmPassword, handleSubmitResetPasswordForm, isLoading } = useResetPasswordHook();
 
   return (
     <div className="w-full overflow-hidden max-w-xl">
       <div className="p-5 md:p-12 flex flex-col justify-center">
         <div className="mb-8 flex justify-center">
           <div className="flex items-center gap-2">
-            <img src={LogoImage} alt="logo" className="w-22 h-22" />
+            <img src={LogoImage.src} alt="logo" className="w-22 h-22" />
           </div>
         </div>
 
@@ -90,11 +90,16 @@ const ResetPasswordComp = () => {
           </div>
 
           <button
+            // onClick={async () => {
+            //   const success = await handleSubmitResetPasswordForm();
+            //   if (success) setModalOpen(true);
+            // }}
             onClick={() => setModalOpen(true)}
-            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer"
+            disabled={isLoading}
+            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-              Proceed To Save Password
+              {isLoading ? "Proceeding..." : " Proceed To Save Password"}
             </div>
           </button>
         </div>

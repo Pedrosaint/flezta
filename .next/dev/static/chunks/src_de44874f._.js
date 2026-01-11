@@ -1,0 +1,2089 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/modules/home/components/top_section.UI.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* eslint-disable @typescript-eslint/no-explicit-any */ __turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+;
+;
+const TopSectionUI = ({ fIndex, eIndex, slides, getTextVariant, getImageVariant, onDotClick, onElectronicDotClick, ElectonicsImage })=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "py-12",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-6",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col md:flex-row gap-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-[#E8EEEE] rounded-4xl p-8 relative overflow-hidden min-h-[430px] w-4/5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-20 max-w-md text-primary-color",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-5xl font-bold mb-4 leading-tight",
+                                        children: "Top Furniture Collection"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 35,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "overflow-hidden h-[55px]",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                            mode: "wait",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                                variants: getTextVariant(),
+                                                initial: "initial",
+                                                animate: "animate",
+                                                exit: "exit",
+                                                transition: {
+                                                    duration: 0.7,
+                                                    ease: "easeInOut"
+                                                },
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-lg font-medium mb-6",
+                                                    children: slides[fIndex].text
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 21
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, fIndex + "-text", false, {
+                                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                                lineNumber: 41,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 40,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 39,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "w-[170px] p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] cursor-pointer mt-2",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-full bg-primary-color text-white py-4 rounded-[14px] text-center font-semibold",
+                                            children: "Shop Now"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 57,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                mode: "wait",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].img, {
+                                    src: slides[fIndex].img,
+                                    alt: "",
+                                    className: "absolute right-0 top-1/2 -translate-y-1/2 h-full object-contain z-10",
+                                    variants: getImageVariant(),
+                                    initial: "initial",
+                                    animate: "animate",
+                                    exit: "exit",
+                                    transition: {
+                                        duration: 0.9,
+                                        ease: "easeInOut"
+                                    }
+                                }, fIndex + "-img", false, {
+                                    fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 64,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute bottom-5 left-105 flex items-center gap-4",
+                                children: [
+                                    0,
+                                    1,
+                                    2
+                                ].map((dot)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>onDotClick(dot),
+                                        children: fIndex === dot ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-6 h-6 rounded-full border-2 border-bg-primary-color flex items-center justify-center",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-3 h-3 rounded-full bg-gradient"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                                lineNumber: 84,
+                                                columnNumber: 23
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 83,
+                                            columnNumber: 21
+                                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-3 h-3 rounded-full bg-primary-color"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 87,
+                                            columnNumber: 21
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, dot, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 81,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 79,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-[#FAF2E9] rounded-3xl p-8 relative overflow-hidden min-h-[400px] flex items-center w-2/5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative z-10 max-w-md self-start",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-5xl font-bold text-primary-color mb-6",
+                                        children: "Best Electronic Deals"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "w-[170px] p-0.5 border backdrop-blur-[10px] border-[#e26e00] rounded-[18px] transition cursor-pointer",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-full bg-gradient text-white py-4 rounded-[14px] font-semibold text-center",
+                                            children: "Shop Now"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 104,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 103,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 98,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute bottom-10 flex items-center gap-4",
+                                children: [
+                                    0,
+                                    1,
+                                    2
+                                ].map((dot)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>onElectronicDotClick(dot),
+                                        children: eIndex === dot ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-6 h-6 rounded-full border-2 border-bg-primary-color flex items-center justify-center",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-3 h-3 rounded-full bg-gradient"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                                lineNumber: 116,
+                                                columnNumber: 23
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 115,
+                                            columnNumber: 21
+                                        }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-3 h-3 rounded-full bg-primary-color"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                            lineNumber: 119,
+                                            columnNumber: 21
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, dot, false, {
+                                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                        lineNumber: 113,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 111,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].img, {
+                                src: ElectonicsImage,
+                                alt: "",
+                                className: "absolute right-9 bottom-10 h-[244px] w-[220px]",
+                                animate: {
+                                    x: [
+                                        40,
+                                        0
+                                    ],
+                                    opacity: [
+                                        0.6,
+                                        1
+                                    ]
+                                },
+                                transition: {
+                                    duration: 0.9,
+                                    ease: "easeInOut"
+                                }
+                            }, eIndex + "-electronic-img", false, {
+                                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                                lineNumber: 126,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+                lineNumber: 28,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+            lineNumber: 27,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/src/modules/home/components/top_section.UI.tsx",
+        lineNumber: 26,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = TopSectionUI;
+const __TURBOPACK__default__export__ = TopSectionUI;
+var _c;
+__turbopack_context__.k.register(_c, "TopSectionUI");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/chair.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/chair.8e16d299.png");}),
+"[project]/src/assets/images/chair.png.mjs { IMAGE => \"[project]/src/assets/images/chair.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/chair.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 430,
+    height: 430,
+    blurWidth: 8,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABCUlEQVR42jWPvUoDURSE7zlnSa67es91E6ImG7MqIhYRREQQTKEQBRHFNhDtkmgRAloIIljYiggWgpUgKIJVEMG/VtTGn3cQBF/Bm03IDgzDxzQzQrSFIHAkgcNpl1Jxttx0POoN9crBsBedEei6Ltj1t5r+rldir7dF/VnKqWqzgxSTF7h/I5992i8umN2lcXO3yr+TfnRaEAIdrMjjx5r9UZnz/5YnBszleo+52dQPyiYlWGL36aJ8fi91/L+UHfNVlebnxDVHW5lDRABhIVjzo7q8lpXbezPq7KIQuz/f8a9mp5L51jgAQM08FiQ5jpPIeF6Olepj5mR4AIhIhqCU8gOOICI1uQE2wDWjpSvWqAAAAABJRU5ErkJggg=="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/white_chair.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/white_chair.b6a4890d.png");}),
+"[project]/src/assets/images/white_chair.png.mjs { IMAGE => \"[project]/src/assets/images/white_chair.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/white_chair.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 430,
+    height: 430,
+    blurWidth: 8,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABE0lEQVR42gEIAff+AAAAAAAAAAAAAgICAi4sKi50b2h6ioR8kX54cIYuLCgzAAAAAAACAgIBPDk1P7mvodPi2Mr96eDT/+Xcz/5waF+HAC8tKjFvZViKqZiC2sa1n//g1MT/6N7Q/9HFtvpORz9kAGVfWG3KuKH8z72m/9bItv/c0MD/1si2/6WVgOkpJB82AEpGQU3SxLP01cW0/9LDsf/Br5v/uaWP/4Z2Y8IODAoRABgWFBiGeGmlkIN0r5yOfcWkkn/dhXVixT42LGkBAQEBAAcFBAohGBE7BgUFBxIPDBktIxtREQ4LIwsHBS0AAAABAAQDAgYHBQQLAAAAAAAAAAAVEAwqBgQDDgEBAQYAAAABt+hjQa1w3jcAAAAASUVORK5CYII="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/cauch.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/cauch.80c3755d.png");}),
+"[project]/src/assets/images/cauch.png.mjs { IMAGE => \"[project]/src/assets/images/cauch.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/cauch.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 430,
+    height: 430,
+    blurWidth: 8,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA5klEQVR42o3Pv4/BUADA8Tecu+v1LnF1mrbRvETcxd1wORe04Ym0fYkSQgfEQCJ+bBY2u4WhCxuREJEYTP4rEolIDMWzWfmu3+kDwD29U0+8x2H3fTuZgJdl/JTtgb5O7o3+asi/q7GBN4tcYjvPxdeZH0/3j2ez7OuLCBAUav04skZphSwLSTIyMGmj/3NHkQ6aWyyDCBTqfR0dTSyTgR4m04xKZoZGFtmYpX/CCpBcXLGH5Z2pSWdT8ZMBDp6GesiapKJ71S2WAP1oY7wf9pgK+ZYG+SZysVVJcOZ9nCPBUM/CTeEFcHo8ZGTW+SEAAAAASUVORK5CYII="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/electronic.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/electronic.87b6df2a.png");}),
+"[project]/src/assets/images/electronic.png.mjs { IMAGE => \"[project]/src/assets/images/electronic.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/electronic.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 220,
+    height: 244,
+    blurWidth: 7,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAA80lEQVR42gHoABf/AAAAAAAAAAAAExMTF0dHR00wMDAvAgICAQAAAAAAAAAAAAAAAAA+Pj5Ny8vL8Z+fn6YGBgYFAAAAAAAGBgYKCgoKEkZGRlrZ2dn7qqqqsAcHBwYAAAAAAD8/P3ZXVlXLZmZmn9PT0/udnZ7EISEhMhISERgApqam0LOysv2pqanmvL28/n9/ge9gX1/XeXd3xADBwcHsmZmZ/5ubm/+5ubn/hIOD7UY/NfhybmnxAMHBwe+goKD/lJSU/5KRj/+MjIzvZmNh+Y2LivMAiYmJrnZ2drVUU1PNbWxp4VpZWbxQT0+MZGRkiIRTYYxw4byFAAAAAElFTkSuQmCC"
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/modules/home/components/top_section.comp.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/* eslint-disable @typescript-eslint/no-explicit-any */ __turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$home$2f$components$2f$top_section$2e$UI$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/modules/home/components/top_section.UI.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/chair.png.mjs { IMAGE => "[project]/src/assets/images/chair.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/white_chair.png.mjs { IMAGE => "[project]/src/assets/images/white_chair.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/cauch.png.mjs { IMAGE => "[project]/src/assets/images/cauch.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/electronic.png.mjs { IMAGE => "[project]/src/assets/images/electronic.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+/* SLIDES DATA */ const slides = [
+    {
+        img: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
+        text: "Figma ipsum component variant main layer. Stroke hand ellipse move shadow thumbnail arrow."
+    },
+    {
+        img: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$white_chair$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
+        text: "Our Buyer Protection is added for a fee to every purchase made with the “Buy now” button."
+    },
+    {
+        img: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$cauch$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
+        text: "Alo cream colored sweatshirt size medium. Stains on front of shirt as shown in photos"
+    }
+];
+/* VARIANTS */ const imageForward = {
+    initial: {
+        x: 300,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 180,
+        opacity: 0
+    }
+};
+const imageRise = {
+    initial: {
+        y: 180,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 100,
+        opacity: 0
+    }
+};
+const imageLastExit = {
+    initial: {
+        x: 300,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1
+    },
+    exit: {
+        x: 180,
+        opacity: 0
+    }
+};
+const textForward = {
+    initial: {
+        x: -300,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 180,
+        opacity: 0
+    }
+};
+const textRise = {
+    initial: {
+        y: 180,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    },
+    exit: {
+        y: 100,
+        opacity: 0
+    }
+};
+const textLastExit = {
+    initial: {
+        x: -300,
+        opacity: 0
+    },
+    animate: {
+        x: 0,
+        opacity: 1
+    },
+    exit: {
+        x: -180,
+        opacity: 0
+    }
+};
+/* MAIN LOGIC */ const TopSectionComp = ()=>{
+    _s();
+    const [fIndex, setFIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [fDirection, setFDirection] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("static-start");
+    const [eIndex, setEIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    /* AUTO SLIDER */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "TopSectionComp.useEffect": ()=>{
+            const int = setInterval({
+                "TopSectionComp.useEffect.int": ()=>{
+                    if (fIndex === 0) {
+                        setFDirection("forward");
+                        setFIndex(1);
+                    } else if (fIndex === 1) {
+                        setFDirection("forward");
+                        setFIndex(2);
+                    } else {
+                        setFDirection("backward");
+                        setFIndex(0);
+                    }
+                }
+            }["TopSectionComp.useEffect.int"], 6000);
+            return ({
+                "TopSectionComp.useEffect": ()=>clearInterval(int)
+            })["TopSectionComp.useEffect"];
+        }
+    }["TopSectionComp.useEffect"], [
+        fIndex
+    ]);
+    /* IMAGE VARIANTS */ const getImageVariant = ()=>{
+        if (fDirection === "static-start") return {};
+        if (fDirection === "forward" && fIndex === 2) return imageForward;
+        if (fDirection === "forward" && fIndex === 1) return imageRise;
+        if (fDirection === "backward" && fIndex === 0) return imageLastExit;
+        return imageForward;
+    };
+    /* TEXT VARIANTS */ const getTextVariant = ()=>{
+        if (fDirection === "static-start") return {};
+        if (fDirection === "forward" && fIndex === 2) return textForward;
+        if (fDirection === "forward" && fIndex === 1) return textRise;
+        if (fDirection === "backward" && fIndex === 0) return textLastExit;
+        return textForward;
+    };
+    /* DOT HANDLERS */ const handleDotClick = (dot)=>{
+        if (dot < fIndex) setFDirection("backward");
+        else setFDirection("forward");
+        setFIndex(dot);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$home$2f$components$2f$top_section$2e$UI$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        fIndex: fIndex,
+        eIndex: eIndex,
+        slides: slides,
+        ElectonicsImage: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
+        getTextVariant: getTextVariant,
+        getImageVariant: getImageVariant,
+        onDotClick: handleDotClick,
+        onElectronicDotClick: setEIndex
+    }, void 0, false, {
+        fileName: "[project]/src/modules/home/components/top_section.comp.tsx",
+        lineNumber: 115,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(TopSectionComp, "SQD5K4UklGXCVxIY/HiYBO1fiZY=");
+_c = TopSectionComp;
+const __TURBOPACK__default__export__ = TopSectionComp;
+var _c;
+__turbopack_context__.k.register(_c, "TopSectionComp");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/seat.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/seat.96f0a39c.png");}),
+"[project]/src/assets/images/seat.png.mjs { IMAGE => \"[project]/src/assets/images/seat.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/seat.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 200,
+    height: 200,
+    blurWidth: 8,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAABBUlEQVR42k1PPUhCURi993uf9/X0vvfue2ZUL9KggkKoRKitqKUhkNqj2YagCApaGgpCwqmCIKLBhiiHgvB3c3ZxcnHSScHdxet7g+LHN5zDOQfOIWTsDI6G7keuMmRBy29bhipGog8BH05Dj3+p2fJXeiObez8o78XtfQJAQZtAzTO8XE6/df6XZLeyI2s/u81lh0VJ2OHh57PI5/2J81RMLVbb+bisZ6Ly9TxSCKigk6Bg9vfdQqn1G+u3suuykVmRpduZXmJTJCkhlFD3Y6tiO3kYur45nkpfHE1+JLbElaWz+WE/ynlgDgB8iKiZprGmKAp3sTla4Io4xIwxi1IKXtDjA9pENyJziddAAAAAAElFTkSuQmCC"
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/modules/products/data/products.data.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__,
+    "products2",
+    ()=>products2,
+    "reviews",
+    ()=>reviews
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/seat.png.mjs { IMAGE => "[project]/src/assets/images/seat.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+;
+const products = [
+    {
+        id: 1,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 2,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 3,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 4,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 5,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 6,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 7,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 8,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    }
+];
+const products2 = [
+    {
+        id: 1,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 2,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 3,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    },
+    {
+        id: 4,
+        name: "Elegant yellow leather modern design armchair",
+        vendor: "Name of the Vendor",
+        price: 102.0,
+        image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+    }
+];
+const reviews = [
+    {
+        id: 1,
+        name: "Sandra Philipson",
+        date: "Sept 6th 2025",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur. Mauris diam tortor eget nulla auctor. Adipiscing praesent cursus vel lorem. Massa facilisis proin viverra suspendisse. Tristique vulputate duis nunc nisl. Nunc consequat libero vestibulum in odio purus est. Nunc massa dignissim nulla nunc non ipsum ipsum."
+    },
+    {
+        id: 2,
+        name: "Sandra Philipson",
+        date: "Sept 6th 2025",
+        rating: 0,
+        comment: "Lorem ipsum dolor sit amet consectetur. Mauris diam tortor eget nulla auctor. Adipiscing praesent cursus vel lorem. Massa facilisis proin viverra suspendisse."
+    },
+    {
+        id: 3,
+        name: "Sandra Philipson",
+        date: "Sept 6th 2025",
+        rating: 0,
+        comment: "Lorem ipsum dolor sit amet consectetur. Mauris diam tortor eget nulla auctor. Adipiscing praesent cursus vel lorem."
+    },
+    {
+        id: 4,
+        name: "Sandra Philipson",
+        date: "Sept 6th 2025",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur. Mauris diam tortor eget nulla auctor. Adipiscing praesent cursus vel lorem. Massa facilisis proin viverra suspendisse. Tristique vulputate duis nunc nisl."
+    },
+    {
+        id: 5,
+        name: "Sandra Philipson",
+        date: "Sept 6th 2025",
+        rating: 5,
+        comment: "Lorem ipsum dolor sit amet consectetur. Mauris diam tortor eget nulla auctor. Adipiscing praesent cursus vel lorem. Massa facilisis proin viverra suspendisse."
+    }
+];
+const __TURBOPACK__default__export__ = products;
+;
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/modules/home/components/list_product.comp.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$data$2f$products$2e$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/modules/products/data/products.data.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+const ListProductsComp = ()=>{
+    _s();
+    const [hoveredCard, setHoveredCard] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "bg-white py-12",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-6",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6",
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$data$2f$products$2e$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "group bg-white border border-gray-200 rounded-3xl px-4 py-10 transition-all duration-300 relative",
+                        onMouseEnter: ()=>setHoveredCard(product.id),
+                        onMouseLeave: ()=>setHoveredCard(null),
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center text-gray-300 hover:text-red-500 transition-colors cursor-pointer",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AshHeartIcon"], {}, void 0, false, {
+                                    fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 17
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                lineNumber: 22,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mb-6 overflow-hidden flex items-center justify-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: product.image.src,
+                                    alt: product.name,
+                                    className: "h-50 object-contain"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 17
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                lineNumber: 27,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-lg font-semibold text-gray-900 leading-tight",
+                                        children: product.name
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-6 h-6 bg-gray-300 rounded-full"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm text-gray-600",
+                                                children: product.vendor
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                        lineNumber: 42,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-xl font-semibold gradient-text",
+                                        children: [
+                                            "$",
+                                            product.price.toFixed(2)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `
+                    absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
+                    ${hoveredCard === product.id ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}
+                `,
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        className: "flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AddToCartIcon"], {}, void 0, false, {
+                                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                                lineNumber: 67,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[13px]  text-secondary-color",
+                                                                children: "Add To Cart"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                                lineNumber: 68,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                        lineNumber: 66,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        className: "flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NegotiateIcon"], {}, void 0, false, {
+                                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                                lineNumber: 74,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[13px] gradient-text",
+                                                                children: "Negotiate"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                                lineNumber: 75,
+                                                                columnNumber: 25
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                        lineNumber: 73,
+                                                        columnNumber: 23
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                                lineNumber: 65,
+                                                columnNumber: 21
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                            lineNumber: 64,
+                                            columnNumber: 19
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                                lineNumber: 36,
+                                columnNumber: 15
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, product.id, true, {
+                        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                        lineNumber: 15,
+                        columnNumber: 13
+                    }, ("TURBOPACK compile-time value", void 0)))
+            }, void 0, false, {
+                fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+                lineNumber: 13,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+            lineNumber: 12,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_s(ListProductsComp, "6CRrwZHYK9uO48fX4or0s9sBNOc=");
+_c = ListProductsComp;
+const __TURBOPACK__default__export__ = ListProductsComp;
+var _c;
+__turbopack_context__.k.register(_c, "ListProductsComp");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/beauty_skin.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/beauty_skin.c34286b8.png");}),
+"[project]/src/assets/images/beauty_skin.png.mjs { IMAGE => \"[project]/src/assets/images/beauty_skin.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/beauty_skin.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 622,
+    height: 349,
+    blurWidth: 8,
+    blurHeight: 4,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAiElEQVR42lWKLQqDUACA314YyFgZk8fGY8/BWNpsRhFBDGoRwR8Qs8FqMYgYbQZPYPME3kCLwRN4AS8gGDSJfvCl7wNgx2kV0zfzz+D+R57d+4FMcBhWCLqnvirMjsDN7Icp9/F8oSiCEa3EttLmvjG4Ml9sA4Tw+iUv3dOkKLHEps6CqQqtcQF24Ri/EXDvfAAAAABJRU5ErkJggg=="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/boy.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/boy.3a96f514.png");}),
+"[project]/src/assets/images/boy.png.mjs { IMAGE => \"[project]/src/assets/images/boy.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/boy.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 365,
+    height: 322,
+    blurWidth: 8,
+    blurHeight: 7,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAsUlEQVR42mWOzQoBQQCAd2b2p91VG8Ky1PiJXSvUtkVNmy257JY8ADm4u/ICDh5Bwhs4eAYvoeTo6uSgxF5n9rt+3+HjOAYIIR+41i50rbPA8xrrORQFc699HNj4EMUS64GTzQcr0rt1DH2PAFQoKyIkT6vNy7Ll/EgRP1RBrFNBQhBTs5p9nZQb365uvJKS7NODAKARrmwWQ+9jFox3WlbHsclSLmOetut76JOnpij9P2mgHGS6w/+xAAAAAElFTkSuQmCC"
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/modules/home/components/top_deals.comp.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>TopDealsComp
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/seat.png.mjs { IMAGE => "[project]/src/assets/images/seat.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/beauty_skin.png.mjs { IMAGE => "[project]/src/assets/images/beauty_skin.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/boy.png.mjs { IMAGE => "[project]/src/assets/images/boy.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/electronic.png.mjs { IMAGE => "[project]/src/assets/images/electronic.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/core/routes/routeNames.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function TopDealsComp() {
+    _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [hoveredCard, setHoveredCard] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [wishlist, setWishlist] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [floatingHearts, setFloatingHearts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const handleHeartClick = (productId)=>{
+        const alreadyLiked = wishlist.includes(productId);
+        if (alreadyLiked) {
+            // Remove from wishlist
+            setWishlist(wishlist.filter((id)=>id !== productId));
+            return;
+        }
+        // Add to wishlist
+        setWishlist([
+            ...wishlist,
+            productId
+        ]);
+        // Trigger floating heart animation
+        const id = `${productId}-${Date.now()}`;
+        setFloatingHearts([
+            ...floatingHearts,
+            {
+                id
+            }
+        ]);
+        // Remove heart after animation
+        setTimeout(()=>{
+            setFloatingHearts((prev)=>prev.filter((h)=>h.id !== id));
+        }, 900);
+    };
+    const products = [
+        {
+            id: 1,
+            name: "Elegant yellow leather modern design armchair",
+            vendor: "Name of the Vendor",
+            price: 102.0,
+            image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+        },
+        {
+            id: 2,
+            name: "Elegant yellow leather modern design armchair",
+            vendor: "Name of the Vendor",
+            price: 102.0,
+            image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+        },
+        {
+            id: 3,
+            name: "Elegant yellow leather modern design armchair",
+            vendor: "Name of the Vendor",
+            price: 102.0,
+            image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+        },
+        {
+            id: 4,
+            name: "Elegant yellow leather modern design armchair",
+            vendor: "Name of the Vendor",
+            price: 102.0,
+            image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
+        }
+    ];
+    const FloatingHeart = ({ id })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            initial: {
+                y: 0,
+                opacity: 1,
+                scale: 0.8
+            },
+            animate: {
+                y: -40,
+                opacity: 0,
+                scale: 1.4
+            },
+            exit: {
+                opacity: 0
+            },
+            transition: {
+                duration: 0.8,
+                ease: "easeOut"
+            },
+            className: "absolute top-0 right-7 pointer-events-none",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
+                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                lineNumber: 89,
+                columnNumber: 7
+            }, this)
+        }, id, false, {
+            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+            lineNumber: 81,
+            columnNumber: 5
+        }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "bg-[#032F21] py-12",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto px-6 mt-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "text-4xl font-bold text-white mb-8",
+                    children: "Top Deals"
+                }, void 0, false, {
+                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                    lineNumber: 96,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "absolute -left-2 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-secondary-color rounded-xl shadow-lg flex items-center justify-center transition-colors",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ArrowLeftIcon"], {}, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                lineNumber: 102,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 scroll-smooth pb-4 gap-3",
+                            children: products.map((product)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    onMouseEnter: ()=>setHoveredCard(product.id),
+                                    onMouseLeave: ()=>setHoveredCard(null),
+                                    className: "hrink-0 w-full border border-[#F9FAFB4D] bg-[#FFFFFF]/10 rounded-3xl py-10 px-4 backdrop-blur-md cursor-pointer",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: ()=>handleHeartClick(String(product.id)),
+                                            className: "absolute right-8 top-8 z-20 flex items-center justify-center cursor-pointer",
+                                            children: wishlist.includes(String(product.id)) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 120,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 119,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AshHeartIcon"], {}, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 123,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 114,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                            children: floatingHearts.filter((h)=>h.id.startsWith(String(product.id))).map((h)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingHeart, {
+                                                    id: h.id
+                                                }, h.id, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 23
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 128,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            onClick: ()=>router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["productDetailsRoute"]),
+                                            className: "rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative w-full h-50",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: product.image,
+                                                alt: product.name,
+                                                width: 200,
+                                                height: 200,
+                                                className: "object-contain"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 141,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 137,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-base font-semibold text-white leading-tight",
+                                                    children: product.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "w-6 h-6 bg-white/20 rounded-full"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 158,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm text-white/80",
+                                                            children: product.vendor
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 159,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 157,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-xl font-medium text-amber-400",
+                                                    children: [
+                                                        "$",
+                                                        product.price.toFixed(2)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: `
+                    absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
+                    ${hoveredCard === product.id ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}
+                `,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex gap-3",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    className: "flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AddToCartIcon"], {}, void 0, false, {
+                                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                            lineNumber: 183,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[13px]  text-secondary-color",
+                                                                            children: "Add To Cart"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                            lineNumber: 184,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                    lineNumber: 182,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    className: "flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NegotiateIcon"], {}, void 0, false, {
+                                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                            lineNumber: 190,
+                                                                            columnNumber: 27
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-[13px] gradient-text",
+                                                                            children: "Negotiate"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                            lineNumber: 191,
+                                                                            columnNumber: 27
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                                    lineNumber: 189,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 181,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                        lineNumber: 180,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 170,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 151,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, product.id, true, {
+                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                    lineNumber: 108,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                            lineNumber: 106,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "absolute -right-2 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-secondary-color rounded-xl shadow-lg flex items-center justify-center transition-colors",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ArrowRightIcon"], {}, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                lineNumber: 205,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                            lineNumber: 204,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                    lineNumber: 99,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-3 mt-1",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-[#E8EEEE] rounded-3xl p-6 relative overflow-hidden min-h-[400px] flex flex-col justify-between w-1/2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-l text-primary-color mb-1",
+                                            children: "Fashion Collections"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 214,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-5xl font-bold text-primary-color mb-2 leading-tight",
+                                                    children: [
+                                                        "Beauty, Skin",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 220,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "and Cosmetics"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 218,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-lg font-medium mb-4",
+                                                    children: [
+                                                        "Figma ipsum component variant main layer.",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 225,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "Stroke hand ellipse move."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 223,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 217,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "group w-[145px] p-0.5 border border-[#003625] rounded-[18px] cursor-pointer",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]",
+                                                children: "Shop Now"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 230,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 229,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                    lineNumber: 213,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute right-0",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$beauty_skin$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                        alt: "Beauty Products",
+                                        width: 600,
+                                        height: 348,
+                                        className: "h-[378.82px] object-cover"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                        lineNumber: 237,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                    lineNumber: 236,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                            lineNumber: 212,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex justify-between w-1/2 gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-[#FAF2E9] rounded-3xl p-6 relative overflow-hidden min-h-[280px] flex flex-col justify-between w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative z-10",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-lg text-primary-color mb-1",
+                                                    children: "Fashion"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 252,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-4xl font-bold text-primary-color mb-4 leading-tight",
+                                                    children: [
+                                                        "Children's",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                            lineNumber: 255,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "Fashion"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 253,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    className: "group w-[140px] p-0.5 border border-[#e26e00] rounded-[18px] cursor-pointer",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-full bg-[#FDA106] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-[#FFF4EA] group-hover:text-[#052214]",
+                                                        children: "Shop Now"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                        lineNumber: 260,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 259,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 251,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute bottom-0 right-0 z-0",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$boy$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                                alt: "Children's Fashion",
+                                                width: 400,
+                                                height: 300,
+                                                className: "object-contain"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 268,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 267,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                    lineNumber: 249,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-[#DCE4EA] rounded-3xl p-6 relative overflow-hidden min-h-[280px] flex flex-col justify-between w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-lg text-primary-color mb-1",
+                                                    children: "Electronics"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 281,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-3xl font-bold text-primary-color mb-3 leading-tight",
+                                                    children: "Home Appliances"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 282,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    className: "group w-[140px] p-0.5 border border-[#003625] rounded-[18px] cursor-pointer",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]",
+                                                        children: "Shop Now"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                        lineNumber: 286,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                    lineNumber: 285,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 280,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute right-0 bottom-0",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$electronic$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                                alt: "Appliances",
+                                                width: 250,
+                                                height: 200,
+                                                className: "object-contain"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                            lineNumber: 292,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                                    lineNumber: 279,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                            lineNumber: 247,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+                    lineNumber: 210,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+            lineNumber: 95,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
+        lineNumber: 94,
+        columnNumber: 5
+    }, this);
+}
+_s(TopDealsComp, "QsXmAhgSCxgzP4cx2efVKPILUmo=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
+_c = TopDealsComp;
+var _c;
+__turbopack_context__.k.register(_c, "TopDealsComp");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/woman.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/woman.345e23dc.png");}),
+"[project]/src/assets/images/woman.png.mjs { IMAGE => \"[project]/src/assets/images/woman.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/woman.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 915,
+    height: 419,
+    blurWidth: 8,
+    blurHeight: 4,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAj0lEQVR42gGEAHv/AAAAAAAAAAAAAwICCSQYEoEqHBWJAwICCwAAAAAAAAAAAAAAAAAAAAAACQYFFkEqH71XOivBBwUEFAAAAAAAAAAAAAAAAAALCAceXEY9kWpYUN54ZFvcRTguaQcGAwgAAAAAAAMDAxJCKyWnsJOL+35vav9zZWD9VkYv6DwxDUsAAAAA40EW33SlyDwAAAAASUVORK5CYII="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/images/hover.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/hover.198bfb36.png");}),
+"[project]/src/assets/images/hover.png.mjs { IMAGE => \"[project]/src/assets/images/hover.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/images/hover.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 365,
+    height: 260,
+    blurWidth: 8,
+    blurHeight: 6,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAo0lEQVR42h2OWw6CQBRD58soCgMqxhWgoIxCVJSXMCDuf0XHGz+aNmmTU7VsUmbFEbc5E35uBDbD76/spwehzVFbCU51Yl5E+G9D0KXoJmHTGVGKCqcCpz6zKmPcKsGtY5xnJDnGa06o3bdAd1e81ohnOOWRxevAQkazR4TSfYYWlrY39CCyhvVo8AWxLBPUqr3g9vm/9Ic7nr0QDHJ4zNm2KT8uPEcIDnVPlAAAAABJRU5ErkJggg=="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/modules/home/components/top_sellers.comp.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.js [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/woman.png.mjs { IMAGE => "[project]/src/assets/images/woman.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/hover.png.mjs { IMAGE => "[project]/src/assets/images/hover.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+'use client';
+;
+;
+;
+;
+;
+;
+const TopSellersComp = ()=>{
+    const sellers = [
+        {
+            id: 1,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 2,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 3,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 4,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 5,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 6,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        },
+        {
+            id: 7,
+            name: "Easy Fashion Ltd.",
+            location: "Newcastle, England",
+            rating: 4.3,
+            reviews: 98
+        }
+    ];
+    const RatingStars = ({ rating })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex items-center gap-1",
+            children: [
+                ...Array(5)
+            ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    filled: i < Math.floor(rating)
+                }, i, false, {
+                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                    lineNumber: 68,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)))
+        }, void 0, false, {
+            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+            lineNumber: 66,
+            columnNumber: 5
+        }, ("TURBOPACK compile-time value", void 0));
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "p-8 bg-[#F3F4F6]",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "container mx-auto mt-10 mb-13",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                    className: "text-4xl font-bold text-gray-900 mb-8",
+                    children: "Top Sellers"
+                }, void 0, false, {
+                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                    lineNumber: 76,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "bg-gradient rounded-3xl overflow-hidden mb-8 shadow-lg",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col md:flex-row items-center justify-between p-8 md:p-12",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex-1 -mb-22 relative w-full h-[400px]",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$woman$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                    alt: "Happy shopper",
+                                    fill: true,
+                                    className: "object-contain",
+                                    priority: true
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                    lineNumber: 82,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                lineNumber: 81,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex-1 text-center md:text-left",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-4xl md:text-5xl font-bold text-white mb-4",
+                                        children: [
+                                            "Buy More For Less",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 93,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "with ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-primary-color",
+                                                children: "Bundle Buy"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 94,
+                                                columnNumber: 22
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-primaryy-color font-medium mb-6 text-lg",
+                                        children: [
+                                            "Enjoy bulk purchase from your favorite sellers and pay",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 98,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            "less for more."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                        lineNumber: 96,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "w-[280px] p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] cursor-pointer",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-full bg-secondary-color text-primary-color py-4 rounded-[14px] text-center font-semibold",
+                                            children: "Shop Now"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                        lineNumber: 101,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                lineNumber: 90,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                        lineNumber: 80,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                }, void 0, false, {
+                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                    lineNumber: 79,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6",
+                    children: [
+                        sellers.map((seller, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative bg-white rounded-2xl p-6 shadow-sm transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg group overflow-hidden",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute inset-0 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-300 ease-out origin-center",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$hover$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                                            alt: "",
+                                            fill: true,
+                                            className: "object-cover"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                            lineNumber: 119,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                        lineNumber: 118,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "relative z-10 flex flex-col items-center text-center",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-gray-50 transition-colors duration-300",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AppleIcon"], {}, void 0, false, {
+                                                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                    lineNumber: 126,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 125,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "font-bold text-gray-900 mb-1 group-hover:text-white transition-colors duration-300",
+                                                children: seller.name
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 130,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-gray-900 group-hover:text-white mb-3",
+                                                children: seller.location
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 133,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-2 mb-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(RatingStars, {
+                                                        rating: seller.rating
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-sm text-gray-900 group-hover:text-white",
+                                                        children: [
+                                                            seller.rating,
+                                                            " (",
+                                                            seller.reviews,
+                                                            " reviews)"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                        lineNumber: 140,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 138,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                className: "w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-[#fda106] group-hover:text-white",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        size: 20,
+                                                        className: "text-gray-700 group-hover:hidden transition-colors duration-300"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                        lineNumber: 147,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                        size: 20,
+                                                        className: "hidden group-hover:block text-white transition-colors duration-300"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                        lineNumber: 151,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 146,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                        lineNumber: 123,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, index, true, {
+                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                lineNumber: 113,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-secondary-color border border-[#003625] rounded-3xl p-6 flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 hover:scale-[1.02] cursor-pointer group overflow-hidden",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 bg-white/10 rounded-3xl scale-0 group-hover:scale-100 transition-transform duration-300 ease-out origin-center"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                    lineNumber: 162,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative z-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center justify-center",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DashboardIcon"], {}, void 0, false, {
+                                                fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                                lineNumber: 165,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-[#077D58] font-semibold text-lg group-hover:text-[#003625] transition-colors duration-300",
+                                            children: "Explore More"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                            lineNumber: 167,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                                    lineNumber: 163,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                            lineNumber: 161,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+            lineNumber: 75,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/src/modules/home/components/top_sellers.comp.tsx",
+        lineNumber: 74,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+_c = TopSellersComp;
+const __TURBOPACK__default__export__ = TopSellersComp;
+var _c;
+__turbopack_context__.k.register(_c, "TopSellersComp");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=src_de44874f._.js.map

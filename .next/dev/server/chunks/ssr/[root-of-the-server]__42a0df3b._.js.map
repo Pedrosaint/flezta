@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/app/%28website%29/products/details/%5Bid%5D/page.tsx"],"sourcesContent":["import ProductDetailsPage from \"@/modules/products/page/product_details.page\";\r\n\r\nexport default function Page() {\r\n    return <ProductDetailsPage />;\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS;IACpB,qBAAO,8OAAC;;;;;AACZ"}}]
+}
