@@ -110,20 +110,40 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 // Base URL
 __turbopack_context__.s([
+    "addToCartAPIRoute",
+    ()=>addToCartAPIRoute,
+    "addToWishlistAPIRoute",
+    ()=>addToWishlistAPIRoute,
     "baseURL",
     ()=>baseURL,
     "forgotPasswordAPIRoute",
     ()=>forgotPasswordAPIRoute,
+    "getPreviouslyViewedAPIRoute",
+    ()=>getPreviouslyViewedAPIRoute,
+    "getProductDetailsAPIRoute",
+    ()=>getProductDetailsAPIRoute,
+    "getProductsAPIRoute",
+    ()=>getProductsAPIRoute,
     "getUserProfileAPIRoute",
     ()=>getUserProfileAPIRoute,
+    "getWishlistItemsAPIRoute",
+    ()=>getWishlistItemsAPIRoute,
     "googleLoginAPIRoute",
     ()=>googleLoginAPIRoute,
     "loginAPIRoute",
     ()=>loginAPIRoute,
     "registerAPIRoute",
     ()=>registerAPIRoute,
+    "removeFromCartAPIRoute",
+    ()=>removeFromCartAPIRoute,
+    "removeFromWishlistAPIRoute",
+    ()=>removeFromWishlistAPIRoute,
     "resetPasswordAPIRoute",
     ()=>resetPasswordAPIRoute,
+    "trackProductViewAPIRoute",
+    ()=>trackProductViewAPIRoute,
+    "updateCartAPIRoute",
+    ()=>updateCartAPIRoute,
     "updateUserProfileAPIRoute",
     ()=>updateUserProfileAPIRoute,
     "verifyOtpAPIRoute",
@@ -140,6 +160,18 @@ const verifyOtpAPIRoute = `/auth/verify_otp`;
 // Users
 const getUserProfileAPIRoute = `/users/profile`;
 const updateUserProfileAPIRoute = `/users/update_profile`;
+// Carts
+const addToCartAPIRoute = `/carts/add_to_cart`;
+const removeFromCartAPIRoute = `/carts/remove_from_cart`;
+const updateCartAPIRoute = `/carts/update_cart`;
+// Products
+const getProductsAPIRoute = "/products";
+const getProductDetailsAPIRoute = "/products/:productId";
+const addToWishlistAPIRoute = "/wishlist/add";
+const removeFromWishlistAPIRoute = "/wishlist/remove";
+const getWishlistItemsAPIRoute = "/wishlist";
+const getPreviouslyViewedAPIRoute = "/products/previously-viewed";
+const trackProductViewAPIRoute = "/products/track-view";
 ;
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
@@ -212,7 +244,12 @@ const rootAPI = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
         maxRetries: 3
     }),
     tagTypes: [
-        "User"
+        "User",
+        "Cart",
+        "Products",
+        "Wishlist",
+        "Orders",
+        "PreviouslyViewed"
     ],
     endpoints: ()=>({})
 });

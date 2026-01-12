@@ -13,6 +13,20 @@ const verifyOtpAPIRoute = `/auth/verify_otp`;
 const getUserProfileAPIRoute = `/users/profile`;
 const updateUserProfileAPIRoute = `/users/update_profile`;
 
+// Carts
+const addToCartAPIRoute = `/carts/add_to_cart`;
+const removeFromCartAPIRoute = `/carts/remove_from_cart`;
+const updateCartAPIRoute = `/carts/update_cart`;
+
+// Products
+const getProductsAPIRoute = "/products";
+const getProductDetailsAPIRoute = "/products/:productId";
+const addToWishlistAPIRoute = "/wishlist/add";
+const removeFromWishlistAPIRoute = "/wishlist/remove";
+const getWishlistItemsAPIRoute = "/wishlist";
+const getPreviouslyViewedAPIRoute = "/products/previously-viewed";
+const trackProductViewAPIRoute = "/products/track-view";
+
 export {
     // Base URL
     baseURL,
@@ -28,4 +42,18 @@ export {
     // Users
     getUserProfileAPIRoute,
     updateUserProfileAPIRoute,
+
+    // Carts
+    addToCartAPIRoute,
+    removeFromCartAPIRoute,
+    updateCartAPIRoute,
+
+    // Products
+    getProductsAPIRoute,
+    getProductDetailsAPIRoute,
+    addToWishlistAPIRoute,
+    removeFromWishlistAPIRoute,
+    getWishlistItemsAPIRoute,
+    getPreviouslyViewedAPIRoute,
+    trackProductViewAPIRoute,  
 };

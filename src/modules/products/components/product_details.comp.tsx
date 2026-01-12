@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { Plus, Minus } from "lucide-react";
@@ -8,6 +7,7 @@ import {
   ArrowRightIcon,
   AshHeartIcon,
   ChatIcon3,
+  RedHeartIcon,
   SecurePaymentIcon,
   VerifiedBadge,
 } from "@/assets/svg/svg_icon";
@@ -17,14 +17,16 @@ import useProductDetailsHook from "../hook/useProductDetails.hook";
 import { useRouter } from "next/navigation";
 import { cartRoute } from "@/core/routes/routeNames";
 import BuyNowModal from "../modal/buy_now.modal";
+import { AnimatePresence, motion } from "framer-motion";
+import { IProduct } from "../types/product.type";
 
 interface ProductDetailsCompProps {
-  product: any;
+  product: IProduct;
 }
 
 const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
   const router = useRouter();
-  void product;
+
   const {
     isNegotiatePriceModal,
     setIsNegotiatePriceModal,
@@ -33,39 +35,60 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
     quantity,
     selectedImage,
     setSelectedImage,
-    isFavorite,
-    setIsFavorite,
     images,
     colors,
     decreaseQuantity,
     increaseQuantity,
     isBuyNowModal,
     setIsBuyNowModal,
+    wishlist,
+    handleWishlistClick,
+    floatingHearts,
+    scrollToTopSmooth,
   } = useProductDetailsHook();
 
-  const scrollToTopSmooth = () => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
+  const productId = String(product.id);
+  const isWishlisted = wishlist.includes(productId);
+
+  const specifications = [
+    { label: "SKU", value: "GE779FD3WOP7NNAFAMZ" },
+    { label: "Model", value: 'N/A' },
+    { label: "Color", value: "Black" },
+    { label: "Condition", value: "New" },
+    { label: "Measurement", value: "Height (100cm), Width (45cm), Breadth (60cm)" },
+    { label: "Main material", value: "Leather" },
+    { label: "Weight", value: "25kg" },
+  ];
+
+  const FloatingHeart = ({ id }: { id: string }) => (
+    <motion.div
+      key={id}
+      initial={{ y: 0, opacity: 1, scale: 0.8 }}
+      animate={{ y: -40, opacity: 0, scale: 1.4 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="absolute top-0 right-53 pointer-events-none"
+    >
+      <RedHeartIcon />
+    </motion.div>
+  );
 
   return (
     <div className="p-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr_0.8fr] gap-5 h-full">
-          {/* ==== Left Column - Image Gallery ====*/}
+          {/* ==== Left Column - Image Gallery ==== */}
           <div className="lg:col-span-1 h-full">
             <div className="flex gap-2">
-              {/* Thumbnail Column */}
               <div className="flex flex-col gap-3">
                 {images.map((img, index) => (
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`w-25 h-29 rounded-[18px] border-2 flex items-center justify-center text-3xl transition-all relative cursor-pointer ${
+                    className={`w-25 h-29 rounded-[18px] border-2 relative ${
                       selectedImage === index
                         ? "border-[#fda106]"
-                        : "border-gray-200 hover:border-gray-300"
+                        : "border-gray-200"
                     }`}
                   >
                     <Image
@@ -78,8 +101,7 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
                 ))}
               </div>
 
-              {/* Main Image */}
-              <div className="flex-1 rounded-[22px] flex border-2 border-gray-200 items-center justify-center relative w-full h-125">
+              <div className="flex-1 relative h-125 border-2 border-gray-200 rounded-[22px]">
                 <Image
                   src={images[selectedImage]}
                   alt="Selected"
@@ -90,52 +112,56 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
             </div>
           </div>
 
-          {/*==== Middle Column - Product Details ====*/}
-          <div className="lg:col-span-1 h-full border-r border-gray-200">
+          {/* ==== Middle Column ==== */}
+          <div className="lg:col-span-1 h-full border-r border-gray-200 relative">
+            {/* Title + Wishlist */}
             <div className="flex items-start gap-6 mb-4">
-              <h1 className="text-4xl font-bold text-gray-900">
-                Ergonomic Office Chair
-              </h1>
+              <h1 className="text-4xl font-bold">{product.name}</h1>
+
               <button
-                onClick={() => setIsFavorite(!isFavorite)}
+                onClick={() => handleWishlistClick(productId)}
                 className="p-2 bg-gray-100 border border-dashed border-gray-300 rounded-lg transition-colors cursor-pointer"
               >
-                <AshHeartIcon
-                  className={`w-6 h-6 ${
-                    isFavorite ? "fill-red-500 text-red-500" : ""
-                  }`}
-                />
+                {isWishlisted ? <RedHeartIcon /> : <AshHeartIcon />}
               </button>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                Specifications
-              </h2>
 
-              <div className="grid grid-cols-1 gap-y-3 text-lg mb-3">
-                {[
-                  ["SKU", "GE779FD3WOP7NNAFAMZ"],
-                  ["Model", "N/A"],
-                  ["Color", "Black"],
-                  ["Condition", "New"],
-                  [
-                    "Measurement",
-                    "Height (100cm), Width (45cm), Breadth (60cm)",
-                  ],
-                  ["Main material", "Leather"],
-                  ["Weight", "25kg"],
-                ].map(([label, value]) => (
-                  <div key={label} className="flex gap-20">
-                    <span className="w-32 text-gray-500">{label}</span>
-                    <span className="text-gray-900 font-medium">{value}</span>
-                  </div>
+            {/* Floating Hearts */}
+            <AnimatePresence>
+              {floatingHearts
+                .filter((h) => h.id.startsWith(productId))
+                .map((h) => (
+                  <FloatingHeart key={h.id} id={h.id} />
                 ))}
-              </div>
+            </AnimatePresence>
+
+            {/* Specifications */}
+            <h2 className="text-xl font-semibold mb-4">Specifications</h2>
+
+            <div className="grid gap-y-3 text-lg mb-4">
+              {specifications.map(({ label, value }) => (
+                <div key={label} className="flex gap-20">
+                  <span className="w-32 text-gray-500">{label}</span>
+
+                  <span className="font-medium">
+                    {Array.isArray(value)
+                      ? value.map((c, i) => (
+                          <span
+                            key={i}
+                            className="inline-block w-4 h-4 rounded-full mr-1 border"
+                            style={{ backgroundColor: c.code }}
+                            title={c.name}
+                          />
+                        ))
+                      : value}
+                  </span>
+                </div>
+              ))}
             </div>
 
             {/* Price */}
             <div className="text-4xl font-medium gradient-text mb-3">
-              $350.00
+              ${product.price}
             </div>
 
             {/* Color Selection */}
@@ -193,6 +219,7 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
               </div>
             </div>
 
+            {/* Action Buttons */}
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-3 mt-auto">
               {/*=== Negotiate Price Button ===*/}
@@ -315,10 +342,10 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
               </div>
 
               {/* Action Button */}
-                <button className="w-full py-3 rounded-2xl text-white bg-[#263238] font-medium transition-colors flex items-center gap-2 justify-center cursor-pointer">
-                  <ChatIcon3 />
-                  Message Seller
-                </button>
+              <button className="w-full py-3 rounded-2xl text-white bg-[#263238] font-medium transition-colors flex items-center gap-2 justify-center cursor-pointer">
+                <ChatIcon3 />
+                Message Seller
+              </button>
             </div>
           </div>
         </div>

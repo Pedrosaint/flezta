@@ -18,6 +18,11 @@ const rootAPI = createApi({
     ),
     tagTypes: [
         "User",
+        "Cart",
+        "Products",
+        "Wishlist",
+        "Orders",
+        "PreviouslyViewed",
     ],
     endpoints: () => ({}),
 });
