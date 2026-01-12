@@ -1086,46 +1086,6 @@ const __TURBOPACK__default__export__ = {
 "[project]/src/modules/home/hooks/useTopDeals.hook.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import { useRouter } from "next/navigation";
-// import { useState } from "react";
-// const useTopDealsHook = () => {
-//     const router = useRouter();
-//     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-//     const [wishlist, setWishlist] = useState<string[]>([]);
-//     const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
-//     const scrollToTopSmooth = () => {
-//         if (typeof window !== "undefined") {
-//             window.scrollTo({ top: 0, behavior: "smooth" });
-//         }
-//     };
-//     const handleHeartClick = (productId: string) => {
-//         const alreadyLiked = wishlist.includes(productId);
-//         if (alreadyLiked) {
-//             // Remove from wishlist
-//             setWishlist(wishlist.filter((id) => id !== productId));
-//             return;
-//         }
-//         // Add to wishlist
-//         setWishlist([...wishlist, productId]);
-//         // Trigger floating heart animation
-//         const id = `${productId}-${Date.now()}`;
-//         setFloatingHearts([...floatingHearts, { id }]);
-//         // Remove heart after animation
-//         setTimeout(() => {
-//             setFloatingHearts((prev) => prev.filter((h) => h.id !== id));
-//         }, 900);
-//     };
-//     return {
-//         hoveredCard,
-//         setHoveredCard,
-//         wishlist,
-//         floatingHearts,
-//         handleHeartClick,
-//         scrollToTopSmooth,
-//         router,
-//     };
-// };
-// export default useTopDealsHook;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__

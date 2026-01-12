@@ -1172,46 +1172,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "[project]/src/modules/home/hooks/useTopDeals.hook.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import { useRouter } from "next/navigation";
-// import { useState } from "react";
-// const useTopDealsHook = () => {
-//     const router = useRouter();
-//     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-//     const [wishlist, setWishlist] = useState<string[]>([]);
-//     const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
-//     const scrollToTopSmooth = () => {
-//         if (typeof window !== "undefined") {
-//             window.scrollTo({ top: 0, behavior: "smooth" });
-//         }
-//     };
-//     const handleHeartClick = (productId: string) => {
-//         const alreadyLiked = wishlist.includes(productId);
-//         if (alreadyLiked) {
-//             // Remove from wishlist
-//             setWishlist(wishlist.filter((id) => id !== productId));
-//             return;
-//         }
-//         // Add to wishlist
-//         setWishlist([...wishlist, productId]);
-//         // Trigger floating heart animation
-//         const id = `${productId}-${Date.now()}`;
-//         setFloatingHearts([...floatingHearts, { id }]);
-//         // Remove heart after animation
-//         setTimeout(() => {
-//             setFloatingHearts((prev) => prev.filter((h) => h.id !== id));
-//         }, 900);
-//     };
-//     return {
-//         hoveredCard,
-//         setHoveredCard,
-//         wishlist,
-//         floatingHearts,
-//         handleHeartClick,
-//         scrollToTopSmooth,
-//         router,
-//     };
-// };
-// export default useTopDealsHook;
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -1879,7 +1839,7 @@ function TopDealsComp() {
         columnNumber: 5
     }, this);
 }
-_s(TopDealsComp, "ebzjI4VacgfjBoLlE377/dJtm98=", false, function() {
+_s(TopDealsComp, "AVADygvdBrIOGUEMdMZCUM0MD44=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$home$2f$hooks$2f$useTopDeals$2e$hook$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
     ];

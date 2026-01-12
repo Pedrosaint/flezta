@@ -817,7 +817,7 @@ const NegotiatePriceModal = ({ onClose })=>{
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(NegotiatePriceModal, "+XGDkAHceKI4Y+7VLxeIrMmWMwk=", false, function() {
+_s(NegotiatePriceModal, "4PSdpBxQZy/HC4u0TXqX6MPFDdk=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$hook$2f$useNegotiatePriceModal$2e$hook$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
     ];
