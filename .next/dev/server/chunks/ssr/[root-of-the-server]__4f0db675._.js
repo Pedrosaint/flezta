@@ -116,16 +116,14 @@ __turbopack_context__.s([
     ()=>addToWishlistAPIRoute,
     "baseURL",
     ()=>baseURL,
-    "forgotPasswordAPIRoute",
-    ()=>forgotPasswordAPIRoute,
     "getPreviouslyViewedAPIRoute",
     ()=>getPreviouslyViewedAPIRoute,
     "getProductDetailsAPIRoute",
     ()=>getProductDetailsAPIRoute,
     "getProductsAPIRoute",
     ()=>getProductsAPIRoute,
-    "getUserProfileAPIRoute",
-    ()=>getUserProfileAPIRoute,
+    "getUserApi",
+    ()=>getUserApi,
     "getWishlistItemsAPIRoute",
     ()=>getWishlistItemsAPIRoute,
     "googleLoginAPIRoute",
@@ -138,27 +136,20 @@ __turbopack_context__.s([
     ()=>removeFromCartAPIRoute,
     "removeFromWishlistAPIRoute",
     ()=>removeFromWishlistAPIRoute,
-    "resetPasswordAPIRoute",
-    ()=>resetPasswordAPIRoute,
     "trackProductViewAPIRoute",
     ()=>trackProductViewAPIRoute,
     "updateCartAPIRoute",
     ()=>updateCartAPIRoute,
     "updateUserProfileAPIRoute",
-    ()=>updateUserProfileAPIRoute,
-    "verifyOtpAPIRoute",
-    ()=>verifyOtpAPIRoute
+    ()=>updateUserProfileAPIRoute
 ]);
-const baseURL = "https://api.example.com";
+const baseURL = "https://flezta-api-dev.onrender.com";
 // Auths
 const loginAPIRoute = "/auth/login";
-const registerAPIRoute = `/auth/register`;
+const registerAPIRoute = `/users`;
 const googleLoginAPIRoute = `/auth/google_login`;
-const forgotPasswordAPIRoute = `/auth/forgot_password`;
-const resetPasswordAPIRoute = `/auth/reset_password`;
-const verifyOtpAPIRoute = `/auth/verify_otp`;
 // Users
-const getUserProfileAPIRoute = `/users/profile`;
+const getUserApi = '/users/me';
 const updateUserProfileAPIRoute = `/users/update_profile`;
 // Carts
 const addToCartAPIRoute = `/carts/add_to_cart`;
@@ -183,6 +174,33 @@ module.exports = mod;
 "[project]/src/core/redux/apis/services/authorization_header.service.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// import secureLocalStorage from "react-secure-storage";
+// /**
+//  * To get the Firebase token or the refreshed token and return the headers.
+//  * @param headers 
+//  * @returns headers - Authorization headers
+//  */
+// const AuthorizationHeaderService = async (headers: Headers) => {
+//     try {
+//         //  Get Agent Token from the Session Storage.
+//         const token = secureLocalStorage.getItem("token");
+//         // console.log("ACCESS TOKEN:::", token);
+//         if (token) {
+//             // Add token to headers
+//             headers.set("Authorization", `Bearer ${token}`);
+//             headers.set("Accept", "application/json");
+//             headers.set("Content-Type", "application/json");
+//         } else {
+//             headers.set("Accept", "application/json");
+//             headers.set("Content-Type", "application/json");
+//         };
+//     } catch (error) {
+//         console.error("Error::: ", error);
+//     };
+//     return headers;
+// };
+// export default AuthorizationHeaderService;
+// authorization_header.service.ts
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -195,21 +213,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$sec
  * @returns headers - Authorization headers
  */ const AuthorizationHeaderService = async (headers)=>{
     try {
-        //  Get Agent Token from the Session Storage.
-        const token = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].getItem("token");
-        // console.log("ACCESS TOKEN:::", token);
+        const token = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].getItem("access_token");
+        console.log("ACCESS TOKEN FROM STORAGE:::", token);
         if (token) {
             // Add token to headers
             headers.set("Authorization", `Bearer ${token}`);
-            headers.set("Accept", "application/json");
-            headers.set("Content-Type", "application/json");
-        } else {
-            headers.set("Accept", "application/json");
-            headers.set("Content-Type", "application/json");
         }
-        ;
+        // Always set these headers
+        headers.set("Accept", "application/json");
+        headers.set("Content-Type", "application/json");
     } catch (error) {
-        console.error("Error::: ", error);
+        console.error("Error setting authorization headers::: ", error);
     }
     ;
     return headers;
@@ -219,6 +233,34 @@ const __TURBOPACK__default__export__ = AuthorizationHeaderService;
 "[project]/src/core/redux/apis/services/api.service.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// import { createApi, fetchBaseQuery, retry } from "@reduxjs/toolkit/query/react";
+// import { baseURL } from "../api_routes";
+// import AuthorizationHeaderService from "./authorization_header.service";
+// const rootAPI = createApi({
+//     reducerPath: "api",
+//     baseQuery: retry(
+//         fetchBaseQuery({
+//             baseUrl: baseURL,
+//             credentials: "include", // ⬅️ VERY IMPORTANT for SECURE HTTPONLY COOKIES
+//             mode: "cors",
+//             prepareHeaders: async (headers: Headers) => AuthorizationHeaderService(headers)
+//         }),
+//         {
+//             maxRetries: 3,
+//         }
+//     ),
+//     tagTypes: [
+//         "User",
+//         "Cart",
+//         "Products",
+//         "Wishlist",
+//         "Orders",
+//         "PreviouslyViewed",
+//     ],
+//     endpoints: () => ({}),
+// });
+// export default rootAPI;
+// api.service.ts
 __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -234,7 +276,8 @@ const rootAPI = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
     reducerPath: "api",
     baseQuery: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$query$2f$rtk$2d$query$2e$modern$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["retry"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$reduxjs$2f$toolkit$2f$dist$2f$query$2f$rtk$2d$query$2e$modern$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fetchBaseQuery"])({
         baseUrl: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$redux$2f$apis$2f$api_routes$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["baseURL"],
-        credentials: "include",
+        // REMOVE THIS LINE - you don't need credentials for Bearer tokens
+        // credentials: "include", 
         mode: "cors",
         prepareHeaders: async (headers)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$redux$2f$apis$2f$services$2f$authorization_header$2e$service$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(headers)
     }), {

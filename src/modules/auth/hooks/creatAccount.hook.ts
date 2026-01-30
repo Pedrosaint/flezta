@@ -1,117 +1,3 @@
-// /* eslint-disable @typescript-eslint/no-explicit-any */
-// import { useState } from "react";
-// import { useRouter } from "next/navigation";
-// import { useCreateAccountMutation } from "../apis/auth.api";
-// import loginValidationSchema from "../../../shared/utils/validations/auth.validation";
-// import secureLocalStorage from "react-secure-storage";
-// import { loginRoute } from "../../../core/routes/routeNames";
-// import handleErrors from "../../../shared/utils/handle_errors.util";
-// import { toast } from "sonner";
-
-
-
-// const useCreateAccountHook = () => {
-//   const router = useRouter();
-
-//   //==== State variables here ====//
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [showPassword, setShowPassword] = useState(false);
-//   const [errors, setErrors] = useState<{ email?: string; password?: string }>(
-//     {}
-//   );
-
-//   //==== Call you APIs here ====//
-//   const [createAccount, { isLoading }] = useCreateAccountMutation();
-
-//   const scrollToTopSmooth = () => {
-//     if (typeof window !== "undefined") {
-//       window.scrollTo({ top: 0, behavior: "smooth" });
-//     }
-//   };
-
-//   // Handle submit login form
-//   const handleSubmitCreateAccountForm = async () => {
-
-
-//     //==== Construct request body here ====//
-//     const requestBody = {
-//       email: email,
-//       password: password,
-//     };
-
-//     try {
-
-//       //==== Validation request body here ====//
-//       const validCreateAccountData = await loginValidationSchema.validate(
-//         requestBody,
-//         { abortEarly: false, strict: true }
-//       );
-
-//       //==== Call the APIs here ====//
-//       const createAccountResponse = await createAccount(
-//         validCreateAccountData
-//       ).unwrap();
-//       const userData = createAccountResponse?.user;
-//       const token = createAccountResponse?.token;
-
-//       console.log("LOGIN RESPONSE::: ", createAccountResponse);
-
-//       if (token) {
-//         //==== Save the token in secure storage here ====//
-//         secureLocalStorage.setItem("access_token", token);
-//         secureLocalStorage.setItem("user_data", userData!);
-
-//         toast.success("account created successfully");
-//         scrollToTopSmooth();
-//         router.push(loginRoute);
-//       } else {
-//         toast.error(createAccountResponse?.message);
-//       }
-//     } catch (error: any) {
-
-//       //==== Handle validation errors here ====//
-//       if (error.inner) {
-//         const formattedErrors: any = {};
-//         error.inner.forEach((err: any) => {
-//           formattedErrors[err.path] = err.message;
-//         });
-
-//         setErrors(formattedErrors);
-//         return;
-//       }
-
-//       handleErrors(error);
-//       console.log("Error in login APIs: ", error);
-//     }
-//   };
-
-//   //==== Handle Firebase Google login here ====//
-//   const handleGoogleLogin = () => {
-//     //==== Implement Google login logic here ====//
-//     console.log("Google login clicked");
-//   };
-
-//   return {
-//     email,
-//     setEmail,
-//     password,
-//     setPassword,
-//     showPassword,
-//     setShowPassword,
-//     handleSubmitCreateAccountForm,
-//     isLoading,
-//     handleGoogleLogin,
-//     errors,
-//   };
-// };
-
-// export default useCreateAccountHook;
-
-
-
-
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -122,21 +8,36 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { toast } from "sonner";
-import loginValidationSchema from "../../../shared/utils/validations/auth.validation";
-import getFirebaseErrorMessage from "@/shared/utils/firebase_errors.util";
+import loginValidationSchema, {
+  LoginValidationType,
+} from "../../../shared/utils/validations/auth.validation";
+import { getBackendError, getFirebaseErrorMessage } from "@/shared/utils/firebase_errors.util";
 import { dashboardRoute } from "@/core/routes/routeNames";
 import secureLocalStorage from "react-secure-storage";
+import { useCreateAccountMutation } from "../apis/auth.api";
 
 const useCreateAccountHook = () => {
   const router = useRouter();
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
+  const [createAccount] = useCreateAccountMutation();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [errors, setErrors] = useState<{ email?: string; password?: string }>(
-    {}
-  );
+  const [userName, setUserName] = useState("");
+  const [errors, setErrors] = useState<{
+    email?: string;
+    password?: string;
+    firstName?: string;
+    lastName?: string;
+    phoneNumber?: string;
+  }>({});
   const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
 
   const scrollToTopSmooth = () => {
     if (typeof window !== "undefined") {
@@ -149,13 +50,20 @@ const useCreateAccountHook = () => {
     setErrors({});
 
     try {
-      // ===== Validate with your existing schema =====
-      const validatedData = await loginValidationSchema.validate(
-        { email, password },
-        { abortEarly: false, strict: true }
-      );
+      // ===== 1. Validate form data =====
+      const validatedData: LoginValidationType =
+        await loginValidationSchema.validate(
+          {
+            email,
+            password,
+            firstName,
+            lastName,
+            phoneNumber,
+          },
+          { abortEarly: false, strict: true }
+        );
 
-      // ===== Firebase email/password signup =====
+      // ===== 2. Create user in Firebase Auth =====
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         validatedData.email,
@@ -164,23 +72,54 @@ const useCreateAccountHook = () => {
       const user = userCredential.user;
       const token = await user.getIdToken();
 
-      console.log("USER CREATED :::", user);
+      console.log("Firebase USER CREATED :::", user);
+      console.log("Firebase TOKEN :::", token);
+      console.log("Token length :::", token.length);
 
       if (token) {
-        //==== Save the token and user data in secure storage ====//
+        // ===== 3. Save token to secure storage =====
         secureLocalStorage.setItem("access_token", token);
-        secureLocalStorage.setItem("user_data", JSON.stringify(user));
 
-        toast.success("Account created successfully");
+        // ===== 4. Create user profile in Backend =====
+        const backendResponse = await createAccount({
+          firstName: validatedData.firstName.trim(),
+          lastName: validatedData.lastName.trim(),
+          phoneNumber: validatedData.phoneNumber?.trim() ?? "",
+          email: validatedData.email.trim(),
+        }).unwrap();
+
+        console.log("Backend user created:", backendResponse);
+
+        // ===== 5. Save complete user data =====
+        secureLocalStorage.setItem(
+          "user_data",
+          JSON.stringify({
+            firebaseUser: {
+              uid: user.uid,
+              email: user.email,
+              emailVerified: user.emailVerified,
+              metadata: {
+                creationTime: user.metadata.creationTime,
+                lastSignInTime: user.metadata.lastSignInTime,
+              },
+            },
+            backendUser: backendResponse.data,
+          })
+        );
+
+        setShowSuccessModal(true);
         scrollToTopSmooth();
-        router.push(dashboardRoute);
+
+        setTimeout(() => {
+          router.push(dashboardRoute);
+        }, 2000);
       } else {
         toast.error("Failed to retrieve access token");
       }
     } catch (error: any) {
-      console.error(error);
+      console.error("Create account error:", error);
 
-      // ===== Handle validation errors =====
+      // ===== Handle Yup validation errors =====
       if (error.inner) {
         const formattedErrors: any = {};
         error.inner.forEach((err: any) => {
@@ -190,38 +129,110 @@ const useCreateAccountHook = () => {
         return;
       }
 
-   if (error.code) {
-     const friendlyMessage = getFirebaseErrorMessage(error.code);
+      // ===== Handle Firebase errors =====
+      if (error.code) {
+        const friendlyMessage = getFirebaseErrorMessage(error.code);
 
-     if (
-       error.code === "auth/email-already-in-use" ||
-       error.code === "auth/invalid-email"
-     ) {
-       setErrors({ email: friendlyMessage });
-     } else if (error.code === "auth/weak-password") {
-       setErrors({ password: friendlyMessage });
-     } else {
-       toast.error(friendlyMessage);
-     }
-   }
+        if (
+          error.code === "auth/email-already-in-use" ||
+          error.code === "auth/invalid-email"
+        ) {
+          setErrors({ email: friendlyMessage });
+        } else if (error.code === "auth/weak-password") {
+          setErrors({ password: friendlyMessage });
+        } else {
+          toast.error(friendlyMessage);
+        }
+        return;
+      }
+
+      // ===== Handle RTK Query/Backend errors =====
+      if (error.data) {
+        toast.error(error.data.message || "Failed to create user profile");
+      } else if (error.status === "FETCH_ERROR") {
+        toast.error("Network error. Please check your connection.");
+      } else {
+        toast.error(error.message || "Something went wrong. Please try again.");
+      }
     } finally {
       setIsLoading(false);
     }
   };
 
-  const handleGoogleLogin = async () => {
-    try {
-      const provider = new GoogleAuthProvider();
-      const result = await signInWithPopup(auth, provider);
-      const user = result.user;
-      console.log("Google User:", user);
-      toast.success("Logged in with Google!");
-      // router.push(appRoute);
-    } catch (error: any) {
-      console.error(error);
-      toast.error(error.message || "Google login failed");
+const handleGoogleLogin = async () => {
+   if (isGoogleLoading) return;
+
+  try {
+    setIsGoogleLoading(true);
+
+    const provider = new GoogleAuthProvider();
+    const result = await signInWithPopup(auth, provider);
+
+    const user = result.user;
+    const token = await user.getIdToken();
+
+    console.log("Google User:", user);
+
+    // ===== Split displayName =====
+    const displayName = user.displayName ?? "";
+    const nameParts = displayName.trim().split(" ");
+
+    const firstName = nameParts[0] ?? "";
+    const lastName = nameParts.length > 1
+      ? nameParts.slice(1).join(" ")
+      : "";
+
+    // ===== Store token =====
+    secureLocalStorage.setItem("access_token", token);
+
+    // ===== Create user in backend =====
+    const backendResponse = await createAccount({
+      firstName,
+      lastName,
+      phoneNumber: user.phoneNumber ?? "",
+      email: user.email ?? "",
+    }).unwrap();
+
+    console.log("Backend user created:", backendResponse);
+
+   setShowSuccessModal(true);
+
+    setTimeout(() => {
+      router.push(dashboardRoute);
+    }, 2000);
+  } catch (error: any) {
+  console.error("Google login error:", error);
+
+  // ===== Backend / RTK Query errors =====
+  if (error?.data?.error) {
+    const backendError = getBackendError(error.data.error);
+
+    if (backendError.type === "info") {
+      toast.info(backendError.message);
+
+      setTimeout(() => {
+        router.push(dashboardRoute);
+      }, 1500);
+
+      return;
     }
-  };
+
+    toast.error(backendError.message);
+    return;
+  }
+
+  // ===== Firebase errors =====
+  if (error.code) {
+    const friendlyMessage = getFirebaseErrorMessage(error.code);
+    toast.error(friendlyMessage);
+    return;
+  }
+
+  toast.error("Google login failed");
+} finally {
+  setIsGoogleLoading(false);
+}};
+
 
   return {
     email,
@@ -230,10 +241,20 @@ const useCreateAccountHook = () => {
     setPassword,
     showPassword,
     setShowPassword,
+    firstName,
+    setFirstName,
+    lastName,
+    setLastName,
+    phoneNumber,
+    setPhoneNumber,
     handleSubmitCreateAccountForm,
     handleGoogleLogin,
     isLoading,
     errors,
+    showSuccessModal,
+    userName,
+    setUserName,
+    isGoogleLoading,
   };
 };
 

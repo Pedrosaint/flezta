@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/app/buyer_portal/dashboard/page.tsx"],"sourcesContent":["import DashboardView from \"@/modules/dashboard/view/dashboard.view\";\r\n\r\nconst Page = () => {\r\n  return (\r\n  <DashboardView />\r\n  );\r\n};\r\n\r\nexport default Page;\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAEA,MAAM,OAAO;IACX,qBACA,8OAAC;;;;;AAEH;uCAEe"}}]
+}

@@ -26,7 +26,10 @@ const RootLayout =({
 }>) => {
     return (
       <html lang="en">
-        <body className={outfit.className} suppressHydrationWarning>
+        <body
+          className={`${outfit.className} bg-[#F9FAFB]`}
+          suppressHydrationWarning
+        >
           <Toaster richColors position="top-right" />
           <Providers>{children}</Providers>
         </body>

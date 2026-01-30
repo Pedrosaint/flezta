@@ -154,72 +154,72 @@
 //                       ))}
 //                   </AnimatePresence>
 
-                  // {/* Product Image */}
-                  // <div
-                  //   onClick={() => {
-                  //     scrollToTopSmooth();
-                  //     router.push(productDetailsRoute);
-                  //   }}
-                  //   className="rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative w-full h-50"
-                  // >
-                  //   <Image
-                  //     src={product.image}
-                  //     alt={product.name}
-                  //     width={200}
-                  //     height={200}
-                  //     className="object-contain"
-                  //   />
-                  // </div>
+// {/* Product Image */}
+// <div
+//   onClick={() => {
+//     scrollToTopSmooth();
+//     router.push(productDetailsRoute);
+//   }}
+//   className="rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative w-full h-50"
+// >
+//   <Image
+//     src={product.image}
+//     alt={product.name}
+//     width={200}
+//     height={200}
+//     className="object-contain"
+//   />
+// </div>
 
-                //   {/* Product Info */}
-                //   <div className="space-y-3">
-                //     <h3 className="text-base font-semibold text-white leading-tight">
-                //       {product.name}
-                //     </h3>
+//   {/* Product Info */}
+//   <div className="space-y-3">
+//     <h3 className="text-base font-semibold text-white leading-tight">
+//       {product.name}
+//     </h3>
 
-                //     {/* Vendor */}
-                //     <div className="flex items-center gap-2">
-                //       <div className="w-6 h-6 bg-white/20 rounded-full"></div>
-                //       <span className="text-sm text-white/80">
-                //         {product.vendor}
-                //       </span>
-                //     </div>
+//     {/* Vendor */}
+//     <div className="flex items-center gap-2">
+//       <div className="w-6 h-6 bg-white/20 rounded-full"></div>
+//       <span className="text-sm text-white/80">
+//         {product.vendor}
+//       </span>
+//     </div>
 
-                //     {/* Price */}
-                //     <div className="text-xl font-medium text-amber-400">
-                //       ${product.price.toFixed(2)}
-                //     </div>
+//     {/* Price */}
+//     <div className="text-xl font-medium text-amber-400">
+//       ${product.price.toFixed(2)}
+//     </div>
 
-                //     {/* Hover Action Buttons */}
-                //     <div
-                //       className={`
-                //     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                //     ${
-                //       hoveredCard === product.id
-                //         ? "translate-y-0 opacity-100"
-                //         : "translate-y-8 opacity-0"
-                //     }
-                // `}
-                //     >
-                //       <div className="backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10">
-                //         <div className="flex gap-3">
-                //           <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
-                //             <AddToCartIcon />
-                //             <span className="text-[13px]  text-secondary-color">
-                //               Add To Cart
-                //             </span>
-                //           </button>
+//     {/* Hover Action Buttons */}
+//     <div
+//       className={`
+//     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
+//     ${
+//       hoveredCard === product.id
+//         ? "translate-y-0 opacity-100"
+//         : "translate-y-8 opacity-0"
+//     }
+// `}
+//     >
+//       <div className="backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10">
+//         <div className="flex gap-3">
+//           <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
+//             <AddToCartIcon />
+//             <span className="text-[13px]  text-secondary-color">
+//               Add To Cart
+//             </span>
+//           </button>
 
-                //           <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer">
-                //             <NegotiateIcon />
-                //             <span className="text-[13px] gradient-text">
-                //               Negotiate
-                //             </span>
-                //           </button>
-                //         </div>
-                //       </div>
-                //     </div>
-                //   </div>
+//           <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer">
+//             <NegotiateIcon />
+//             <span className="text-[13px] gradient-text">
+//               Negotiate
+//             </span>
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
 //                 </div>
 //               );
 //             })}
@@ -238,101 +238,101 @@
 //           </button>
 //         </div>
 
-        // {/*==== Category Cards ====*/}
-        // <div className="flex gap-3 mt-1">
-        //   {/*==== Beauty, Skin and Cosmetics ====*/}
-        //   <div className="bg-[#E8EEEE] rounded-3xl p-6 relative overflow-hidden min-h-100 flex flex-col justify-between w-1/2">
-        //     <div>
-        //       <p className="text-l text-primary-color mb-1">
-        //         Fashion Collections
-        //       </p>
-        //       <div>
-        //         <h3 className="text-5xl font-bold text-primary-color mb-2 leading-tight">
-        //           Beauty, Skin
-        //           <br />
-        //           and Cosmetics
-        //         </h3>
-        //         <p className="text-lg font-medium mb-4">
-        //           Figma ipsum component variant main layer.
-        //           <br />
-        //           Stroke hand ellipse move.
-        //         </p>
-        //       </div>
-        //       <button className="group w-36.25 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer">
-        //         <div className="w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-        //           Shop Now
-        //         </div>
-        //       </button>
-        //     </div>
-        //     {/* Cosmetics Image */}
-        //     <div className="absolute right-0">
-        //       <Image
-        //         src={BeautyImage}
-        //         alt="Beauty Products"
-        //         width={600}
-        //         height={348}
-        //         className="h-[378.82px] object-cover"
-        //       />
-        //     </div>
-        //   </div>
+// {/*==== Category Cards ====*/}
+// <div className="flex gap-3 mt-1">
+//   {/*==== Beauty, Skin and Cosmetics ====*/}
+//   <div className="bg-[#E8EEEE] rounded-3xl p-6 relative overflow-hidden min-h-100 flex flex-col justify-between w-1/2">
+//     <div>
+//       <p className="text-l text-primary-color mb-1">
+//         Fashion Collections
+//       </p>
+//       <div>
+//         <h3 className="text-5xl font-bold text-primary-color mb-2 leading-tight">
+//           Beauty, Skin
+//           <br />
+//           and Cosmetics
+//         </h3>
+//         <p className="text-lg font-medium mb-4">
+//           Figma ipsum component variant main layer.
+//           <br />
+//           Stroke hand ellipse move.
+//         </p>
+//       </div>
+//       <button className="group w-36.25 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer">
+//         <div className="w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
+//           Shop Now
+//         </div>
+//       </button>
+//     </div>
+//     {/* Cosmetics Image */}
+//     <div className="absolute right-0">
+//       <Image
+//         src={BeautyImage}
+//         alt="Beauty Products"
+//         width={600}
+//         height={348}
+//         className="h-[378.82px] object-cover"
+//       />
+//     </div>
+//   </div>
 
-        //   <div className="flex justify-between w-1/2 gap-3">
-        //     {/*==== Children's Fashion ====*/}
-        //     <div className="bg-[#FAF2E9] rounded-3xl p-6 relative overflow-hidden min-h-70 flex flex-col justify-between w-full">
-        //       {/* Text + Button */}
-        //       <div className="relative z-10">
-        //         <p className="text-lg text-primary-color mb-1">Fashion</p>
-        //         <h3 className="text-4xl font-bold text-primary-color mb-4 leading-tight">
-        //           Children's
-        //           <br />
-        //           Fashion
-        //         </h3>
+//   <div className="flex justify-between w-1/2 gap-3">
+//     {/*==== Children's Fashion ====*/}
+//     <div className="bg-[#FAF2E9] rounded-3xl p-6 relative overflow-hidden min-h-70 flex flex-col justify-between w-full">
+//       {/* Text + Button */}
+//       <div className="relative z-10">
+//         <p className="text-lg text-primary-color mb-1">Fashion</p>
+//         <h3 className="text-4xl font-bold text-primary-color mb-4 leading-tight">
+//           Children's
+//           <br />
+//           Fashion
+//         </h3>
 
-        //         <button className="group w-35 p-0.5 border border-[#e26e00] rounded-[18px] cursor-pointer">
-        //           <div className="w-full bg-[#FDA106] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-[#FFF4EA] group-hover:text-[#052214]">
-        //             Shop Now
-        //           </div>
-        //         </button>
-        //       </div>
+//         <button className="group w-35 p-0.5 border border-[#e26e00] rounded-[18px] cursor-pointer">
+//           <div className="w-full bg-[#FDA106] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-[#FFF4EA] group-hover:text-[#052214]">
+//             Shop Now
+//           </div>
+//         </button>
+//       </div>
 
-        //       {/*=== Kids Fashion Image (behind) ===*/}
-        //       <div className="absolute bottom-0 right-0 z-0">
-        //         <Image
-        //           src={KidsFashionImage}
-        //           alt="Children's Fashion"
-        //           width={400}
-        //           height={300}
-        //           className="object-contain"
-        //         />
-        //       </div>
-        //     </div>
+//       {/*=== Kids Fashion Image (behind) ===*/}
+//       <div className="absolute bottom-0 right-0 z-0">
+//         <Image
+//           src={KidsFashionImage}
+//           alt="Children's Fashion"
+//           width={400}
+//           height={300}
+//           className="object-contain"
+//         />
+//       </div>
+//     </div>
 
-        //     {/*==== Home Appliances ====*/}
-        //     <div className="bg-[#DCE4EA] rounded-3xl p-6 relative overflow-hidden min-h-70 flex flex-col justify-between w-full">
-        //       <div>
-        //         <p className="text-lg text-primary-color mb-1">Electronics</p>
-        //         <h3 className="text-3xl font-bold text-primary-color mb-3 leading-tight">
-        //           Home Appliances
-        //         </h3>
-        //         <button className="group w-35 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer">
-        //           <div className="w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-        //             Shop Now
-        //           </div>
-        //         </button>
-        //       </div>
-        //       {/* Appliances Image */}
-        //       <div className="absolute right-0 bottom-0">
-        //         <Image
-        //           src={AppliancesImage}
-        //           alt="Appliances"
-        //           width={250}
-        //           height={200}
-        //           className="object-contain"
-        //         />
-        //       </div>
-        //     </div>
-        //   </div>
-        // </div>
+//     {/*==== Home Appliances ====*/}
+//     <div className="bg-[#DCE4EA] rounded-3xl p-6 relative overflow-hidden min-h-70 flex flex-col justify-between w-full">
+//       <div>
+//         <p className="text-lg text-primary-color mb-1">Electronics</p>
+//         <h3 className="text-3xl font-bold text-primary-color mb-3 leading-tight">
+//           Home Appliances
+//         </h3>
+//         <button className="group w-35 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer">
+//           <div className="w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
+//             Shop Now
+//           </div>
+//         </button>
+//       </div>
+//       {/* Appliances Image */}
+//       <div className="absolute right-0 bottom-0">
+//         <Image
+//           src={AppliancesImage}
+//           alt="Appliances"
+//           width={250}
+//           height={200}
+//           className="object-contain"
+//         />
+//       </div>
+//     </div>
+//   </div>
+// </div>
 //       </div>
 //     </div>
 //   );
@@ -518,11 +518,10 @@ export default function TopDealsComp() {
                       <div
                         className={`
                     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                    ${
-                      hoveredCard === product.id
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-8 opacity-0"
-                    }
+                    ${hoveredCard === product.id
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
+                          }
                 `}
                       >
                         <div className="backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10">
@@ -562,7 +561,7 @@ export default function TopDealsComp() {
         </div>
 
 
-         {/*==== Category Cards ====*/}
+        {/*==== Category Cards ====*/}
         <div className="flex gap-3 mt-1">
           {/*==== Beauty, Skin and Cosmetics ====*/}
           <div className="bg-[#E8EEEE] rounded-3xl p-6 relative overflow-hidden min-h-100 flex flex-col justify-between w-1/2">

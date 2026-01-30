@@ -189,6 +189,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$office_seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$office_seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/office_seat.png.mjs { IMAGE => "[project]/src/assets/images/office_seat.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$phone_input$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/shared/ui/components/phone_input.ui.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/core/routes/routeNames.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -196,8 +198,11 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
+;
 const ShoppingInfoComp = ()=>{
     _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [method, setMethod] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("pickup");
     const [station, setStation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
     ;
@@ -243,7 +248,7 @@ const ShoppingInfoComp = ()=>{
                                 children: "Shipping Information"
                             }, void 0, false, {
                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                lineNumber: 47,
+                                lineNumber: 50,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,7 +262,7 @@ const ShoppingInfoComp = ()=>{
                                                 children: "Saved Shipping Information"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 55,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -265,13 +270,13 @@ const ShoppingInfoComp = ()=>{
                                                 children: "Change Address"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 58,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -282,7 +287,7 @@ const ShoppingInfoComp = ()=>{
                                                 children: "Otor John Stephen"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 64,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -290,7 +295,7 @@ const ShoppingInfoComp = ()=>{
                                                 children: "38 Asheli, James Street, Jabi Abuja"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 65,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -300,20 +305,20 @@ const ShoppingInfoComp = ()=>{
                                                         children: "myemail@address@gmail.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 67,
+                                                        lineNumber: 70,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "08130000000"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 68,
+                                                        lineNumber: 71,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 66,
+                                                lineNumber: 69,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -321,37 +326,37 @@ const ShoppingInfoComp = ()=>{
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DefaultIcon"], {}, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 72,
+                                                        lineNumber: 75,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     "Default address"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 74,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 63,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                lineNumber: 50,
+                                lineNumber: 53,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-2xl mb-6 max-w-3xl",
+                                className: "rounded-2xl mb-6 max-w-3xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                         className: "font-semibold text-lg mb-6",
                                         children: "OR Enter another shipping information"
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -364,7 +369,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "First name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 90,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -373,13 +378,13 @@ const ShoppingInfoComp = ()=>{
                                                         className: "w-full h-13 px-4 border border-gray-300 rounded-2xl focus:outline-none"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 93,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 89,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -389,7 +394,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "Last name"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 101,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -398,19 +403,19 @@ const ShoppingInfoComp = ()=>{
                                                         className: "w-full h-13 px-4 border border-gray-300 rounded-2xl focus:outline-none"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 101,
+                                                        lineNumber: 104,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 97,
+                                                lineNumber: 100,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -423,7 +428,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "Email address"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 115,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -432,30 +437,30 @@ const ShoppingInfoComp = ()=>{
                                                         className: "w-full h-13 px-4 border border-gray-300 rounded-2xl focus:outline-none"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 115,
+                                                        lineNumber: 118,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 111,
+                                                lineNumber: 114,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$phone_input$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 123,
-                                                    columnNumber: 15
+                                                    lineNumber: 126,
+                                                    columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 122,
-                                                columnNumber: 13
+                                                lineNumber: 125,
+                                                columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -468,7 +473,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "Country"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 131,
+                                                        lineNumber: 134,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -478,30 +483,30 @@ const ShoppingInfoComp = ()=>{
                                                                 children: "Select country"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 138,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownIcon"], {}, void 0, false, {
                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                    lineNumber: 137,
+                                                                    lineNumber: 140,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 136,
+                                                                lineNumber: 139,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 134,
+                                                        lineNumber: 137,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -511,7 +516,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "State"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 146,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -521,30 +526,30 @@ const ShoppingInfoComp = ()=>{
                                                                 children: "Select state"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 147,
+                                                                lineNumber: 150,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownIcon"], {}, void 0, false, {
                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                    lineNumber: 149,
+                                                                    lineNumber: 152,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 148,
+                                                                lineNumber: 151,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 149,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 145,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -554,7 +559,7 @@ const ShoppingInfoComp = ()=>{
                                                         children: "Zip code"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 158,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -563,19 +568,19 @@ const ShoppingInfoComp = ()=>{
                                                         className: "w-full h-13 px-4 border border-gray-300 rounded-2xl focus:outline-none"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 158,
+                                                        lineNumber: 161,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 157,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -586,7 +591,7 @@ const ShoppingInfoComp = ()=>{
                                                 children: "Street address"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 168,
+                                                lineNumber: 171,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -595,13 +600,13 @@ const ShoppingInfoComp = ()=>{
                                                 className: "w-full h-13 px-4 border border-gray-300 rounded-2xl focus:outline-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 171,
+                                                lineNumber: 174,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 170,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -617,14 +622,14 @@ const ShoppingInfoComp = ()=>{
                                                         className: "checkbox"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 181,
+                                                        lineNumber: 184,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     "Save this information for next time"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 180,
+                                                lineNumber: 183,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -637,37 +642,37 @@ const ShoppingInfoComp = ()=>{
                                                         className: "checkbox"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 194,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     "Set as default shipping address"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 193,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 182,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                lineNumber: 79,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white space-y-6 max-w-xl",
+                                className: "space-y-6 max-w-xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-xl font-bold",
                                         children: "Delivery Method"
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 205,
+                                        lineNumber: 208,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -683,7 +688,7 @@ const ShoppingInfoComp = ()=>{
                                                     className: method === "pickup" ? "custom-radio" : "radio"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 213,
+                                                    lineNumber: 216,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -693,7 +698,7 @@ const ShoppingInfoComp = ()=>{
                                                             children: "Pickup Station (From $5.99)"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 223,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -701,24 +706,24 @@ const ShoppingInfoComp = ()=>{
                                                             children: "Delivery between 17th November and 21st November"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                            lineNumber: 221,
+                                                            lineNumber: 224,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 219,
+                                                    lineNumber: 222,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                            lineNumber: 209,
+                                            lineNumber: 212,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 208,
+                                        lineNumber: 211,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     method === "pickup" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -729,7 +734,7 @@ const ShoppingInfoComp = ()=>{
                                                 children: "Select from the Stations near You"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 234,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -744,7 +749,7 @@ const ShoppingInfoComp = ()=>{
                                                                 children: "FLEZTA Pickup station one"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 247,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -754,18 +759,18 @@ const ShoppingInfoComp = ()=>{
                                                                     children: "$5.00"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                    lineNumber: 253,
+                                                                    lineNumber: 254,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 246,
+                                                                lineNumber: 248,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 244,
+                                                        lineNumber: 246,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -801,7 +806,7 @@ const ShoppingInfoComp = ()=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 236,
+                                                lineNumber: 239,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -816,7 +821,7 @@ const ShoppingInfoComp = ()=>{
                                                                 children: "FLEZTA Pickup station one"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 284,
+                                                                lineNumber: 283,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -826,18 +831,18 @@ const ShoppingInfoComp = ()=>{
                                                                     children: "$5.00"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                    lineNumber: 292,
+                                                                    lineNumber: 290,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 285,
+                                                                lineNumber: 284,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 283,
+                                                        lineNumber: 282,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -845,14 +850,14 @@ const ShoppingInfoComp = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LocationIcon"], {}, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 303,
+                                                                lineNumber: 300,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             "This will be the location"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 302,
+                                                        lineNumber: 299,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -860,14 +865,14 @@ const ShoppingInfoComp = ()=>{
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DateIcon"], {}, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 308,
+                                                                lineNumber: 305,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             "Open from Mon–Fri, 8am – 6pm and Sat, 9am–6pm"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 307,
+                                                        lineNumber: 304,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
@@ -879,7 +884,7 @@ const ShoppingInfoComp = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 230,
+                                        lineNumber: 233,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -895,7 +900,7 @@ const ShoppingInfoComp = ()=>{
                                                     className: method === "door" ? "custom-radio" : "radio"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 322,
+                                                    lineNumber: 319,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -905,7 +910,7 @@ const ShoppingInfoComp = ()=>{
                                                             children: "Door Delivery (From $15.99)"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                            lineNumber: 329,
+                                                            lineNumber: 326,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -913,24 +918,24 @@ const ShoppingInfoComp = ()=>{
                                                             children: "Delivery between 15th November and 19th November"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                            lineNumber: 330,
+                                                            lineNumber: 327,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 328,
+                                                    lineNumber: 325,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                            lineNumber: 317,
+                                            lineNumber: 314,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 316,
+                                        lineNumber: 313,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -947,7 +952,7 @@ const ShoppingInfoComp = ()=>{
                                                                 children: shipment.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 345,
+                                                                lineNumber: 342,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -961,7 +966,7 @@ const ShoppingInfoComp = ()=>{
                                                                                 children: shipment.method
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                lineNumber: 351,
+                                                                                lineNumber: 348,
                                                                                 columnNumber: 29
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -969,20 +974,20 @@ const ShoppingInfoComp = ()=>{
                                                                                 children: shipment.deliveryDate
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                lineNumber: 354,
+                                                                                lineNumber: 351,
                                                                                 columnNumber: 29
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                        lineNumber: 350,
+                                                                        lineNumber: 347,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "border-t border-gray-200"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                        lineNumber: 359,
+                                                                        lineNumber: 356,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -996,7 +1001,7 @@ const ShoppingInfoComp = ()=>{
                                                                                     className: "w-13 h-13 rounded-md object-cover shrink-0"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                    lineNumber: 363,
+                                                                                    lineNumber: 360,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1006,7 +1011,7 @@ const ShoppingInfoComp = ()=>{
                                                                                             children: shipment.product.name
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                            lineNumber: 369,
+                                                                                            lineNumber: 366,
                                                                                             columnNumber: 33
                                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1017,41 +1022,41 @@ const ShoppingInfoComp = ()=>{
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                            lineNumber: 372,
+                                                                                            lineNumber: 369,
                                                                                             columnNumber: 33
                                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                                    lineNumber: 368,
+                                                                                    lineNumber: 365,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                            lineNumber: 362,
+                                                                            lineNumber: 359,
                                                                             columnNumber: 29
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                        lineNumber: 361,
+                                                                        lineNumber: 358,
                                                                         columnNumber: 27
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                                lineNumber: 348,
+                                                                lineNumber: 345,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, shipment.id, true, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 340,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0)))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 341,
+                                                lineNumber: 338,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1064,7 +1069,7 @@ const ShoppingInfoComp = ()=>{
                                                         className: "checkbox"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 385,
+                                                        lineNumber: 382,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1072,31 +1077,31 @@ const ShoppingInfoComp = ()=>{
                                                         children: "Confirm delivery details before proceeding to make payment."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                        lineNumber: 391,
+                                                        lineNumber: 388,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                lineNumber: 384,
+                                                lineNumber: 381,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 339,
+                                        lineNumber: 336,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                lineNumber: 203,
+                                lineNumber: 206,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                        lineNumber: 46,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1109,7 +1114,7 @@ const ShoppingInfoComp = ()=>{
                                     children: "Cart Summary"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                    lineNumber: 404,
+                                    lineNumber: 401,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1122,7 +1127,7 @@ const ShoppingInfoComp = ()=>{
                                                     children: "Items total(8)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 410,
+                                                    lineNumber: 407,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1130,13 +1135,13 @@ const ShoppingInfoComp = ()=>{
                                                     children: "$1,950.00"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 411,
+                                                    lineNumber: 408,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                            lineNumber: 409,
+                                            lineNumber: 406,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,7 +1151,7 @@ const ShoppingInfoComp = ()=>{
                                                     children: "Delivery fee"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 415,
+                                                    lineNumber: 412,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1154,13 +1159,13 @@ const ShoppingInfoComp = ()=>{
                                                     children: "$5.99"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 416,
+                                                    lineNumber: 413,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                            lineNumber: 414,
+                                            lineNumber: 411,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1170,31 +1175,33 @@ const ShoppingInfoComp = ()=>{
                                                     children: "Total"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 420,
+                                                    lineNumber: 417,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "$1,905.99"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                                    lineNumber: 421,
+                                                    lineNumber: 418,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                            lineNumber: 419,
+                                            lineNumber: 416,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                    lineNumber: 408,
+                                    lineNumber: 405,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mt-35 p-5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: ()=>router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["paymentRoute"]),
                                         className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] cursor-pointer",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "w-full bg-primary-color text-white py-4 rounded-[14px] text-center font-semibold",
@@ -1206,43 +1213,47 @@ const ShoppingInfoComp = ()=>{
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                        lineNumber: 426,
+                                        lineNumber: 423,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                                    lineNumber: 425,
+                                    lineNumber: 422,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                            lineNumber: 403,
+                            lineNumber: 400,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                        lineNumber: 402,
+                        lineNumber: 399,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-                lineNumber: 44,
+                lineNumber: 47,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-            lineNumber: 43,
+            lineNumber: 46,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/modules/checkout/components/shipping_info.comp.tsx",
-        lineNumber: 42,
+        lineNumber: 45,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(ShoppingInfoComp, "aKJ2JddgPnrwtforQNgYj688zd0=");
+_s(ShoppingInfoComp, "Hj/1octqr2mym2HoanObtzAv2xM=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = ShoppingInfoComp;
 const __TURBOPACK__default__export__ = ShoppingInfoComp;
 var _c;

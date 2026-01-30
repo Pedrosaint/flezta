@@ -12,7 +12,7 @@ interface ITopSectionUIProps {
   ElectonicsImage: string;
 }
 
- const TopSectionUI = ({
+const TopSectionUI = ({
   fIndex,
   eIndex,
   slides,
@@ -23,7 +23,7 @@ interface ITopSectionUIProps {
   ElectonicsImage,
 }: ITopSectionUIProps) => {
   return (
-    <div className="py-12">
+    <div className="py-12 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-6">
           {/* =============================== */}

@@ -108,8 +108,6 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s([
-    "analytics",
-    ()=>analytics,
     "auth",
     ()=>auth,
     "db",
@@ -127,13 +125,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/firestore/dist/index.node.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$storage$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/firebase/storage/dist/index.mjs [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$storage$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/storage/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$analytics$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/firebase/analytics/dist/index.mjs [app-ssr] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/analytics/dist/esm/index.esm.js [app-ssr] (ecmascript)");
 ;
 ;
 ;
 ;
-;
+// import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
     apiKey: ("TURBOPACK compile-time value", "AIzaSyBIgPWLHGfbN4Vz_G4nOewUbNpdH2pYkTM"),
     authDomain: ("TURBOPACK compile-time value", "flezta.firebaseapp.com"),
@@ -148,8 +144,28 @@ const app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f4
 const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAuth"])(app);
 const db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFirestore"])(app);
 const storage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$storage$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getStorage"])(app);
-const analytics = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAnalytics"])(app);
 const __TURBOPACK__default__export__ = app;
+ // import { initializeApp, getApps, getApp } from "firebase/app";
+ // import { getAuth } from "firebase/auth";
+ // import { getFirestore } from "firebase/firestore";
+ // import { getStorage } from "firebase/storage";
+ // const firebaseConfig = {
+ //   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+ //   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+ //   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+ //   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+ //   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+ //   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
+ //   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID!,
+ // };
+ // // Prevent re-initialization during HMR / SSR
+ // const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+ // // Core services (SSR-safe)
+ // export const auth = getAuth(app);
+ // export const db = getFirestore(app);
+ // export const storage = getStorage(app);
+ // // DO NOT initialize analytics here
+ // export default app;
 }),
 "[project]/src/shared/utils/validations/auth.validation.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -162,7 +178,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index
 ;
 const loginValidationSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["object"]().shape({
     email: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().email("Email must be a valid email.").required("Email is required."),
-    password: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().min(6, "Password must be at least 6 characters").required("Password is required.")
+    password: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().min(6, "Password must be at least 6 characters").required("Password is required."),
+    firstName: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("First name is required."),
+    lastName: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().trim().required("Last name is required."),
+    phoneNumber: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["string"]().required("Phone number is required.")
 });
 const __TURBOPACK__default__export__ = loginValidationSchema;
 }),
@@ -191,94 +210,6 @@ const __TURBOPACK__default__export__ = getFirebaseErrorMessage;
 "[project]/src/modules/auth/hooks/creatAccount.hook.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// /* eslint-disable @typescript-eslint/no-explicit-any */
-// import { useState } from "react";
-// import { useRouter } from "next/navigation";
-// import { useCreateAccountMutation } from "../apis/auth.api";
-// import loginValidationSchema from "../../../shared/utils/validations/auth.validation";
-// import secureLocalStorage from "react-secure-storage";
-// import { loginRoute } from "../../../core/routes/routeNames";
-// import handleErrors from "../../../shared/utils/handle_errors.util";
-// import { toast } from "sonner";
-// const useCreateAccountHook = () => {
-//   const router = useRouter();
-//   //==== State variables here ====//
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [showPassword, setShowPassword] = useState(false);
-//   const [errors, setErrors] = useState<{ email?: string; password?: string }>(
-//     {}
-//   );
-//   //==== Call you APIs here ====//
-//   const [createAccount, { isLoading }] = useCreateAccountMutation();
-//   const scrollToTopSmooth = () => {
-//     if (typeof window !== "undefined") {
-//       window.scrollTo({ top: 0, behavior: "smooth" });
-//     }
-//   };
-//   // Handle submit login form
-//   const handleSubmitCreateAccountForm = async () => {
-//     //==== Construct request body here ====//
-//     const requestBody = {
-//       email: email,
-//       password: password,
-//     };
-//     try {
-//       //==== Validation request body here ====//
-//       const validCreateAccountData = await loginValidationSchema.validate(
-//         requestBody,
-//         { abortEarly: false, strict: true }
-//       );
-//       //==== Call the APIs here ====//
-//       const createAccountResponse = await createAccount(
-//         validCreateAccountData
-//       ).unwrap();
-//       const userData = createAccountResponse?.user;
-//       const token = createAccountResponse?.token;
-//       console.log("LOGIN RESPONSE::: ", createAccountResponse);
-//       if (token) {
-//         //==== Save the token in secure storage here ====//
-//         secureLocalStorage.setItem("access_token", token);
-//         secureLocalStorage.setItem("user_data", userData!);
-//         toast.success("account created successfully");
-//         scrollToTopSmooth();
-//         router.push(loginRoute);
-//       } else {
-//         toast.error(createAccountResponse?.message);
-//       }
-//     } catch (error: any) {
-//       //==== Handle validation errors here ====//
-//       if (error.inner) {
-//         const formattedErrors: any = {};
-//         error.inner.forEach((err: any) => {
-//           formattedErrors[err.path] = err.message;
-//         });
-//         setErrors(formattedErrors);
-//         return;
-//       }
-//       handleErrors(error);
-//       console.log("Error in login APIs: ", error);
-//     }
-//   };
-//   //==== Handle Firebase Google login here ====//
-//   const handleGoogleLogin = () => {
-//     //==== Implement Google login logic here ====//
-//     console.log("Google login clicked");
-//   };
-//   return {
-//     email,
-//     setEmail,
-//     password,
-//     setPassword,
-//     showPassword,
-//     setShowPassword,
-//     handleSubmitCreateAccountForm,
-//     isLoading,
-//     handleGoogleLogin,
-//     errors,
-//   };
-// };
-// export default useCreateAccountHook;
 /* eslint-disable @typescript-eslint/no-explicit-any */ __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
@@ -304,8 +235,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$sec
 ;
 const useCreateAccountHook = ()=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [createAccount] = useCreateAccountMutation();
     const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [password, setPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [firstName, setFirstName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [lastName, setLastName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [phoneNumber, setPhoneNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [showPassword, setShowPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [errors, setErrors] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({});
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -317,32 +252,56 @@ const useCreateAccountHook = ()=>{
         setIsLoading(true);
         setErrors({});
         try {
-            // ===== Validate with your existing schema =====
+            // ===== 1. Validate form data =====
             const validatedData = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$utils$2f$validations$2f$auth$2e$validation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].validate({
                 email,
-                password
+                password,
+                firstName,
+                lastName,
+                phoneNumber
             }, {
                 abortEarly: false,
                 strict: true
             });
-            // ===== Firebase email/password signup =====
+            // ===== 2. Create user in Firebase Auth =====
             const userCredential = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createUserWithEmailAndPassword"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], validatedData.email, validatedData.password);
             const user = userCredential.user;
             const token = await user.getIdToken();
-            console.log("USER CREATED :::", user);
+            console.log("Firebase USER CREATED :::", user);
+            console.log("Firebase TOKEN :::", token);
             if (token) {
-                //==== Save the token and user data in secure storage ====//
+                // ===== 3. Save token to secure storage =====
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].setItem("access_token", token);
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].setItem("user_data", JSON.stringify(user));
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success("Account created successfully");
+                // ===== 4. Create user profile in Backend =====
+                // Use RTK Query with custom headers since the token might not be in prepareHeaders yet
+                const backendResponse = await createAccount({
+                    firstName: validatedData.firstName.trim(),
+                    lastName: validatedData.lastName.trim(),
+                    phoneNumber: validatedData.phoneNumber.trim()
+                }).unwrap();
+                console.log("Backend user created:", backendResponse);
+                // ===== 5. Save complete user data =====
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].setItem("user_data", JSON.stringify({
+                    firebaseUser: {
+                        uid: user.uid,
+                        email: user.email,
+                        emailVerified: user.emailVerified,
+                        metadata: {
+                            creationTime: user.metadata.creationTime,
+                            lastSignInTime: user.metadata.lastSignInTime
+                        }
+                    },
+                    backendUser: backendResponse.data
+                }));
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success(backendResponse.message || "Account created successfully!");
                 scrollToTopSmooth();
                 router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dashboardRoute"]);
             } else {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error("Failed to retrieve access token");
             }
         } catch (error) {
-            console.error(error);
-            // ===== Handle validation errors =====
+            console.error("Create account error:", error);
+            // ===== Handle Yup validation errors =====
             if (error.inner) {
                 const formattedErrors = {};
                 error.inner.forEach((err)=>{
@@ -351,6 +310,7 @@ const useCreateAccountHook = ()=>{
                 setErrors(formattedErrors);
                 return;
             }
+            // ===== Handle Firebase errors =====
             if (error.code) {
                 const friendlyMessage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$utils$2f$firebase_errors$2e$util$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(error.code);
                 if (error.code === "auth/email-already-in-use" || error.code === "auth/invalid-email") {
@@ -364,6 +324,15 @@ const useCreateAccountHook = ()=>{
                 } else {
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error(friendlyMessage);
                 }
+                return;
+            }
+            // ===== Handle RTK Query/Backend errors =====
+            if (error.data) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error(error.data.message || "Failed to create user profile");
+            } else if (error.status === "FETCH_ERROR") {
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error("Network error. Please check your connection.");
+            } else {
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error(error.message || "Something went wrong. Please try again.");
             }
         } finally{
             setIsLoading(false);
@@ -374,9 +343,10 @@ const useCreateAccountHook = ()=>{
             const provider = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GoogleAuthProvider"]();
             const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["signInWithPopup"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], provider);
             const user = result.user;
+            const token = await user.getIdToken();
             console.log("Google User:", user);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].setItem("access_token", token);
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success("Logged in with Google!");
-        // router.push(appRoute);
         } catch (error) {
             console.error(error);
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error(error.message || "Google login failed");
@@ -389,6 +359,12 @@ const useCreateAccountHook = ()=>{
         setPassword,
         showPassword,
         setShowPassword,
+        firstName,
+        setFirstName,
+        lastName,
+        setLastName,
+        phoneNumber,
+        setPhoneNumber,
         handleSubmitCreateAccountForm,
         handleGoogleLogin,
         isLoading,
@@ -423,7 +399,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$rou
 const CreateAccountComp = ()=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     //==== Call all required hooks here ====//
-    const { email, setEmail, password, setPassword, showPassword, setShowPassword, handleSubmitCreateAccountForm, handleGoogleLogin, isLoading, errors } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$auth$2f$hooks$2f$creatAccount$2e$hook$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
+    const { email, setEmail, password, setPassword, showPassword, setShowPassword, handleSubmitCreateAccountForm, handleGoogleLogin, isLoading, errors, firstName, setFirstName, lastName, setLastName, phoneNumber, setPhoneNumber } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$auth$2f$hooks$2f$creatAccount$2e$hook$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
     const scrollToTopSmooth = ()=>{
         if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
         ;
@@ -443,17 +419,17 @@ const CreateAccountComp = ()=>{
                             className: "w-22 h-22"
                         }, void 0, false, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 37,
+                            lineNumber: 43,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                        lineNumber: 36,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                    lineNumber: 35,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -464,7 +440,7 @@ const CreateAccountComp = ()=>{
                             children: "Hello there! Let help you"
                         }, void 0, false, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 42,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -472,18 +448,88 @@ const CreateAccountComp = ()=>{
                             children: "Create a New Account"
                         }, void 0, false, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 45,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                    lineNumber: 41,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-5",
+                    className: "grid grid-cols-1 md:grid-cols-2 gap-5",
                     children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "block text-sm font-medium text-gray-700 mb-2 pl-3",
+                                    children: "First Name"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "text",
+                                    value: firstName,
+                                    onChange: (e)=>setFirstName(e.target.value),
+                                    placeholder: "Enter your first name",
+                                    className: "w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 61,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                errors.firstName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-red-500 text-sm pl-3 mt-1",
+                                    children: errors.firstName
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "block text-sm font-medium text-gray-700 mb-2 pl-3",
+                                    children: "Last Name"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 76,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "text",
+                                    value: lastName,
+                                    onChange: (e)=>setLastName(e.target.value),
+                                    placeholder: "Enter your last name",
+                                    className: "w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 79,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                errors.lastName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-red-500 text-sm pl-3 mt-1",
+                                    children: errors.lastName
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 88,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 75,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -491,7 +537,7 @@ const CreateAccountComp = ()=>{
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -502,7 +548,7 @@ const CreateAccountComp = ()=>{
                                     className: "w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 errors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -510,13 +556,13 @@ const CreateAccountComp = ()=>{
                                     children: errors.email
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 106,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 51,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -526,7 +572,7 @@ const CreateAccountComp = ()=>{
                                     children: "Password"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -540,7 +586,7 @@ const CreateAccountComp = ()=>{
                                             className: "w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 114,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -551,24 +597,24 @@ const CreateAccountComp = ()=>{
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 127,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Eye$3e$__["Eye"], {
                                                 className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                                lineNumber: 88,
+                                                lineNumber: 129,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 errors.password && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -576,131 +622,166 @@ const CreateAccountComp = ()=>{
                                     children: errors.password
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 135,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: handleSubmitCreateAccountForm,
-                            // onClick={() => {
-                            //   scrollToTopSmooth();
-                            //   router.push(loginRoute);
-                            // }}
-                            disabled: isLoading,
-                            className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold",
-                                children: isLoading ? "Please wait..." : "Create Account"
-                            }, void 0, false, {
-                                fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                lineNumber: 109,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 100,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 flex items-center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-full border-t border-gray-300"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                        lineNumber: 116,
-                                        columnNumber: 15
-                                    }, ("TURBOPACK compile-time value", void 0))
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "block text-sm font-medium text-gray-700 mb-2 pl-3",
+                                    children: "Phone Number"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative flex justify-center text-sm",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "px-4 bg-white text-gray-500",
-                                        children: "Or Login With"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                        lineNumber: 119,
-                                        columnNumber: 15
-                                    }, ("TURBOPACK compile-time value", void 0))
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "tel",
+                                    value: phoneNumber,
+                                    onChange: (e)=>setPhoneNumber(e.target.value),
+                                    placeholder: "+2348123456789",
+                                    className: "w-full px-4 py-3 border border-gray-300 rounded-2xl outline-none transition"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 145,
                                     columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                errors.phoneNumber && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-red-500 text-sm pl-3 mt-1",
+                                    children: errors.phoneNumber
+                                }, void 0, false, {
+                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 114,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: handleGoogleLogin,
-                            className: "w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 cursor-pointer",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fc$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FcGoogle"], {
-                                    size: 20
-                                }, void 0, false, {
-                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 127,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                "Google"
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 123,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-sm text-primary-color",
-                            children: [
-                                "Already have an account?",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>{
-                                        scrollToTopSmooth();
-                                        router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loginRoute"]);
-                                    },
-                                    type: "button",
-                                    className: "text-secondary-color font-semibold cursor-pointer",
-                                    children: "Login"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                                    lineNumber: 133,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                            lineNumber: 131,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-                    lineNumber: 50,
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: handleSubmitCreateAccountForm,
+                    // onClick={() => {
+                    //   scrollToTopSmooth();
+                    //   router.push(loginRoute);
+                    // }}
+                    disabled: isLoading,
+                    className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mb-5 mt-5",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold",
+                        children: isLoading ? "Please wait..." : "Create Account"
+                    }, void 0, false, {
+                        fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                        lineNumber: 169,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0))
+                }, void 0, false, {
+                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                    lineNumber: 160,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative mb-5",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "absolute inset-0 flex items-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-full border-t border-gray-300"
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                lineNumber: 176,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 175,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative flex justify-center text-sm",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "px-4 bg-white text-gray-500",
+                                children: "Or Login With"
+                            }, void 0, false, {
+                                fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                                lineNumber: 179,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 178,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                    lineNumber: 174,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: handleGoogleLogin,
+                    className: "w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fc$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FcGoogle"], {
+                            size: 20
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 187,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0)),
+                        "Google"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                    lineNumber: 183,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-center text-sm text-primary-color",
+                    children: [
+                        "Already have an account?",
+                        " ",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>{
+                                scrollToTopSmooth();
+                                router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loginRoute"]);
+                            },
+                            type: "button",
+                            className: "text-secondary-color font-semibold cursor-pointer",
+                            children: "Login"
+                        }, void 0, false, {
+                            fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                            lineNumber: 193,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
+                    lineNumber: 191,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-            lineNumber: 34,
+            lineNumber: 40,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/modules/auth/components/create_account.comp.tsx",
-        lineNumber: 33,
+        lineNumber: 39,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

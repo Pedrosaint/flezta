@@ -23,6 +23,7 @@ const LoginComp = () => {
     handleGoogleLogin,
     isLoading,
     errors,
+    isGoogleLoading,
   } = useLoginHook();
 
   const scrollToTopSmooth = () => {
@@ -114,13 +115,13 @@ const LoginComp = () => {
           </div>
 
           <button
+            type="button"
             onClick={handleSubmitLoginForm}
             disabled={isLoading}
-            className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-          >
-            <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-              Login
-            </div>
+          className="group w-full p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mb-5">
+          <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
+          {isLoading ? "Logging in..." : "Login"}
+          </div>
           </button>
 
           <div className="relative">
@@ -134,17 +135,17 @@ const LoginComp = () => {
 
           <button
             onClick={() => handleGoogleLogin()}
-            disabled={isLoading}
-            className="w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            disabled={isGoogleLoading}
+            className="w-full bg-[#F9FAFB] border border-[#DDE0E5] py-4 rounded-[18px] font-semibold hover:bg-gray-50 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer transition-all duration-200 ease-out transform hover:scale-[1.02]"
           >
             <FcGoogle size={20} />
-            Google
+            {isGoogleLoading ? "Please wait..." : "Google"}
           </button>
 
           <p className="text-center text-sm text-primary-color">
             Don't have an account?{" "}
             <button
-              onClick={() => {
+              onClick={() => {  
                 scrollToTopSmooth();
                 router.push(createAccountRoute);
               }}

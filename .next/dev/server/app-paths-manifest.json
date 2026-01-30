@@ -1,6 +1,7 @@
 {
-  "/(website)/cart/page": "app/(website)/cart/page.js",
-  "/(website)/checkout/page": "app/(website)/checkout/page.js",
   "/(website)/home/page": "app/(website)/home/page.js",
-  "/(website)/products/details/[id]/page": "app/(website)/products/details/[id]/page.js"
+  "/buyer_portal/dashboard/page": "app/buyer_portal/dashboard/page.js",
+  "/buyer_portal/order_history/[id]/page": "app/buyer_portal/order_history/[id]/page.js",
+  "/buyer_portal/order_history/page": "app/buyer_portal/order_history/page.js",
+  "/page": "app/page.js"
 }

@@ -1610,7 +1610,7 @@ const ProductDetailsComp = ({ product })=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full max-w-md",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "rounded-3xl border-2 border-dashed border-gray-300 p-6 h-130",
+                                className: "rounded-3xl border-2 border-dashed bg-white border-gray-300 p-6 h-130",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-xl font-bold text-gray-900 mb-6",
@@ -2054,56 +2054,56 @@ const newProducts = [
     {
         id: 11,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 12,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 13,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 14,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 15,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 16,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 17,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 18,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
@@ -2112,28 +2112,28 @@ const products2 = [
     {
         id: 1,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 2,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 3,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 4,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
@@ -3387,32 +3387,32 @@ const ProductDetailsPage = ()=>{
                 showProductDetails: true
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$product_details$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 product: productData
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 28,
+                lineNumber: 27,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$add_bundle$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 29,
+                lineNumber: 28,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$product_overview$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 product: productData
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 30,
+                lineNumber: 29,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

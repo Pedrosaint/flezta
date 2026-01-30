@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/modules/order_history/page/order_history.page.tsx"],"sourcesContent":["\"use client\";\r\n\r\n\r\nconst OrderHistoryPage = () => {\r\n    return (\r\n        <div>\r\n            <h1>Order History</h1>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default OrderHistoryPage;\r\n"],"names":[],"mappings":";;;;;AAAA;;AAGA,MAAM,mBAAmB;IACrB,qBACI,6LAAC;kBACG,cAAA,6LAAC;sBAAG;;;;;;;;;;;AAGhB;KANM;uCAQS"}}]
+}

@@ -1,8 +1,9 @@
-import DashboardView from "@/modules/dashboard/view/dashboard.view";
+import DashboardPage from "@/modules/dashboard/page/dashboard.page";
+
 
 const Page = () => {
   return (
-  <DashboardView />
+    <DashboardPage />
   );
 };
 

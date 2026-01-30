@@ -13,7 +13,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 const TopSectionUI = ({ fIndex, eIndex, slides, getTextVariant, getImageVariant, onDotClick, onElectronicDotClick, ElectonicsImage })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "py-12",
+        className: "py-12 bg-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-6",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -578,56 +578,56 @@ const newProducts = [
     {
         id: 11,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 12,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 13,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 14,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 15,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 16,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 17,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 18,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
@@ -636,28 +636,28 @@ const products2 = [
     {
         id: 1,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 2,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 3,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 4,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
@@ -824,12 +824,12 @@ const ListProductsComp = ()=>{
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                 lineNumber: 30,
-                columnNumber: 9
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         }, id, false, {
             fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
             lineNumber: 22,
-            columnNumber: 7
+            columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "bg-white py-12",
@@ -850,16 +850,16 @@ const ListProductsComp = ()=>{
                                 children: isWishlisted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
                                     fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                     lineNumber: 54,
-                                    columnNumber: 37
+                                    columnNumber: 35
                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AshHeartIcon"], {}, void 0, false, {
                                     fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                     lineNumber: 54,
-                                    columnNumber: 56
+                                    columnNumber: 54
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                 lineNumber: 50,
-                                columnNumber: 19
+                                columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                                 children: floatingHearts.filter((h)=>h.id.startsWith(String(product.id))).map((h)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingHeart, {
@@ -867,12 +867,12 @@ const ListProductsComp = ()=>{
                                     }, h.id, false, {
                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                         lineNumber: 62,
-                                        columnNumber: 25
+                                        columnNumber: 23
                                     }, ("TURBOPACK compile-time value", void 0)))
                             }, void 0, false, {
                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                 lineNumber: 58,
-                                columnNumber: 19
+                                columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mb-6 overflow-hidden flex items-center justify-center cursor-pointer",
@@ -887,12 +887,12 @@ const ListProductsComp = ()=>{
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                     lineNumber: 74,
-                                    columnNumber: 21
+                                    columnNumber: 19
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                 lineNumber: 67,
-                                columnNumber: 19
+                                columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-3",
@@ -903,31 +903,31 @@ const ListProductsComp = ()=>{
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                         lineNumber: 83,
-                                        columnNumber: 21
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center gap-2",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-6 h-6 bg-gray-300 rounded-full"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: "Condition: New"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
-                                                lineNumber: 89,
-                                                columnNumber: 23
+                                                lineNumber: 90,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-sm text-gray-600",
                                                 children: product.vendor
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 23
+                                                lineNumber: 91,
+                                                columnNumber: 21
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                         lineNumber: 88,
-                                        columnNumber: 21
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-xl font-semibold gradient-text",
@@ -937,8 +937,8 @@ const ListProductsComp = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
-                                        lineNumber: 96,
-                                        columnNumber: 21
+                                        lineNumber: 97,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: `
@@ -956,7 +956,7 @@ const ListProductsComp = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AddToCartIcon"], {}, void 0, false, {
                                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                                 lineNumber: 114,
-                                                                columnNumber: 29
+                                                                columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-[13px]  text-secondary-color",
@@ -964,13 +964,13 @@ const ListProductsComp = ()=>{
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                                 lineNumber: 115,
-                                                                columnNumber: 29
+                                                                columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                         lineNumber: 113,
-                                                        columnNumber: 27
+                                                        columnNumber: 25
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         className: "flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer",
@@ -978,7 +978,7 @@ const ListProductsComp = ()=>{
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NegotiateIcon"], {}, void 0, false, {
                                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                                 lineNumber: 121,
-                                                                columnNumber: 29
+                                                                columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 className: "text-[13px] gradient-text",
@@ -986,41 +986,41 @@ const ListProductsComp = ()=>{
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                                 lineNumber: 122,
-                                                                columnNumber: 29
+                                                                columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                         lineNumber: 120,
-                                                        columnNumber: 27
+                                                        columnNumber: 25
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                                 lineNumber: 112,
-                                                columnNumber: 25
+                                                columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                             lineNumber: 111,
-                                            columnNumber: 23
+                                            columnNumber: 21
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
-                                        lineNumber: 101,
-                                        columnNumber: 21
+                                        lineNumber: 102,
+                                        columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                                 lineNumber: 82,
-                                columnNumber: 19
+                                columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, product.id, true, {
                         fileName: "[project]/src/modules/home/components/list_product.comp.tsx",
                         lineNumber: 43,
-                        columnNumber: 17
+                        columnNumber: 15
                     }, ("TURBOPACK compile-time value", void 0));
                 })
             }, void 0, false, {
@@ -1789,7 +1789,7 @@ function TopDealsComp() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AddToCartIcon"], {}, void 0, false, {
                                                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                                lineNumber: 531,
+                                                                                lineNumber: 530,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1797,13 +1797,13 @@ function TopDealsComp() {
                                                                                 children: "Add To Cart"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                                lineNumber: 532,
+                                                                                lineNumber: 531,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                        lineNumber: 530,
+                                                                        lineNumber: 529,
                                                                         columnNumber: 29
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1811,7 +1811,7 @@ function TopDealsComp() {
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NegotiateIcon"], {}, void 0, false, {
                                                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                                lineNumber: 538,
+                                                                                lineNumber: 537,
                                                                                 columnNumber: 31
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1819,24 +1819,24 @@ function TopDealsComp() {
                                                                                 children: "Negotiate"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                                lineNumber: 539,
+                                                                                lineNumber: 538,
                                                                                 columnNumber: 31
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                        lineNumber: 537,
+                                                                        lineNumber: 536,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                                lineNumber: 529,
+                                                                lineNumber: 528,
                                                                 columnNumber: 27
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                            lineNumber: 528,
+                                                            lineNumber: 527,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
@@ -1874,12 +1874,12 @@ function TopDealsComp() {
               ${canGoNext ? "bg-secondary-color cursor-pointer" : "bg-gray-400 cursor-not-allowed"}`,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ArrowRightIcon"], {}, void 0, false, {
                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                lineNumber: 560,
+                                lineNumber: 559,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                            lineNumber: 554,
+                            lineNumber: 553,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1901,7 +1901,7 @@ function TopDealsComp() {
                                             children: "Fashion Collections"
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 570,
+                                            lineNumber: 569,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1912,14 +1912,14 @@ function TopDealsComp() {
                                                         "Beauty, Skin",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                            lineNumber: 576,
+                                                            lineNumber: 575,
                                                             columnNumber: 19
                                                         }, this),
                                                         "and Cosmetics"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 574,
+                                                    lineNumber: 573,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1928,20 +1928,20 @@ function TopDealsComp() {
                                                         "Figma ipsum component variant main layer.",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                            lineNumber: 581,
+                                                            lineNumber: 580,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Stroke hand ellipse move."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 579,
+                                                    lineNumber: 578,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 573,
+                                            lineNumber: 572,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1951,18 +1951,18 @@ function TopDealsComp() {
                                                 children: "Shop Now"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                lineNumber: 586,
+                                                lineNumber: 585,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 585,
+                                            lineNumber: 584,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                    lineNumber: 569,
+                                    lineNumber: 568,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1975,18 +1975,18 @@ function TopDealsComp() {
                                         className: "h-[378.82px] object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                        lineNumber: 593,
+                                        lineNumber: 592,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                    lineNumber: 592,
+                                    lineNumber: 591,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                            lineNumber: 568,
+                            lineNumber: 567,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2003,7 +2003,7 @@ function TopDealsComp() {
                                                     children: "Fashion"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 608,
+                                                    lineNumber: 607,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2012,14 +2012,14 @@ function TopDealsComp() {
                                                         "Children's",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                            lineNumber: 611,
+                                                            lineNumber: 610,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Fashion"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 609,
+                                                    lineNumber: 608,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2029,18 +2029,18 @@ function TopDealsComp() {
                                                         children: "Shop Now"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                        lineNumber: 616,
+                                                        lineNumber: 615,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 615,
+                                                    lineNumber: 614,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 607,
+                                            lineNumber: 606,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2053,18 +2053,18 @@ function TopDealsComp() {
                                                 className: "object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                lineNumber: 624,
+                                                lineNumber: 623,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 623,
+                                            lineNumber: 622,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                    lineNumber: 605,
+                                    lineNumber: 604,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2077,7 +2077,7 @@ function TopDealsComp() {
                                                     children: "Electronics"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 637,
+                                                    lineNumber: 636,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2085,7 +2085,7 @@ function TopDealsComp() {
                                                     children: "Home Appliances"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 638,
+                                                    lineNumber: 637,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2095,18 +2095,18 @@ function TopDealsComp() {
                                                         children: "Shop Now"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                        lineNumber: 642,
+                                                        lineNumber: 641,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                    lineNumber: 641,
+                                                    lineNumber: 640,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 636,
+                                            lineNumber: 635,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2119,30 +2119,30 @@ function TopDealsComp() {
                                                 className: "object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                                lineNumber: 649,
+                                                lineNumber: 648,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                            lineNumber: 648,
+                                            lineNumber: 647,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                                    lineNumber: 635,
+                                    lineNumber: 634,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                            lineNumber: 603,
+                            lineNumber: 602,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/modules/home/components/top_deals.comp.tsx",
-                    lineNumber: 566,
+                    lineNumber: 565,
                     columnNumber: 9
                 }, this)
             ]

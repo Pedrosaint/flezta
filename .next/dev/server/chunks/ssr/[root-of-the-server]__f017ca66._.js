@@ -77,22 +77,32 @@ __turbopack_context__.s([
     ()=>LaptopIcon,
     "LocationIcon",
     ()=>LocationIcon,
+    "LogoutIcon",
+    ()=>LogoutIcon,
+    "Love",
+    ()=>Love,
     "LoveIcon",
     ()=>LoveIcon,
     "NegotiateIcon",
     ()=>NegotiateIcon,
+    "OrderIcon",
+    ()=>OrderIcon,
     "PriceIcon",
     ()=>PriceIcon,
     "RedHeartIcon",
     ()=>RedHeartIcon,
     "SecurePaymentIcon",
     ()=>SecurePaymentIcon,
+    "SettingsIcon",
+    ()=>SettingsIcon,
     "TVIcon",
     ()=>TVIcon,
     "UserIcon",
     ()=>UserIcon,
     "VerifiedBadge",
     ()=>VerifiedBadge,
+    "WalletIcon",
+    ()=>WalletIcon,
     "default",
     ()=>StarIcon
 ]);
@@ -112,7 +122,7 @@ const GoodIcon = ({ width = 44, height = 44, ...props })=>/*#__PURE__*/ (0, __TU
                 strokeWidth: "2.75"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 15,
+                lineNumber: 23,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -123,13 +133,13 @@ const GoodIcon = ({ width = 44, height = 44, ...props })=>/*#__PURE__*/ (0, __TU
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 20,
+                lineNumber: 28,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 7,
+        lineNumber: 15,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const LoveIcon = ({ width = 29, height = 25, stroke = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -148,12 +158,12 @@ const LoveIcon = ({ width = 29, height = 25, stroke = "#0C0F16", ...props })=>/*
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 45,
+            lineNumber: 53,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 36,
+        lineNumber: 44,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const BagIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -173,7 +183,7 @@ const BagIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*#
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 70,
+                lineNumber: 78,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -184,13 +194,13 @@ const BagIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*#
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 77,
+                lineNumber: 85,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 61,
+        lineNumber: 69,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const UserIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -208,7 +218,7 @@ const UserIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 102,
+                lineNumber: 110,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -218,13 +228,13 @@ const UserIcon = ({ width = 32, height = 32, stroke = "#0C0F16", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 107,
+                lineNumber: 115,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 93,
+        lineNumber: 101,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -242,7 +252,7 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 124,
+                lineNumber: 132,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -253,7 +263,7 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 131,
+                lineNumber: 139,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -270,7 +280,7 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 147,
+                                lineNumber: 155,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -278,13 +288,13 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 148,
+                                lineNumber: 156,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 139,
+                        lineNumber: 147,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -299,7 +309,7 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 158,
+                                lineNumber: 166,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -307,25 +317,25 @@ const ArrowUpIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 159,
+                                lineNumber: 167,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 150,
+                        lineNumber: 158,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 138,
+                lineNumber: 146,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 117,
+        lineNumber: 125,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const AshHeartIcon = ({ width = 22, height = 19, fill = "#C4C8CE", stroke = "#C4C8CE", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -345,12 +355,12 @@ const AshHeartIcon = ({ width = 22, height = 19, fill = "#C4C8CE", stroke = "#C4
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 181,
+            lineNumber: 189,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 172,
+        lineNumber: 180,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const AddToCartIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -368,7 +378,7 @@ const AddToCartIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 200,
+                lineNumber: 208,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -379,7 +389,7 @@ const AddToCartIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 207,
+                lineNumber: 215,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -390,13 +400,13 @@ const AddToCartIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 214,
+                lineNumber: 222,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 193,
+        lineNumber: 201,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -414,7 +424,7 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 232,
+                lineNumber: 240,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -425,7 +435,7 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 239,
+                lineNumber: 247,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -442,7 +452,7 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 255,
+                                lineNumber: 263,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -450,13 +460,13 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 256,
+                                lineNumber: 264,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 247,
+                        lineNumber: 255,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -471,7 +481,7 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 266,
+                                lineNumber: 274,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -479,25 +489,25 @@ const NegotiateIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPA
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 267,
+                                lineNumber: 275,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 258,
+                        lineNumber: 266,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 246,
+                lineNumber: 254,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 225,
+        lineNumber: 233,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const RedHeartIcon = ({ width = 22, height = 19, fill = "#C33232", stroke = "#C33232", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -517,12 +527,12 @@ const RedHeartIcon = ({ width = 22, height = 19, fill = "#C33232", stroke = "#C3
             strokeLinejoin: "round"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 289,
+            lineNumber: 297,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 280,
+        lineNumber: 288,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const ArrowRightIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -542,7 +552,7 @@ const ArrowRightIcon = ({ width = 24, height = 24, stroke = "#003625", ...props 
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 315,
+                lineNumber: 323,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -553,13 +563,13 @@ const ArrowRightIcon = ({ width = 24, height = 24, stroke = "#003625", ...props 
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 322,
+                lineNumber: 330,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 306,
+        lineNumber: 314,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const ArrowLeftIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -579,7 +589,7 @@ const ArrowLeftIcon = ({ width = 24, height = 24, stroke = "#003625", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 347,
+                lineNumber: 355,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -590,13 +600,13 @@ const ArrowLeftIcon = ({ width = 24, height = 24, stroke = "#003625", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 354,
+                lineNumber: 362,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 338,
+        lineNumber: 346,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const DashboardIcon = ({ width = 48, height = 48, stroke = "#077D58", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -615,7 +625,7 @@ const DashboardIcon = ({ width = 48, height = 48, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 379,
+                lineNumber: 387,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -625,7 +635,7 @@ const DashboardIcon = ({ width = 48, height = 48, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 385,
+                lineNumber: 393,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -635,7 +645,7 @@ const DashboardIcon = ({ width = 48, height = 48, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 391,
+                lineNumber: 399,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -645,29 +655,30 @@ const DashboardIcon = ({ width = 48, height = 48, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 397,
+                lineNumber: 405,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 370,
+        lineNumber: 378,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
-const AppleIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const AppleIcon = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         className: "w-10 h-10",
         viewBox: "0 0 24 24",
         fill: "currentColor",
+        ...props,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
             d: "M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 408,
+            lineNumber: 416,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 407,
+        lineNumber: 415,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 function StarIcon({ filled = false, className = "w-4 h-4" }) {
@@ -679,12 +690,12 @@ function StarIcon({ filled = false, className = "w-4 h-4" }) {
             d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 422,
+            lineNumber: 430,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 417,
+        lineNumber: 425,
         columnNumber: 5
     }, this);
 }
@@ -703,7 +714,7 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeWidth: "1.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 442,
+                lineNumber: 450,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -712,7 +723,7 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeWidth: "1.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 447,
+                lineNumber: 455,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -723,7 +734,7 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 452,
+                lineNumber: 460,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -734,7 +745,7 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 459,
+                lineNumber: 467,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -745,7 +756,7 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 466,
+                lineNumber: 474,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -756,13 +767,13 @@ const FastShippingIcon = ({ width = 24, height = 24, stroke = "#003625", ...prop
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 473,
+                lineNumber: 481,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 433,
+        lineNumber: 441,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -782,8 +793,8 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 499,
-                columnNumber: 5
+                lineNumber: 506,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M22 7C22 9.76142 19.7614 12 17 12C14.2386 12 12 9.76142 12 7C12 4.23858 14.2386 2 17 2C19.7614 2 22 4.23858 22 7Z",
@@ -792,8 +803,8 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 506,
-                columnNumber: 5
+                lineNumber: 513,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M13 21.75V22.25H11V21.75H13ZM4.18066 21.0889C4.6874 21.3686 5.31177 21.534 6.14258 21.6279C7.12409 21.7388 8.36535 21.7481 10 21.749V22.249C8.37007 22.2481 7.09942 22.2393 6.08691 22.125C5.18578 22.0232 4.46948 21.8335 3.86914 21.4844L4.18066 21.0889ZM20.1299 21.4844C19.5297 21.8332 18.8139 22.0232 17.9131 22.125C16.9006 22.2393 15.6299 22.2481 14 22.249V21.749C15.6347 21.7481 16.876 21.7388 17.8574 21.6279C18.6878 21.5341 19.3117 21.3683 19.8184 21.0889L20.1299 21.4844ZM2.25098 14.5C2.25213 16.0244 2.26322 17.1807 2.37988 18.0957C2.47815 18.8663 2.65014 19.4458 2.94043 19.917L2.56348 20.2529C2.19317 19.6858 1.99213 19.0087 1.88379 18.1592C1.76269 17.2093 1.75203 16.0197 1.75098 14.5H2.25098ZM22.249 14.5C22.248 16.0197 22.2373 17.2093 22.1162 18.1592C22.0078 19.0089 21.8061 19.6857 21.4355 20.2529L21.0586 19.917C21.349 19.4457 21.5218 18.8665 21.6201 18.0957C21.7368 17.1807 21.7479 16.0244 21.749 14.5H22.249ZM2.94043 8.08301C2.64998 8.55419 2.4782 9.13364 2.37988 9.9043C2.2632 10.8192 2.25213 11.9758 2.25098 13.5H1.75098C1.75204 11.9807 1.76272 10.7914 1.88379 9.8418C1.99216 8.99196 2.19293 8.31434 2.56348 7.74707L2.94043 8.08301ZM8.5625 6.25879C7.39277 6.27223 6.4721 6.31126 5.72168 6.42969C5.09544 6.52851 4.59787 6.68003 4.18066 6.91016L3.86719 6.51367C4.36566 6.22372 4.94509 6.04578 5.64355 5.93555C6.43114 5.81126 7.38383 5.77124 8.55957 5.75781L8.5625 6.25879Z",
@@ -801,8 +812,8 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 stroke: stroke
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 512,
-                columnNumber: 5
+                lineNumber: 519,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M10 18H11.5",
@@ -813,8 +824,8 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 517,
-                columnNumber: 5
+                lineNumber: 524,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M14.5 18H18",
@@ -825,8 +836,8 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 525,
-                columnNumber: 5
+                lineNumber: 532,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M2.5 11H10",
@@ -836,14 +847,14 @@ const SecurePaymentIcon = ({ width = 24, height = 24, stroke = "#003625", fill =
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 533,
-                columnNumber: 5
+                lineNumber: 540,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 490,
-        columnNumber: 3
+        lineNumber: 497,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const CustomerSupportIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -860,8 +871,8 @@ const CustomerSupportIcon = ({ width = 24, height = 24, stroke = "#003625", ...p
                 strokeWidth: "1.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 558,
-                columnNumber: 5
+                lineNumber: 564,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M7 10.8046C7 10.3694 6.98778 9.97821 6.63591 9.6722C6.50793 9.5609 6.33825 9.48361 5.99891 9.32905C5.55001 9.12458 5.32556 9.02235 5.10316 9.00436C4.43591 8.9504 4.07692 9.40581 3.69213 9.87318C2.74875 11.019 2.27706 11.5919 2.10446 12.2237C1.96518 12.7336 1.96518 13.2668 2.10446 13.7766C2.3562 14.6981 3.15152 15.4705 3.74021 16.1856C4.11129 16.6363 4.46577 17.0475 5.10316 16.996C5.32556 16.978 5.55001 16.8757 5.99891 16.6713C6.33825 16.5167 6.50793 16.4394 6.63591 16.3281C6.98778 16.0221 7 15.631 7 15.1957V10.8046Z",
@@ -869,8 +880,8 @@ const CustomerSupportIcon = ({ width = 24, height = 24, stroke = "#003625", ...p
                 strokeWidth: "1.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 563,
-                columnNumber: 5
+                lineNumber: 569,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M5 9C5 5.68629 8.13401 3 12 3C15.866 3 19 5.68629 19 9",
@@ -880,8 +891,8 @@ const CustomerSupportIcon = ({ width = 24, height = 24, stroke = "#003625", ...p
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 568,
-                columnNumber: 5
+                lineNumber: 574,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M19 17V17.8C19 19.5673 17.2091 21 15 21H13",
@@ -891,14 +902,14 @@ const CustomerSupportIcon = ({ width = 24, height = 24, stroke = "#003625", ...p
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 575,
-                columnNumber: 5
+                lineNumber: 581,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 549,
-        columnNumber: 3
+        lineNumber: 555,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const PriceIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -917,8 +928,8 @@ const PriceIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 600,
-                columnNumber: 5
+                lineNumber: 605,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M14 6C12.8954 6 12 6.67157 12 7.5C12 8.32843 12.8954 9 14 9C15.1046 9 16 9.67157 16 10.5C16 11.3284 15.1046 12 14 12M14 6C14.8708 6 15.6116 6.4174 15.8862 7M14 6V5M14 12C13.1292 12 12.3884 11.5826 12.1138 11M14 12V13",
@@ -927,8 +938,8 @@ const PriceIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 607,
-                columnNumber: 5
+                lineNumber: 612,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M3 14H5.39482C5.68897 14 5.97908 14.0663 6.24217 14.1936L8.28415 15.1816C8.54724 15.3089 8.83735 15.3751 9.1315 15.3751H10.1741C11.1825 15.3751 12 16.1662 12 17.142C12 17.1814 11.973 17.2161 11.9338 17.2269L9.39287 17.9295C8.93707 18.0555 8.449 18.0116 8.025 17.8064L5.84211 16.7503M12 16.5L16.5928 15.0889C17.407 14.8352 18.2871 15.136 18.7971 15.8423C19.1659 16.3529 19.0157 17.0842 18.4785 17.3942L10.9629 21.7305C10.4849 22.0063 9.92094 22.0736 9.39516 21.9176L3 20.0199",
@@ -938,14 +949,14 @@ const PriceIcon = ({ width = 24, height = 24, stroke = "#003625", ...props })=>/
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 613,
-                columnNumber: 5
+                lineNumber: 618,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 591,
-        columnNumber: 3
+        lineNumber: 596,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -962,7 +973,7 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 631,
+                lineNumber: 636,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -973,7 +984,7 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 638,
+                lineNumber: 643,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -990,7 +1001,7 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 654,
+                                lineNumber: 659,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -998,13 +1009,13 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 655,
+                                lineNumber: 660,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 646,
+                        lineNumber: 651,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1019,7 +1030,7 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 665,
+                                lineNumber: 670,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1027,25 +1038,25 @@ const HomeIcon = ({ width = 24, height = 24 })=>/*#__PURE__*/ (0, __TURBOPACK__i
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 666,
+                                lineNumber: 671,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 657,
+                        lineNumber: 662,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 645,
+                lineNumber: 650,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 624,
+        lineNumber: 629,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1065,8 +1076,8 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 687,
-                columnNumber: 5
+                lineNumber: 691,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M28.333 35V25",
@@ -1076,8 +1087,8 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 694,
-                columnNumber: 5
+                lineNumber: 698,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M28.333 10V5",
@@ -1087,8 +1098,8 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 701,
-                columnNumber: 5
+                lineNumber: 705,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M11.667 15V5",
@@ -1098,8 +1109,8 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 708,
-                columnNumber: 5
+                lineNumber: 712,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M11.667 30C10.1139 30 9.33729 30 8.72471 29.7463C7.90796 29.408 7.25904 28.759 6.92073 27.9423C6.66699 27.3297 6.66699 26.5532 6.66699 25C6.66699 23.4468 6.66699 22.6703 6.92073 22.0577C7.25904 21.241 7.90796 20.592 8.72471 20.2537C9.33729 20 10.1139 20 11.667 20C13.2201 20 13.9967 20 14.6093 20.2537C15.426 20.592 16.0749 21.241 16.4133 22.0577C16.667 22.6703 16.667 23.4468 16.667 25C16.667 26.5532 16.667 27.3297 16.4133 27.9423C16.0749 28.759 15.426 29.408 14.6093 29.7463C13.9967 30 13.2201 30 11.667 30Z",
@@ -1107,8 +1118,8 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeWidth: "2.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 715,
-                columnNumber: 5
+                lineNumber: 719,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M28.333 20C26.7798 20 26.0033 20 25.3907 19.7463C24.574 19.408 23.925 18.759 23.5867 17.9423C23.333 17.3297 23.333 16.5531 23.333 15C23.333 13.4469 23.333 12.6703 23.5867 12.0577C23.925 11.241 24.574 10.592 25.3907 10.2537C26.0033 10 26.7798 10 28.333 10C29.8862 10 30.6627 10 31.2753 10.2537C32.092 10.592 32.741 11.241 33.0793 12.0577C33.333 12.6703 33.333 13.4469 33.333 15C33.333 16.5531 33.333 17.3297 33.0793 17.9423C32.741 18.759 32.092 19.408 31.2753 19.7463C30.6627 20 29.8862 20 28.333 20Z",
@@ -1116,14 +1127,14 @@ const FilterIcon = ({ width = 40, height = 40, stroke = "white", ...props })=>/*
                 strokeWidth: "2.5"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 720,
-                columnNumber: 5
+                lineNumber: 724,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 678,
-        columnNumber: 3
+        lineNumber: 682,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const VerifiedBadge = ({ height = 24, width = 24, stroke = "#077D58", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1142,8 +1153,8 @@ const VerifiedBadge = ({ height = 24, width = 24, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 743,
-                columnNumber: 5
+                lineNumber: 746,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8 10.3077C8 10.3077 10.25 10 12 14C12 14 17.0588 4 22 2",
@@ -1153,14 +1164,14 @@ const VerifiedBadge = ({ height = 24, width = 24, stroke = "#077D58", ...props }
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 750,
-                columnNumber: 5
+                lineNumber: 753,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 734,
-        columnNumber: 3
+        lineNumber: 737,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const ChatIcon = ({ height = 24, width = 24, stroke = "#003625", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1179,8 +1190,8 @@ const ChatIcon = ({ height = 24, width = 24, stroke = "#003625", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 775,
-                columnNumber: 5
+                lineNumber: 777,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M18 9.49609C19.933 9.49609 21.5 7.92909 21.5 5.99609C21.5 4.06309 19.933 2.49609 18 2.49609C16.067 2.49609 14.5 4.06309 14.5 5.99609C14.5 7.92909 16.067 9.49609 18 9.49609Z",
@@ -1190,21 +1201,22 @@ const ChatIcon = ({ height = 24, width = 24, stroke = "#003625", ...props })=>/*
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 782,
-                columnNumber: 5
+                lineNumber: 784,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 766,
-        columnNumber: 3
+        lineNumber: 768,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
-const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const ChatIcon2 = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "24",
         height: "24",
         viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
+        ...props,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21.5 11.9961C21.5 17.2428 17.2467 21.4961 12 21.4961C10.3446 21.4961 8.78814 21.0727 7.43293 20.3283C6.87976 20.0244 6.22839 19.9176 5.62966 20.1171L3.00001 20.9937L3.87695 18.3629C4.07645 17.7644 3.96974 17.1133 3.66622 16.5603C2.92279 15.2057 2.5 13.6503 2.5 11.9961C2.5 6.74939 6.75329 2.49609 12 2.49609",
@@ -1214,7 +1226,7 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 800,
+                lineNumber: 803,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -1225,7 +1237,7 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 807,
+                lineNumber: 810,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -1242,7 +1254,7 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 823,
+                                lineNumber: 826,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1250,13 +1262,13 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 824,
+                                lineNumber: 827,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 815,
+                        lineNumber: 818,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
@@ -1271,7 +1283,7 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                 stopColor: "#E26E00"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 834,
+                                lineNumber: 837,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -1279,61 +1291,62 @@ const ChatIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proje
                                 stopColor: "#FDA106"
                             }, void 0, false, {
                                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                                lineNumber: 835,
+                                lineNumber: 838,
                                 columnNumber: 9
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                        lineNumber: 826,
+                        lineNumber: 829,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 814,
+                lineNumber: 817,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 793,
+        lineNumber: 795,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
-const ChatIcon3 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const ChatIcon3 = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "24",
         height: "24",
         viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
+        ...props,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21.5 11.9961C21.5 17.2428 17.2467 21.4961 12 21.4961C10.3446 21.4961 8.78814 21.0727 7.43293 20.3283C6.87976 20.0244 6.22839 19.9176 5.62966 20.1171L3.00001 20.9937L3.87695 18.3629C4.07645 17.7644 3.96974 17.1133 3.66622 16.5603C2.92279 15.2057 2.5 13.6503 2.5 11.9961C2.5 6.74939 6.75329 2.49609 12 2.49609",
                 stroke: "white",
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 849,
-                columnNumber: 5
+                lineNumber: 852,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M18 9.49609C19.933 9.49609 21.5 7.92909 21.5 5.99609C21.5 4.06309 19.933 2.49609 18 2.49609C16.067 2.49609 14.5 4.06309 14.5 5.99609C14.5 7.92909 16.067 9.49609 18 9.49609Z",
                 stroke: "white",
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 856,
-                columnNumber: 5
+                lineNumber: 859,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 842,
-        columnNumber: 3
+        lineNumber: 844,
+        columnNumber: 65
     }, ("TURBOPACK compile-time value", void 0));
 const AddToCartIcon2 = ({ stroke = "white", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "24",
@@ -1352,8 +1365,8 @@ const AddToCartIcon2 = ({ stroke = "white", ...props })=>/*#__PURE__*/ (0, __TUR
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 876,
-                columnNumber: 5
+                lineNumber: 881,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M15.25 9.5C15.25 5.63401 13.4591 2 11.25 2C9.04086 2 7.25 5.63401 7.25 9.5",
@@ -1363,8 +1376,8 @@ const AddToCartIcon2 = ({ stroke = "white", ...props })=>/*#__PURE__*/ (0, __TUR
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 883,
-                columnNumber: 5
+                lineNumber: 888,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M15.25 19H21.25M18.25 22V16",
@@ -1374,14 +1387,14 @@ const AddToCartIcon2 = ({ stroke = "white", ...props })=>/*#__PURE__*/ (0, __TUR
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 890,
-                columnNumber: 5
+                lineNumber: 895,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 867,
-        columnNumber: 3
+        lineNumber: 872,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const DeleteCartIcon = ({ width = 24, height = 24, stroke = "white", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1400,8 +1413,8 @@ const DeleteCartIcon = ({ width = 24, height = 24, stroke = "white", ...props })
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 916,
-                columnNumber: 5
+                lineNumber: 920,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M15 9.5C15 5.63401 13.2091 2 11 2C8.79086 2 7 5.63401 7 9.5",
@@ -1411,8 +1424,8 @@ const DeleteCartIcon = ({ width = 24, height = 24, stroke = "white", ...props })
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 923,
-                columnNumber: 5
+                lineNumber: 927,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M16 17L21 22M16 22L21 17",
@@ -1422,14 +1435,14 @@ const DeleteCartIcon = ({ width = 24, height = 24, stroke = "white", ...props })
                 strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 930,
-                columnNumber: 5
+                lineNumber: 934,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 907,
-        columnNumber: 3
+        lineNumber: 911,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const DeleteIcon = ({ width = 24, height = 24, stroke = "#C33232", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1446,8 +1459,8 @@ const DeleteIcon = ({ width = 24, height = 24, stroke = "#C33232", ...props })=>
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 956,
-                columnNumber: 5
+                lineNumber: 959,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5",
@@ -1456,8 +1469,8 @@ const DeleteIcon = ({ width = 24, height = 24, stroke = "#C33232", ...props })=>
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 961,
-                columnNumber: 5
+                lineNumber: 964,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9.5 16.5V10.5",
@@ -1466,8 +1479,8 @@ const DeleteIcon = ({ width = 24, height = 24, stroke = "#C33232", ...props })=>
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 967,
-                columnNumber: 5
+                lineNumber: 970,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M14.5 16.5V10.5",
@@ -1476,21 +1489,22 @@ const DeleteIcon = ({ width = 24, height = 24, stroke = "#C33232", ...props })=>
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 973,
-                columnNumber: 5
+                lineNumber: 976,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 947,
-        columnNumber: 3
+        lineNumber: 950,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
-const DeleteIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const DeleteIcon2 = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "24",
         height: "24",
         viewBox: "0 0 24 24",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
+        ...props,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5",
@@ -1499,8 +1513,8 @@ const DeleteIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 991,
-                columnNumber: 5
+                lineNumber: 994,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5",
@@ -1509,8 +1523,8 @@ const DeleteIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 997,
-                columnNumber: 5
+                lineNumber: 1000,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9.5 16.5V10.5",
@@ -1519,8 +1533,8 @@ const DeleteIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1003,
-                columnNumber: 5
+                lineNumber: 1006,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M14.5 16.5V10.5",
@@ -1529,58 +1543,59 @@ const DeleteIcon2 = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$pro
                 strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1009,
-                columnNumber: 5
+                lineNumber: 1012,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 984,
-        columnNumber: 3
+        lineNumber: 986,
+        columnNumber: 67
     }, ("TURBOPACK compile-time value", void 0));
-const DefaultIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const DefaultIcon = ({ ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: "16",
         height: "16",
         viewBox: "0 0 16 16",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
+        ...props,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M7.99998 14.6667C11.6819 14.6667 14.6666 11.6819 14.6666 8.00001C14.6666 4.31811 11.6819 1.33334 7.99998 1.33334C4.31808 1.33334 1.33331 4.31811 1.33331 8.00001C1.33331 11.6819 4.31808 14.6667 7.99998 14.6667Z",
                 stroke: "#077D58",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1027,
-                columnNumber: 5
+                lineNumber: 1030,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8 10.6667V7.66666",
                 stroke: "#077D58",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1033,
-                columnNumber: 5
+                lineNumber: 1036,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8 5.34114V5.33447",
                 stroke: "#077D58",
-                "stroke-width": "1.2",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1039,
-                columnNumber: 5
+                lineNumber: 1042,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1020,
-        columnNumber: 3
+        lineNumber: 1022,
+        columnNumber: 67
     }, ("TURBOPACK compile-time value", void 0));
 const LocationIcon = ({ width = 20, height = 20, stroke = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1597,8 +1612,8 @@ const LocationIcon = ({ width = 20, height = 20, stroke = "#0C0F16", ...props })
                 strokeWidth: "1.25"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1065,
-                columnNumber: 5
+                lineNumber: 1067,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12.9166 9.16667C12.9166 10.7775 11.6108 12.0833 9.99998 12.0833C8.38915 12.0833 7.08331 10.7775 7.08331 9.16667C7.08331 7.55583 8.38915 6.25 9.99998 6.25C11.6108 6.25 12.9166 7.55583 12.9166 9.16667Z",
@@ -1606,14 +1621,14 @@ const LocationIcon = ({ width = 20, height = 20, stroke = "#0C0F16", ...props })
                 strokeWidth: "1.25"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1070,
-                columnNumber: 5
+                lineNumber: 1072,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1056,
-        columnNumber: 3
+        lineNumber: 1058,
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const DateIcon = ({ width = 20, height = 20, stroke = "#0C0F16", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1627,52 +1642,52 @@ const DateIcon = ({ width = 20, height = 20, stroke = "#0C0F16", ...props })=>/*
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M13.3334 1.66669V5.00002M6.66669 1.66669V5.00002",
                 stroke: stroke,
-                "stroke-width": "1.25",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.25",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1089,
-                columnNumber: 5
+                lineNumber: 1090,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M10.8333 3.33331H9.16667C6.02397 3.33331 4.45262 3.33331 3.47631 4.30962C2.5 5.28594 2.5 6.85728 2.5 9.99998V11.6666C2.5 14.8093 2.5 16.3807 3.47631 17.357C4.45262 18.3333 6.02397 18.3333 9.16667 18.3333H10.8333C13.976 18.3333 15.5474 18.3333 16.5237 17.357C17.5 16.3807 17.5 14.8093 17.5 11.6666V9.99998C17.5 6.85728 17.5 5.28594 16.5237 4.30962C15.5474 3.33331 13.976 3.33331 10.8333 3.33331Z",
                 stroke: stroke,
-                "stroke-width": "1.25",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.25",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1096,
-                columnNumber: 5
+                lineNumber: 1097,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M2.5 8.33331H17.5",
                 stroke: stroke,
-                "stroke-width": "1.25",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.25",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1103,
-                columnNumber: 5
+                lineNumber: 1104,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9.16669 11.6667H13.3334M6.66669 11.6667H6.67417M10.8334 15H6.66669M13.3334 15H13.3259",
                 stroke: stroke,
-                "stroke-width": "1.25",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.25",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1110,
-                columnNumber: 5
+                lineNumber: 1111,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1080,
-        columnNumber: 3
+        lineNumber: 1081,
+        columnNumber: 109
     }, ("TURBOPACK compile-time value", void 0));
 const DropdownIcon = ({ width = 24, height = 24, stroke = "#6B7280", ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1691,12 +1706,12 @@ const DropdownIcon = ({ width = 24, height = 24, stroke = "#6B7280", ...props })
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
             lineNumber: 1135,
-            columnNumber: 5
+            columnNumber: 3
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
         lineNumber: 1126,
-        columnNumber: 3
+        columnNumber: 28
     }, ("TURBOPACK compile-time value", void 0));
 const GameIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1710,62 +1725,62 @@ const GameIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M2.00825 15.8092C2.23114 12.3161 2.88737 9.7599 3.44345 8.27511C3.72419 7.5255 4.32818 6.96728 5.10145 6.78021C9.40147 5.73993 14.5986 5.73993 18.8986 6.78021C19.6719 6.96728 20.2759 7.5255 20.5566 8.27511C21.1127 9.7599 21.7689 12.3161 21.9918 15.8092C22.1251 17.8989 20.6148 19.0503 18.9429 19.8925C17.878 20.4289 17.0591 18.8457 16.5155 17.6203C16.2185 16.9508 15.5667 16.5356 14.8281 16.5356H9.17196C8.43331 16.5356 7.78158 16.9508 7.48456 17.6203C6.94089 18.8457 6.122 20.4289 5.05711 19.8925C3.40215 19.0588 1.87384 17.9157 2.00825 15.8092Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1156,
-                columnNumber: 5
+                lineNumber: 1155,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M5 4.5L6.96285 4M19 4.5L17 4",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1163,
-                columnNumber: 5
+                lineNumber: 1162,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9 13L7.5 11.5M7.5 11.5L6 10M7.5 11.5L6 13M7.5 11.5L9 10",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1170,
-                columnNumber: 5
+                lineNumber: 1169,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M15.9883 10H15.9973",
                 stroke: stroke,
-                "stroke-width": "2",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1176,
-                columnNumber: 5
+                lineNumber: 1175,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M17.9883 13H17.9973",
                 stroke: stroke,
-                "stroke-width": "2",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1183,
-                columnNumber: 5
+                lineNumber: 1182,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1147,
-        columnNumber: 3
+        lineNumber: 1146,
+        columnNumber: 109
     }, ("TURBOPACK compile-time value", void 0));
 const LaptopIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1779,30 +1794,30 @@ const LaptopIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M20.5 16.5V8.5C20.5 6.14298 20.5 4.96447 19.7677 4.23223C19.0355 3.5 17.857 3.5 15.5 3.5H8.5C6.14298 3.5 4.96446 3.5 4.23223 4.23223C3.5 4.96447 3.5 6.14298 3.5 8.5V16.5",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1204,
-                columnNumber: 5
+                lineNumber: 1202,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21.9842 20.5H2.01579C1.63285 20.5 1.38379 20.1088 1.55505 19.7764L3.5 16.5H20.5L22.4449 19.7764C22.6162 20.1088 22.3671 20.5 21.9842 20.5Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1211,
-                columnNumber: 5
+                lineNumber: 1209,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1195,
-        columnNumber: 3
+        lineNumber: 1193,
+        columnNumber: 111
     }, ("TURBOPACK compile-time value", void 0));
 const HeadphoneIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1816,41 +1831,41 @@ const HeadphoneIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props }
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M20.0849 17C20.5849 15.5 21 13.4368 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.4368 3.41512 15.5 3.91512 17",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1231,
-                columnNumber: 5
+                lineNumber: 1228,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8.97651 19.6043L7.23857 14.6127C7.05341 14.1466 6.4617 13.9131 5.97493 14.0297C4.46441 14.5333 3.6462 16.1718 4.14742 17.6895L4.58543 19.0158C5.08664 20.5334 6.71747 21.3555 8.22799 20.8519C8.68896 20.6556 9.10449 20.0897 8.97651 19.6043Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1238,
-                columnNumber: 5
+                lineNumber: 1235,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M15.0235 19.6043L16.7614 14.6127C16.9466 14.1466 17.5383 13.9131 18.0251 14.0297C19.5356 14.5333 20.3538 16.1718 19.8526 17.6895L19.4146 19.0158C18.9134 20.5334 17.2825 21.3555 15.772 20.8519C15.311 20.6556 14.8955 20.0897 15.0235 19.6043Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1245,
-                columnNumber: 5
+                lineNumber: 1242,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1222,
-        columnNumber: 3
+        lineNumber: 1219,
+        columnNumber: 114
     }, ("TURBOPACK compile-time value", void 0));
 const CameraIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1864,41 +1879,41 @@ const CameraIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12.6972 3.5H11.3028C10.5882 3.5 10.2309 3.5 9.91049 3.612C9.71481 3.68039 9.53095 3.77879 9.3655 3.90367C9.09456 4.10816 8.89637 4.40544 8.5 5C8.297 5.30452 7.99776 5.75337 7.87849 5.87871C7.58296 6.18927 7.19545 6.39666 6.77311 6.47029C6.60266 6.5 6.41967 6.5 6.05369 6.5C5.07361 6.5 4.58358 6.5 4.18289 6.61342C3.18056 6.89716 2.39716 7.68055 2.11342 8.68289C2 9.08357 2 9.57361 2 10.5537V14.5C2 17.3284 2 18.7426 2.87868 19.6213C3.75736 20.5 5.17158 20.5 8 20.5H16C18.8284 20.5 20.2426 20.5 21.1213 19.6213C22 18.7426 22 17.3284 22 14.5V10.5537C22 9.57361 22 9.08357 21.8866 8.68289C21.6028 7.68055 20.8194 6.89716 19.8171 6.61342C19.4164 6.5 18.9264 6.5 17.9463 6.5C17.5803 6.5 17.3973 6.5 17.2269 6.47029C16.8045 6.39666 16.417 6.18927 16.1215 5.87871C16.0022 5.75336 15.703 5.30451 15.5 5C15.1036 4.40544 14.9054 4.10816 14.6345 3.90367C14.469 3.77879 14.2852 3.68039 14.0895 3.612C13.7691 3.5 13.4118 3.5 12.6972 3.5Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1266,
-                columnNumber: 5
+                lineNumber: 1262,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1273,
-                columnNumber: 5
+                lineNumber: 1269,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M19 9.5V9.51",
                 stroke: stroke,
-                "stroke-width": "2",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1280,
-                columnNumber: 5
+                lineNumber: 1276,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1257,
-        columnNumber: 3
+        lineNumber: 1253,
+        columnNumber: 111
     }, ("TURBOPACK compile-time value", void 0));
 const TVIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1912,40 +1927,40 @@ const TVIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#_
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M14 3H10C6.22876 3 4.34315 3 3.17157 4.17157C2 5.34315 2 7.22876 2 11C2 14.7712 2 16.6569 3.17157 17.8284C4.34315 19 6.22876 19 10 19H14C17.7712 19 19.6569 19 20.8284 17.8284C22 16.6569 22 14.7712 22 11C22 7.22876 22 5.34315 20.8284 4.17157C19.6569 3 17.7712 3 14 3Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1301,
-                columnNumber: 5
+                lineNumber: 1296,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M18 19L19 21",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1307,
-                columnNumber: 5
+                lineNumber: 1302,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M6 19L5 21",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1314,
-                columnNumber: 5
+                lineNumber: 1309,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1292,
-        columnNumber: 3
+        lineNumber: 1287,
+        columnNumber: 107
     }, ("TURBOPACK compile-time value", void 0));
 const HairIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
@@ -1959,73 +1974,280 @@ const HairIcon = ({ stroke = "#4B5563", width = 24, height = 24, ...props })=>/*
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M8.69128 2.15168C5.80039 1.36313 3 3.74875 3 7C3 10.2513 5.80039 12.6369 8.69128 11.8483C10.9979 11.2192 14.2043 9.58049 16.6244 9.80217C17.5008 9.88246 18.126 10.6464 18.9467 10.8707C20.0559 11.1739 20.4902 9.50002 20.7285 8.75297C21.0905 7.61771 21.0905 6.38229 20.7285 5.24703C20.4902 4.49998 20.0559 2.82606 18.9467 3.12929C18.126 3.35364 17.5008 4.11755 16.6244 4.19783C14.2043 4.41951 10.9979 2.78085 8.69128 2.15168Z",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1334,
-                columnNumber: 5
+                lineNumber: 1328,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M5.5 11.5C6.87177 12.9095 6.77428 15.2676 6.8188 17.376C6.8373 18.2518 7.50261 19 8.34709 19H9.5674C10.2374 19 10.6397 17.4957 10.8465 17.0224C11.1215 16.3927 11.0041 15.6743 10.6757 15.0727C9.98228 13.8023 9.5 13 10 11.5",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1341,
-                columnNumber: 5
+                lineNumber: 1335,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M16.5 4.5L16.8789 6.01942C17.0404 6.66673 17.0404 7.33327 16.8789 7.98058L16.5 9.5",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1348,
-                columnNumber: 5
+                lineNumber: 1342,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M9 19C9 19.9319 9 20.3978 8.82601 20.7654C8.59402 21.2554 8.14906 21.6448 7.58899 21.8478C7.16894 22 6.06501 22 5 22",
                 stroke: stroke,
-                "stroke-width": "1.5",
-                "stroke-linecap": "round",
-                "stroke-linejoin": "round"
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
             }, void 0, false, {
                 fileName: "[project]/src/assets/svg/svg_icon.tsx",
-                lineNumber: 1355,
-                columnNumber: 5
+                lineNumber: 1349,
+                columnNumber: 3
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1325,
-        columnNumber: 3
+        lineNumber: 1319,
+        columnNumber: 109
     }, ("TURBOPACK compile-time value", void 0));
-const ArrowRight = ({ stroke = "#0C0F16", width = 8, height = 14 })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+const ArrowRight = ({ stroke = "#0C0F16", width = 8, height = 14, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
         width: width,
         height: height,
         viewBox: "0 0 8 14",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
+        ...props,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
             d: "M0.75005 0.750061C0.75005 0.750061 6.75 5.16896 6.75 6.75006C6.75 8.33126 0.75 12.7501 0.75 12.7501",
+            stroke: stroke,
+            strokeWidth: "1.5",
+            strokeLinecap: "round",
+            strokeLinejoin: "round"
+        }, void 0, false, {
+            fileName: "[project]/src/assets/svg/svg_icon.tsx",
+            lineNumber: 1367,
+            columnNumber: 3
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1359,
+        columnNumber: 110
+    }, ("TURBOPACK compile-time value", void 0));
+const WalletIcon = ({ stroke = "#0C0F16", width = 32, height = 32, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 32 32",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        ...props,
+        children: [
+            "    ",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M18.6667 4H6.66667C5.19391 4 4 5.19391 4 6.66667C4 8.13943 5.19391 9.33333 6.66667 9.33333H24C24 8.09337 24 7.47339 23.8637 6.96472C23.4939 5.58436 22.4156 4.50616 21.0353 4.13629C20.5267 4 19.9067 4 18.6667 4Z",
+                stroke: stroke,
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1384,
+                columnNumber: 6
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M4 6.66663V20C4 23.7712 4 25.6568 5.17157 26.8284C6.34315 28 8.22876 28 12 28H20C23.7712 28 25.6568 28 26.8284 26.8284C28 25.6568 28 23.7712 28 20V17.3333C28 13.5621 28 11.6764 26.8284 10.5049C25.6568 9.33329 23.7712 9.33329 20 9.33329H9.33333",
+                stroke: stroke,
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1391,
+                columnNumber: 3
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M28.0003 16H25.3337C24.7137 16 24.4037 16 24.1494 16.0681C23.4591 16.2531 22.9201 16.7921 22.7351 17.4824C22.667 17.7367 22.667 18.0467 22.667 18.6667C22.667 19.2867 22.667 19.5967 22.7351 19.8509C22.9201 20.5412 23.4591 21.0803 24.1494 21.2652C24.4037 21.3333 24.7137 21.3333 25.3337 21.3333H28.0003",
+                stroke: stroke,
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1398,
+                columnNumber: 3
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1377,
+        columnNumber: 111
+    }, ("TURBOPACK compile-time value", void 0));
+const OrderIcon = ({ stroke = "#0C0F16", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        ...props,
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M11 6H21",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1411,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M11 12H21",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1412,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M11 18H21",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1413,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M3 7.39286C3 7.39286 4 8.04466 4.5 9C4.5 9 6 5.25 8 4",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1414,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M3 18.3929C3 18.3929 4 19.0447 4.5 20C4.5 20 6 16.25 8 15",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1415,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1410,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const LogoutIcon = ({ stroke = "#0C0F16", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        ...props,
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M8.00002 8C8.00002 7.42459 8.00002 7.17765 8.04465 6.92457C8.21993 5.93047 8.89355 5.09255 9.83302 4.70001C10.0723 4.60003 10.3559 4.53526 10.9232 4.40573L13.6508 3.78286C17.0405 3.00882 18.7353 2.6218 19.8677 3.51317C21 4.40454 21 6.1257 21 9.56803V14.432C21 17.8743 21 19.5955 19.8676 20.4868C18.7353 21.3782 17.0405 20.9912 13.6508 20.2171L10.9232 19.5943C10.3559 19.4647 10.0723 19.4 9.833 19.3C8.89353 18.9074 8.21991 18.0695 8.04462 17.0754C8 16.8224 8 16.5754 8 16",
+                stroke: stroke,
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1421,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M13 9C13 9 16 11.2095 16 12C16 12.7906 13 15 13 15M15.5 12H3",
+                stroke: stroke,
+                strokeWidth: "1.5",
+                strokeLinecap: "round",
+                strokeLinejoin: "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1422,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1420,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const SettingsIcon = ({ stroke = "#0C0F16", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        ...props,
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M21.3175 7.14139L20.8239 6.28479C20.4506 5.63696 20.264 5.31305 19.9464 5.18388C19.6288 5.05472 19.2696 5.15664 18.5513 5.36048L17.3311 5.70418C16.8725 5.80994 16.3913 5.74994 15.9726 5.53479L15.6357 5.34042C15.2766 5.11043 15.0004 4.77133 14.8475 4.37274L14.5136 3.37536C14.294 2.71534 14.1842 2.38533 13.9228 2.19657C13.6615 2.00781 13.3143 2.00781 12.6199 2.00781H11.5051C10.8108 2.00781 10.4636 2.00781 10.2022 2.19657C9.94085 2.38533 9.83106 2.71534 9.61149 3.37536L9.27753 4.37274C9.12465 4.77133 8.84845 5.11043 8.48937 5.34042L8.15249 5.53479C7.73374 5.74994 7.25259 5.80994 6.79398 5.70418L5.57375 5.36048C4.85541 5.15664 4.49625 5.05472 4.17867 5.18388C3.86109 5.31305 3.67445 5.63696 3.30115 6.28479L2.80757 7.14139C2.45766 7.74864 2.2827 8.05227 2.31666 8.37549C2.35061 8.69871 2.58483 8.95918 3.05326 9.48012L4.0843 10.6328C4.3363 10.9518 4.51521 11.5078 4.51521 12.0077C4.51521 12.5078 4.33636 13.0636 4.08433 13.3827L3.05326 14.5354C2.58483 15.0564 2.35062 15.3168 2.31666 15.6401C2.2827 15.9633 2.45766 16.2669 2.80757 16.8741L3.30114 17.7307C3.67443 18.3785 3.86109 18.7025 4.17867 18.8316C4.49625 18.9608 4.85542 18.8589 5.57377 18.655L6.79394 18.3113C7.25263 18.2055 7.73387 18.2656 8.15267 18.4808L8.4895 18.6752C8.84851 18.9052 9.12464 19.2442 9.2775 19.6428L9.61149 20.6403C9.83106 21.3003 9.94085 21.6303 10.2022 21.8191C10.4636 22.0078 10.8108 22.0078 11.5051 22.0078H12.6199C13.3143 22.0078 13.6615 22.0078 13.9228 21.8191C14.1842 21.6303 14.294 21.3003 14.5136 20.6403L14.8476 19.6428C15.0004 19.2442 15.2765 18.9052 15.6356 18.6752L15.9724 18.4808C16.3912 18.2656 16.8724 18.2055 17.3311 18.3113L18.5513 18.655C19.2696 18.8589 19.6288 18.9608 19.9464 18.8316C20.264 18.7025 20.4506 18.3785 20.8239 17.7307L21.3175 16.8741C21.6674 16.2669 21.8423 15.9633 21.8084 15.6401C21.7744 15.3168 21.5402 15.0564 21.0718 14.5354L20.0407 13.3827C19.7887 13.0636 19.6098 12.5078 19.6098 12.0077C19.6098 11.5078 19.7888 10.9518 20.0407 10.6328L21.0718 9.48012C21.5402 8.95918 21.7744 8.69871 21.8084 8.37549C21.8423 8.05227 21.6674 7.74864 21.3175 7.14139Z",
+                stroke: stroke,
+                "stroke-width": "1.5",
+                "stroke-linecap": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1428,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M15.5195 12C15.5195 13.933 13.9525 15.5 12.0195 15.5C10.0865 15.5 8.51953 13.933 8.51953 12C8.51953 10.067 10.0865 8.5 12.0195 8.5C13.9525 8.5 15.5195 10.067 15.5195 12Z",
+                stroke: stroke,
+                "stroke-width": "1.5"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1429,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1427,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
+const Love = ({ stroke = "#0C0F16", width = 24, height = 24, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 24 24",
+        fill: "none",
+        ...props,
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+            d: "M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z",
             stroke: stroke,
             "stroke-width": "1.5",
             "stroke-linecap": "round",
             "stroke-linejoin": "round"
         }, void 0, false, {
             fileName: "[project]/src/assets/svg/svg_icon.tsx",
-            lineNumber: 1373,
+            lineNumber: 1435,
             columnNumber: 5
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/assets/svg/svg_icon.tsx",
-        lineNumber: 1366,
+        lineNumber: 1434,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 }),

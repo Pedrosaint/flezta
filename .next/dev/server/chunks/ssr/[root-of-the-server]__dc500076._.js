@@ -108,8 +108,6 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s([
-    "analytics",
-    ()=>analytics,
     "auth",
     ()=>auth,
     "db",
@@ -127,13 +125,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/firestore/dist/index.node.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$storage$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/firebase/storage/dist/index.mjs [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$storage$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/storage/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$analytics$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/firebase/analytics/dist/index.mjs [app-ssr] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/analytics/dist/esm/index.esm.js [app-ssr] (ecmascript)");
 ;
 ;
 ;
 ;
-;
+// import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
     apiKey: ("TURBOPACK compile-time value", "AIzaSyBIgPWLHGfbN4Vz_G4nOewUbNpdH2pYkTM"),
     authDomain: ("TURBOPACK compile-time value", "flezta.firebaseapp.com"),
@@ -148,15 +144,38 @@ const app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f4
 const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAuth"])(app);
 const db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$node$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFirestore"])(app);
 const storage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$storage$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getStorage"])(app);
-const analytics = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAnalytics"])(app);
 const __TURBOPACK__default__export__ = app;
+ // import { initializeApp, getApps, getApp } from "firebase/app";
+ // import { getAuth } from "firebase/auth";
+ // import { getFirestore } from "firebase/firestore";
+ // import { getStorage } from "firebase/storage";
+ // const firebaseConfig = {
+ //   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+ //   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+ //   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+ //   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+ //   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+ //   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
+ //   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID!,
+ // };
+ // // Prevent re-initialization during HMR / SSR
+ // const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+ // // Core services (SSR-safe)
+ // export const auth = getAuth(app);
+ // export const db = getFirestore(app);
+ // export const storage = getStorage(app);
+ // // DO NOT initialize analytics here
+ // export default app;
 }),
 "[project]/src/shared/utils/firebase_errors.util.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// ================= Firebase errors =================
 __turbopack_context__.s([
-    "default",
-    ()=>__TURBOPACK__default__export__
+    "getBackendError",
+    ()=>getBackendError,
+    "getFirebaseErrorMessage",
+    ()=>getFirebaseErrorMessage
 ]);
 const firebaseErrorMessages = {
     "auth/email-already-in-use": "Email already in use",
@@ -164,67 +183,94 @@ const firebaseErrorMessages = {
     "auth/weak-password": "Password should be at least 6 characters",
     "auth/user-not-found": "User not found",
     "auth/wrong-password": "Incorrect password",
-    "auth/popup-closed-by-user": "Popup closed before completing sign-in"
+    "auth/popup-closed-by-user": "Popup closed before completing sign-in",
+    "auth/invalid-credential": "Invalid login credentials"
 };
-/**
- * Get a friendly error message from a Firebase error code
- */ const getFirebaseErrorMessage = (errorCode)=>{
+// ================= Backend errors =================
+const backendErrorMessages = {
+    "User already exists": {
+        message: "Account already exists. Logging you in...",
+        type: "info"
+    },
+    "Unauthorized": {
+        message: "You are not authorized to perform this action",
+        type: "error"
+    }
+};
+// ================= Firebase =================
+const getFirebaseErrorMessage = (errorCode)=>{
     return firebaseErrorMessages[errorCode] || "Something went wrong";
 };
-const __TURBOPACK__default__export__ = getFirebaseErrorMessage;
+// ================= Backend =================
+const getBackendError = (errorMessage)=>{
+    return backendErrorMessages[errorMessage] || {
+        message: errorMessage || "Something went wrong",
+        type: "error"
+    };
+};
+;
 }),
 "[project]/src/modules/auth/hooks/forgotPassword.hook.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// import { useRouter } from "next/navigation";
+// /* eslint-disable @typescript-eslint/no-explicit-any */
 // import { useState } from "react";
-// import { useForgotPasswordMutation } from "../apis/auth.api";
+// import { useRouter } from "next/navigation";
+// import { sendPasswordResetEmail } from "firebase/auth";
+// import { auth } from "@/lib/firebase";
+// import { toast } from "sonner";
 // import secureLocalStorage from "react-secure-storage";
 // import { verifyOtpRoute } from "../../../core/routes/routeNames";
-// import handleErrors from "../../../shared/utils/handle_errors.util";
-// import { toast } from "sonner";
+// import getFirebaseErrorMessage from "@/shared/utils/firebase_errors.util";
 // const useForgotPasswordHook = () => {
 //   const router = useRouter();
-//   //==== State variables here ====//
+//   // ===== State =====
 //   const [email, setEmail] = useState("");
-//   //==== Call you APIs here ====//
-//   const [forgotPassword, { isLoading }] = useForgotPasswordMutation();
+//   const [errors, setErrors] = useState<{ email?: string }>({});
+//   const [isLoading, setIsLoading] = useState(false);
 //   const scrollToTopSmooth = () => {
 //     if (typeof window !== "undefined") {
 //       window.scrollTo({ top: 0, behavior: "smooth" });
 //     }
 //   };
-//   // Handle submit login form
+//   // ===== Submit handler =====
 //   const handleSubmitForgotPasswordForm = async () => {
-//     //==== Construct request body here ====//
-//     const requestBody = {
-//       email: email,
-//     };
+//     setIsLoading(true);
+//     setErrors({});
 //     try {
-//       //==== Call the APIs here ====//
-//       const forgotPasswordResponse = await forgotPassword(
-//         requestBody
-//       ).unwrap();
-//       const message = forgotPasswordResponse.message;
-//       console.log("FORGOT PASSWORD RESPONSE::: ", forgotPasswordResponse);
-//       if (message) {
-//         //==== Save the email in local storage ====//
-//         secureLocalStorage.setItem("email", email);
-//         toast.success("Password reset link sent to your email");
-//         scrollToTopSmooth();
-//         router.push(verifyOtpRoute);
-//       } else {
-//         toast.error(forgotPasswordResponse.message);
+//       if (!email) {
+//         setErrors({ email: "Email is required" });
+//         return;
 //       }
-//     } catch (error) {
-//       handleErrors(error);
+//       // ===== Firebase password reset =====
+//       await sendPasswordResetEmail(auth, email);
+//       // Save email locally for possible OTP flow
+//       secureLocalStorage.setItem("email", email);
+//       toast.success("Password reset link sent to your email!");
+//       scrollToTopSmooth();
+//       router.push(verifyOtpRoute);
+//     } catch (error: any) {
+//       console.error(error);
+//   if (error.code) {
+//      const friendlyMessage = getFirebaseErrorMessage(error.code);
+//     if (error.code === "auth/user-not-found" || error.code === "auth/invalid-email") {
+//       setErrors({ email: friendlyMessage });
+//     } else {
+//       toast.error(friendlyMessage);
 //     }
+//   } else {
+//     toast.error("Something went wrong, please try again");
+//   }
+// } finally {
+//   setIsLoading(false);
+// }
 //   };
 //   return {
 //     email,
 //     setEmail,
-//     handleSubmitForgotPasswordForm,
+//     errors,
 //     isLoading,
+//     handleSubmitForgotPasswordForm,
 //   };
 // };
 // export default useForgotPasswordHook;
@@ -238,10 +284,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$firebase$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@firebase/auth/dist/node-esm/index.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/firebase.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/sonner/dist/index.mjs [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-secure-storage/dist/index.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/core/routes/routeNames.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$utils$2f$firebase_errors$2e$util$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/shared/utils/firebase_errors.util.ts [app-ssr] (ecmascript)");
-;
 ;
 ;
 ;
@@ -271,16 +315,15 @@ const useForgotPasswordHook = ()=>{
                 return;
             }
             // ===== Firebase password reset =====
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sendPasswordResetEmail"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], email);
-            // Save email locally for possible OTP flow
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$secure$2d$storage$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].setItem("email", email);
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success("Password reset link sent to your email!");
+            const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sendPasswordResetEmail"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$firebase$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["auth"], email, {
+                url: `${window.location.origin}${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["loginRoute"]}`
+            });
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success("Password reset link has been sent to your email.");
             scrollToTopSmooth();
-            router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["verifyOtpRoute"]);
         } catch (error) {
-            console.error(error);
+            console.error("Forgot password error:", error);
             if (error.code) {
-                const friendlyMessage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$utils$2f$firebase_errors$2e$util$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(error.code);
+                const friendlyMessage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$utils$2f$firebase_errors$2e$util$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getFirebaseErrorMessage"])(error.code);
                 if (error.code === "auth/user-not-found" || error.code === "auth/invalid-email") {
                     setErrors({
                         email: friendlyMessage
@@ -458,7 +501,7 @@ const ForgotPasswordComp = ()=>{
                                     className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold",
-                                        children: isLoading ? "Please wait..." : "Proceed To Get Code"
+                                        children: isLoading ? "Please wait..." : "Proceed"
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/auth/components/forgot_password.comp.tsx",
                                         lineNumber: 83,

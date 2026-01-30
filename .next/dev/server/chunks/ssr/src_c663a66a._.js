@@ -752,56 +752,56 @@ const newProducts = [
     {
         id: 11,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 12,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 13,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 14,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 15,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 16,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 17,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 18,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
@@ -810,28 +810,28 @@ const products2 = [
     {
         id: 1,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 2,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 3,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
         id: 4,
         name: "Elegant yellow leather modern design armchair",
-        vendor: "Name of the Vendor",
+        vendor: "",
         price: 102.0,
         image: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$seat$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }

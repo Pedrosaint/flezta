@@ -15,7 +15,7 @@ const ResetPasswordModal = () => {
   };
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-md bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className=" p-2 border backdrop-blur-[10px] border-[#003625] rounded-3xl bg-transparent">
+      <div className=" p-2 border border-[#003625] rounded-3xl bg-transparent">
         <div className="bg-[#DDFFF4] rounded-2xl p-8 max-w-sm w-full text-center">
           <div className="flex justify-center mb-6">
             <GoodIcon width={50} height={50} />

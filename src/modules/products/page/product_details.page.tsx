@@ -4,17 +4,16 @@ import ProductDetailsComp from "../components/product_details.comp";
 import ProductOverviewComp from "../components/product_overview.comp";
 
 const ProductDetailsPage = () => {
-
-    const productData = {
-      id: 1,
-      name: "Ergonomic Office Chair",
-      category: {
-        main: "Home & Office",
-        sub: "Ergonomic Office Chair",
-      },
-      price: 350.0,
-      // ... other product data
-    };
+  const productData = {
+    id: 1,
+    name: "Ergonomic Office Chair",
+    category: {
+      main: "Home & Office",
+      sub: "Ergonomic Office Chair",
+    },
+    price: 350.0,
+    // ... other product data
+  };
 
   return (
     <section>

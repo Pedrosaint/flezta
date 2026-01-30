@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../src/app/%28website%29/payment/page.tsx"],"sourcesContent":["\r\nconst Page = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Page\r\n"],"names":[],"mappings":"0OACa,IAET,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,CAAA"}

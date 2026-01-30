@@ -3,7 +3,7 @@
 
 type AppRoutes = "/" | "/auths/create_account" | "/auths/forgot_password" | "/auths/login" | "/auths/reset_password" | "/auths/verify_otp" | "/buyer_portal/dashboard" | "/cart" | "/checkout" | "/home" | "/payment" | "/products" | "/products/details/[id]"
 type PageRoutes = never
-type LayoutRoutes = "/" | "/auths"
+type LayoutRoutes = "/" | "/auths" | "/buyer_portal"
 type RedirectRoutes = never
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
@@ -17,6 +17,7 @@ interface ParamMap {
   "/auths/login": {}
   "/auths/reset_password": {}
   "/auths/verify_otp": {}
+  "/buyer_portal": {}
   "/buyer_portal/dashboard": {}
   "/cart": {}
   "/checkout": {}
@@ -32,6 +33,7 @@ export type ParamsOf<Route extends Routes> = ParamMap[Route]
 interface LayoutSlotMap {
   "/": never
   "/auths": never
+  "/buyer_portal": never
 }
 
 

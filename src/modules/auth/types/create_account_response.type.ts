@@ -1,16 +1,22 @@
 
 interface ICreateAccountResponse {
-  user?: IUser;
-  accessToken?: string;
+  message: string;
+  data: IUser;
 }
 
-interface IUser {
+ interface IUser {
   uid: string;
-  email: string | null;
-  emailVerified: boolean;
-  displayName: string | null;
-  photoURL: string | null;
-  providerId: string;
+  userName: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  isAdmin: boolean;
+  isSuperAdmin: boolean;
+  disabled: boolean;
+  createdAt: string;
+  updatedAt: string;
+  points: number;
 }
 
-export type { ICreateAccountResponse, IUser };
+export type { ICreateAccountResponse , IUser };

@@ -1,143 +1,21 @@
-// /* eslint-disable @typescript-eslint/no-explicit-any */
-// import { useRouter } from "next/navigation";
-// import loginValidationSchema from "../../../shared/utils/validations/auth.validation";
-// import handleErrors from "../../../shared/utils/handle_errors.util";
-// import { dashboardRoute } from "../../../core/routes/routeNames";
-// import { useLoginMutation } from "../apis/auth.api";
-// import { useState } from "react";
-// import secureLocalStorage from "react-secure-storage";
-// import { useDispatch } from "react-redux";
-// import { setIsAuthenticated } from "../slices/auth.slice";
-// import { toast } from "sonner";
-
-// const useLoginHook = () => {
-//   const router = useRouter();
-//   const dispatch = useDispatch();
-
-//   // State variables
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-//   const [showPassword, setShowPassword] = useState(false);
-//   const [errors, setErrors] = useState<{ email?: string; password?: string }>(
-//     {}
-//   );
-
-//   // Call you APIs
-//   const [login, { isLoading }] = useLoginMutation();
-
-//   const scrollToTopSmooth = () => {
-//     if (typeof window !== "undefined") {
-//       window.scrollTo({ top: 0, behavior: "smooth" });
-//     }
-//   };
-
-//   // Handle submit login form
-//   const handleSubmitLoginForm = async () => {
-//     // Construct request body
-//     const requestBody = {
-//       email: email,
-//       password: password,
-//     };
-
-//     try {
-//       // Validation request body
-//       const validLoginData = await loginValidationSchema.validate(requestBody, {
-//         abortEarly: false,
-//         strict: true,
-//       });
-
-//       // Call the APIs here
-//       const loginResponse = await login(validLoginData).unwrap();
-//       const userData = loginResponse;
-//       // const token = loginResponse.token;
-
-//       console.log("LOGIN RESPONSE::: ", loginResponse);
-
-//       if (userData) {
-//         // Save the token in secure storage
-//         // secureLocalStorage.setItem("access_token", token);
-//         secureLocalStorage.setItem("user_data", userData!);
-//         dispatch(setIsAuthenticated(true));
-
-//         toast.success("Login successful");
-//         console.log("Button clicked");
-//         scrollToTopSmooth();
-//         router.push(dashboardRoute);
-//       } else {
-//         // toast.error(loginResponse?.message);
-//         toast.error("Login failed");
-//       }
-//     } catch (error: any) {
-//       //==== Handle validation errors here ====//
-//       if (error.inner) {
-//         const formattedErrors: any = {};
-//         error.inner.forEach((err: any) => {
-//           formattedErrors[err.path] = err.message;
-//         });
-
-//         setErrors(formattedErrors);
-//         return;
-//       }
-
-//       // Otherwise it's an API or network error → send to toast
-//       handleErrors(error);
-//     }
-//   };
-
-//   // Handle Firebase Google login
-//   const handleGoogleLogin = () => {
-//     // Implement Google login logic here
-//     console.log("Google login clicked");
-//   };
-
-//   return {
-//     email,
-//     setEmail,
-//     password,
-//     setPassword,
-//     showPassword,
-//     setShowPassword,
-//     handleSubmitLoginForm,
-//     isLoading,
-//     handleGoogleLogin,
-//     errors,
-//   };
-// };
-
-// export default useLoginHook;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import loginValidationSchema from "../../../shared/utils/validations/auth.validation";
-import getFirebaseErrorMessage from "@/shared/utils/firebase_errors.util";
-import { appRoute, dashboardRoute } from "../../../core/routes/routeNames";
+import { getFirebaseErrorMessage } from "@/shared/utils/firebase_errors.util";
+import { dashboardRoute, createAccountRoute } from "../../../core/routes/routeNames";
 import secureLocalStorage from "react-secure-storage";
 import { useDispatch } from "react-redux";
 import { setIsAuthenticated } from "../slices/auth.slice";
 import { toast } from "sonner";
+import { useLazyGetUserQuery } from "../apis/auth.api";
 
 const useLoginHook = () => {
   const router = useRouter();
   const dispatch = useDispatch();
+  const [getUser] = useLazyGetUserQuery();
 
   // State
   const [email, setEmail] = useState("");
@@ -145,7 +23,7 @@ const useLoginHook = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
   const [isLoading, setIsLoading] = useState(false);
-
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const scrollToTopSmooth = () => {
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -178,15 +56,59 @@ const useLoginHook = () => {
 
       if (token) {
         // ===== Save auth data =====
+        // ===== Save auth data temporarily =====
         secureLocalStorage.setItem("access_token", token);
         secureLocalStorage.setItem("user_data", JSON.stringify(user));
 
-        dispatch(setIsAuthenticated(true));
+        // ===== Call /users/me API after login =====
+        try {
+          const userResponse = await getUser().unwrap();
+          console.log("User data from /users/me:", userResponse);
 
-        toast.success("Login successful");
-        scrollToTopSmooth();
-        // router.push(dashboardRoute);
-          router.push(appRoute);
+          // Update user_data with backend response
+          // Based on transformResponse, userResponse is the data object which has message and data (IUser)
+          if (userResponse) {
+            dispatch(setIsAuthenticated(true));
+            secureLocalStorage.setItem(
+              "user_data",
+              JSON.stringify({
+                firebaseUser: user,
+                backendUser: userResponse.data,
+              })
+            );
+
+            toast.success("Login successful");
+            scrollToTopSmooth();
+
+            // ===== Check for return URL =====
+            const returnUrl = secureLocalStorage.getItem("return_url") as string | null;
+
+            if (returnUrl) {
+              secureLocalStorage.removeItem("return_url");
+              router.push(returnUrl);
+            } else {
+              router.push(dashboardRoute);
+            }
+          }
+        } catch (getUserError: any) {
+          console.error("Error fetching user data:", getUserError);
+
+          if (getUserError?.status === 404) {
+            const errorMessage = getUserError?.data?.message || "Account not found. Please register first.";
+            toast.error(errorMessage);
+
+            // Redirect to create account page
+            router.push(createAccountRoute);
+          } else {
+            toast.error("Failed to verify user account. Please try again.");
+          }
+
+          // Clear everything on error
+          await auth.signOut();
+          secureLocalStorage.clear();
+          dispatch(setIsAuthenticated(false));
+          return;
+        }
       } else {
         toast.error("Failed to retrieve access token");
       }
@@ -203,13 +125,20 @@ const useLoginHook = () => {
         return;
       }
 
+      // ===== API / Backend Errors (Nested structure) =====
+      if (error?.data?.error?.message) {
+        toast.error(error.data.error.message.replace(/_/g, " "));
+        return;
+      }
+
       // ===== Firebase errors =====
       if (error.code) {
         const friendlyMessage = getFirebaseErrorMessage(error.code);
 
         if (
           error.code === "auth/user-not-found" ||
-          error.code === "auth/invalid-email"
+          error.code === "auth/invalid-email" ||
+          error.code === "auth/invalid-credential"
         ) {
           setErrors({ email: friendlyMessage });
         } else if (error.code === "auth/wrong-password") {
@@ -217,14 +146,26 @@ const useLoginHook = () => {
         } else {
           toast.error(friendlyMessage);
         }
+      } else {
+        // Fallback for any other error
+        const genericMessage = error?.message || "Login failed. Please try again.";
+        toast.error(genericMessage);
       }
     } finally {
       setIsLoading(false);
     }
   };
 
-  // ===== Google Login =====
+
+
+
+
+  // ======== Google Login ========
   const handleGoogleLogin = async () => {
+    if (isGoogleLoading) return;
+
+    setIsGoogleLoading(true);
+
     try {
       const provider = new GoogleAuthProvider();
       const result = await signInWithPopup(auth, provider);
@@ -234,13 +175,80 @@ const useLoginHook = () => {
       secureLocalStorage.setItem("access_token", token);
       secureLocalStorage.setItem("user_data", JSON.stringify(user));
 
-      dispatch(setIsAuthenticated(true));
+      // ===== Call /users/me API after Google login =====
+      try {
+        const userResponse = await getUser().unwrap();
+        console.log("User data from /users/me:", userResponse);
 
-      toast.success("Logged in with Google!");
-      router.push(dashboardRoute);
+        // Update user_data with backend response
+        if (userResponse) {
+          dispatch(setIsAuthenticated(true));
+          secureLocalStorage.setItem(
+            "user_data",
+            JSON.stringify({
+              firebaseUser: user,
+              backendUser: userResponse.data,
+            })
+          );
+
+          toast.success("Logged in with Google!");
+
+          // ===== Check for return URL =====
+          const returnUrl = secureLocalStorage.getItem("return_url") as string | null;
+
+          if (returnUrl) {
+            secureLocalStorage.removeItem("return_url");
+            router.push(returnUrl);
+          } else {
+            router.push(dashboardRoute);
+          }
+        }
+      } catch (getUserError: any) {
+        console.error("Error fetching user data:", getUserError);
+
+        if (getUserError?.status === 404) {
+          const errorMessage = getUserError?.data?.message || "Account not found. Please sign up with this Google account first.";
+          toast.error(errorMessage);
+
+          // Redirect to create account page
+          router.push(createAccountRoute);
+        } else {
+          toast.error("Failed to verify user account. Please try again.");
+        }
+
+        // Clear and sign out
+        await auth.signOut();
+        secureLocalStorage.clear();
+        dispatch(setIsAuthenticated(false));
+        return;
+      }
     } catch (error: any) {
-      console.error(error);
-      toast.error(error.message || "Google login failed");
+      console.error("Google login error:", error);
+
+      // Cleanup on error
+      await auth.signOut();
+      secureLocalStorage.clear();
+      dispatch(setIsAuthenticated(false));
+
+      // 1. Check for nested backend/API error
+      if (error?.data?.error?.message) {
+        toast.error(error.data.error.message.replace(/_/g, " "));
+      }
+      // 2. Check for general backend message
+      else if (error?.data?.message) {
+        toast.error(error.data.message);
+      }
+      // 3. Check for Firebase error code
+      else if (error.code) {
+        const friendlyMessage = getFirebaseErrorMessage(error.code);
+        toast.error(friendlyMessage);
+      }
+      // 4. Final fallback
+      else {
+        toast.error(error.message || "Google login failed");
+      }
+    } finally {
+      setIsGoogleLoading(false);
     }
   };
 
@@ -255,6 +263,7 @@ const useLoginHook = () => {
     handleGoogleLogin,
     isLoading,
     errors,
+    isGoogleLoading,
   };
 };
 

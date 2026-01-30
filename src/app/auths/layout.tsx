@@ -19,7 +19,7 @@ export default function AuthLayout({
     const avatarToShow = isLoginPage ? LoginAvatar : Avatar;
 
     return (
-        <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+        <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2 bg-[#FFFFFF]">
             {/*=== LEFT SIDE ===*/}
             <div className="bg-[#04241A] p-12 text-white relative overflow-hidden rounded-[70px] m-5 xl:m-10 hidden lg:block">
                 {/* === TOP-RIGHT DECORATION === */}

@@ -81,7 +81,7 @@ const ForgotPasswordComp = () => {
               className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <div className="w-full bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-                {isLoading ? "Please wait..." : "Proceed To Get Code"}
+                {isLoading ? "Please wait..." : "Proceed"}
               </div>
             </button>
           </div>

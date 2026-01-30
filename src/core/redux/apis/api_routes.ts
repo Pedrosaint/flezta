@@ -1,16 +1,14 @@
 // Base URL
-const baseURL = "https://api.example.com";
+const baseURL = "https://flezta-api-dev.onrender.com";
 
 // Auths
 const loginAPIRoute = "/auth/login";
-const registerAPIRoute = `/auth/register`;
+const registerAPIRoute = `/users`;
 const googleLoginAPIRoute = `/auth/google_login`;
-const forgotPasswordAPIRoute = `/auth/forgot_password`;
-const resetPasswordAPIRoute = `/auth/reset_password`;
-const verifyOtpAPIRoute = `/auth/verify_otp`;
+
 
 // Users
-const getUserProfileAPIRoute = `/users/profile`;
+const getUserApi = '/users/me';
 const updateUserProfileAPIRoute = `/users/update_profile`;
 
 // Carts
@@ -35,12 +33,9 @@ export {
     loginAPIRoute,
     googleLoginAPIRoute,
     registerAPIRoute,
-    forgotPasswordAPIRoute,
-    resetPasswordAPIRoute,
-    verifyOtpAPIRoute,
 
     // Users
-    getUserProfileAPIRoute,
+    getUserApi,
     updateUserProfileAPIRoute,
 
     // Carts

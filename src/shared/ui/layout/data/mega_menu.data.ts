@@ -1,73 +1,86 @@
-import { CameraIcon, GameIcon, HairIcon, HeadphoneIcon, LaptopIcon, TVIcon } from "@/assets/svg/svg_icon";
+import {
+  CustomSVGIconProps,
+  CameraIcon,
+  GameIcon,
+  HairIcon,
+  HeadphoneIcon,
+  LaptopIcon,
+  TVIcon,
+} from "@/assets/svg/svg_icon";
 
+// Define types for better type safety
+export interface ISubCategory {
+  id: string;
+  name: string;
+  path: string;
+}
 
-// Mapping of mega menu categories to their respective icons
-export const megaMenuIcons: Record<string, React.ElementType> = {
-  "Cell phones & Communication": GameIcon,
-  "Computers & Accessories": LaptopIcon,
-  "Video games & consoles": GameIcon,
-  "Audio and headphones": HeadphoneIcon,
-  "Cameras & Accessories": CameraIcon,
-  "Tablets & e-readers": GameIcon,
-  "TV & home theatre": TVIcon,
-  "Beauty & personal care": HairIcon,
-};
+export interface IMegaMenuCategory {
+  id: string;
+  name: string;
+  path: string;
+  icon?: React.ComponentType<CustomSVGIconProps>; // Icon is now optional and can be a string or component
+  subCategories?: ISubCategory[];
+}
 
+export interface IMegaMenuItem {
+  id: string;
+  name: string;
+  path: string;
+  icon?: React.ComponentType<CustomSVGIconProps>;
+  categories?: IMegaMenuCategory[];
+}
 
-// Mega menu content data structure
-const megaMenuContent: Record<string, { col1: string[]; col2: string[] }> = {
-  "Cell phones & Communication": {
-    col1: ["All", "Smartphones", "Feature phones", "Accessories"],
-    col2: ["Chargers", "Screen protectors", "Phone cases"],
-  },
-
-  "Computers & Accessories": {
-    col1: [
-      "All",
-      "Desktop",
-      "Laptop & accessories",
-      "Keyboard accessories",
-      "Computer speakers",
-      "Webcams",
-      "Printers & accessories",
+export const navItems: IMegaMenuItem[] = [
+  {
+    id: "001",
+    name: 'Electronics',
+    path: '/electronics',
+    icon: TVIcon,
+    categories: [
+      {
+        id: "001-1",
+        name: 'TVs & Audio',
+        path: '/electronics/tvs-audio',
+        icon: TVIcon,
+        subCategories: [
+          { id: "001-1-1", name: 'Televisions', path: '/electronics/tvs-audio/televisions' },
+          { id: "001-1-2", name: 'Soundbars', path: '/electronics/tvs-audio/soundbars' },
+          { id: "001-1-3", name: 'Home Theater Systems', path: '/electronics/tvs-audio/home-theater-systems' },
+        ],
+      },
+      { id: "001-2", name: 'Cameras', path: '/electronics/cameras', icon: CameraIcon },
+      { id: "001-3", name: 'Headphones', path: '/electronics/headphones', icon: HeadphoneIcon },
+      { id: "001-4", name: 'Wearables', path: '/electronics/wearables', icon: LaptopIcon },
     ],
-    col2: [
-      "Mouse pads",
-      "Computer accessories",
-      "Scanners",
-      "Networking devices",
+  },
+
+  {
+    id: "002",
+    name: 'Fashion',
+    path: '/fashion',
+    icon: HairIcon,
+    categories: [
+      {
+        id: "002-1",
+        name: "Men's Clothing",
+        path: '/fashion/mens-clothing',
+        icon: HairIcon,
+        subCategories: [
+          { id: "002-1-1", name: 'Shirts', path: '/fashion/mens-clothing/shirts' },
+          { id: "002-1-2", name: 'Pants', path: '/fashion/mens-clothing/pants' },
+          { id: "002-1-3", name: 'Jackets', path: '/fashion/mens-clothing/jackets' },
+        ],
+      },
+      { id: "002-2", name: "Women's Clothing", path: '/fashion/womens-clothing', icon: HairIcon },
+      { id: "002-3", name: "Accessories", path: '/fashion/accessories', icon: LaptopIcon },
     ],
   },
 
-  "Video games & consoles": {
-    col1: ["PlayStation", "Xbox", "Nintendo"],
-    col2: ["Controllers", "Game discs", "VR accessories"],
-  },
 
-  "Audio and headphones": {
-    col1: ["Headphones", "Earbuds", "Speakers"],
-    col2: ["Bluetooth audio", "Studio audio"],
-  },
+  { id: "003", name: 'Phones & Tablets', path: '/phones-tablets', icon: HeadphoneIcon },
+  { id: "004", name: 'Laptops', path: '/laptops', icon: LaptopIcon },
+  { id: "005", name: 'Appliances', path: '/appliances', icon: GameIcon },
+];
 
-  "Cameras & Accessories": {
-    col1: ["Cameras", "Lenses", "Tripods"],
-    col2: ["Memory cards", "Camera bags"],
-  },
-
-  "Tablets & e-readers": {
-    col1: ["Tablets", "E-readers"],
-    col2: ["Covers", "Stylus pens"],
-  },
-
-  "TV & home theatre": {
-    col1: ["Smart TVs", "LED TVs"],
-    col2: ["Home theatre systems", "Wall mounts"],
-  },
-
-  "Beauty & personal care": {
-    col1: ["Makeup", "Skincare"],
-    col2: ["Hair care", "Fragrances"],
-  },
-};
-
-export default megaMenuContent;
+export default navItems;

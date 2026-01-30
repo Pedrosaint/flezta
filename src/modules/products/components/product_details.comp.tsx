@@ -292,7 +292,7 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
 
           {/*==== Right Column - Seller Info ====*/}
           <div className="w-full max-w-md">
-            <div className="rounded-3xl border-2 border-dashed border-gray-300 p-6 h-130">
+            <div className="rounded-3xl border-2 border-dashed bg-white border-gray-300 p-6 h-130">
               <h2 className="text-xl font-bold text-gray-900 mb-6">Sold by</h2>
 
               {/* Seller Profile */}
