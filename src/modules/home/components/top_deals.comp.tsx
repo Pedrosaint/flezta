@@ -17,7 +17,6 @@
 // import Image from "next/image";
 // import useTopDealsHook from "../hooks/useTopDeals.hook";
 
-
 //   const products = [
 //     {
 //       id: 1,
@@ -92,7 +91,6 @@
 //   canGoNext,
 //   canGoPrev,
 // } = useTopDealsHook(products.length);
-
 
 //   const FloatingHeart = ({ id }: { id: string }) => (
 //     <motion.div
@@ -338,39 +336,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 
 import {
@@ -389,16 +354,67 @@ import { motion, AnimatePresence } from "framer-motion";
 import { productDetailsRoute } from "@/core/routes/routeNames";
 import Image from "next/image";
 import useTopDealsHook from "../hooks/useTopDeals.hook";
+import { useState } from "react";
+import NegotiatePriceModal from "@/modules/products/modal/negotiate_price.modal";
+import useCart from "@/shared/ui/hooks/use_cart.hook";
 
 const products = [
-  { id: 1, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 102, image: SeatImage },
-  { id: 2, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 102, image: SeatImage },
-  { id: 3, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 100, image: SeatImage },
-  { id: 4, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 102, image: SeatImage },
-  { id: 5, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 102, image: SeatImage },
-  { id: 6, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 234, image: SeatImage },
-  { id: 7, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 345, image: SeatImage },
-  { id: 8, name: "Elegant yellow leather modern design armchair", vendor: "Name of the Vendor", price: 453, image: SeatImage },
+  {
+    id: 1,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 102,
+    image: SeatImage,
+  },
+  {
+    id: 2,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 102,
+    image: SeatImage,
+  },
+  {
+    id: 3,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 100,
+    image: SeatImage,
+  },
+  {
+    id: 4,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 102,
+    image: SeatImage,
+  },
+  {
+    id: 5,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 102,
+    image: SeatImage,
+  },
+  {
+    id: 6,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 234,
+    image: SeatImage,
+  },
+  {
+    id: 7,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 345,
+    image: SeatImage,
+  },
+  {
+    id: 8,
+    name: "Elegant yellow leather modern design armchair",
+    vendor: "Name of the Vendor",
+    price: 453,
+    image: SeatImage,
+  },
 ];
 
 export default function TopDealsComp() {
@@ -416,6 +432,9 @@ export default function TopDealsComp() {
     canGoNext,
     canGoPrev,
   } = useTopDealsHook(products.length);
+
+  const { addToCart } = useCart();
+  const [isNegotiatePriceModal, setIsNegotiatePriceModal] = useState(false);
 
   const FloatingHeart = ({ id }: { id: string }) => (
     <motion.div
@@ -518,22 +537,29 @@ export default function TopDealsComp() {
                       <div
                         className={`
                     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                    ${hoveredCard === product.id
-                            ? "translate-y-0 opacity-100"
-                            : "translate-y-8 opacity-0"
-                          }
+                    ${
+                      hoveredCard === product.id
+                        ? "translate-y-0 opacity-100"
+                        : "translate-y-8 opacity-0"
+                    }
                 `}
                       >
                         <div className="backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10">
                           <div className="flex gap-3">
-                            <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
+                            <button
+                              onClick={() => addToCart(String(product.id), 1)}
+                              className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
+                            >
                               <AddToCartIcon />
                               <span className="text-[13px]  text-secondary-color">
                                 Add To Cart
                               </span>
                             </button>
 
-                            <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer">
+                            <button
+                              onClick={() => setIsNegotiatePriceModal(true)}
+                              className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer"
+                            >
                               <NegotiateIcon />
                               <span className="text-[13px] gradient-text">
                                 Negotiate
@@ -558,8 +584,13 @@ export default function TopDealsComp() {
           >
             <ArrowRightIcon />
           </button>
-        </div>
 
+          {isNegotiatePriceModal && (
+            <NegotiatePriceModal
+              onClose={() => setIsNegotiatePriceModal(false)}
+            />
+          )}
+        </div>
 
         {/*==== Category Cards ====*/}
         <div className="flex gap-3 mt-1">

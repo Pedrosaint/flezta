@@ -11,8 +11,17 @@ import {
 } from "../../../assets/svg/svg_icon";
 import Link from "next/link";
 import { navLinks } from "../../../core/routes/nav_links";
-import { appRoute, cartRoute, checkoutRoute, paymentRoute } from "@/core/routes/routeNames";
-import { IMegaMenuItem, IMegaMenuCategory, ISubCategory } from "./data/mega_menu.data";
+import {
+  appRoute,
+  cartRoute,
+  checkoutRoute,
+  paymentRoute,
+} from "@/core/routes/routeNames";
+import {
+  IMegaMenuItem,
+  IMegaMenuCategory,
+  ISubCategory,
+} from "./data/mega_menu.data";
 import useWebsiteHeaderHook from "../hooks/website_header.hook";
 
 const WebsiteHeaderComponent = () => {
@@ -20,6 +29,7 @@ const WebsiteHeaderComponent = () => {
     showMegaMenu,
     setShowMegaMenu,
     wishlistCount,
+    cartCount,
     router,
     pathname,
     navItems,
@@ -68,14 +78,17 @@ const WebsiteHeaderComponent = () => {
                 pathname === nav.path ||
                 pathname.startsWith(`${nav.path}/`) ||
                 (nav.name === "Products" &&
-                  (pathname === cartRoute || pathname === checkoutRoute || pathname === paymentRoute));
+                  (pathname === cartRoute ||
+                    pathname === checkoutRoute ||
+                    pathname === paymentRoute));
 
               return (
                 <Link
                   key={nav.path}
                   href={nav.path}
-                  className={`text-lg font-medium transition-colors hover-gradient-text ${isActive ? "gradient-text" : "text-tertiary-color"
-                    }`}
+                  className={`text-lg font-medium transition-colors hover-gradient-text ${
+                    isActive ? "gradient-text" : "text-tertiary-color"
+                  }`}
                 >
                   {nav.name}
                 </Link>
@@ -105,29 +118,35 @@ const WebsiteHeaderComponent = () => {
               className="text-gray-700 hover:text-emerald-700 relative cursor-pointer"
             >
               <BagIcon />
-              <span className="absolute top-1.5 -right-0.5 w-4 h-4 bg-emerald-700 text-white text-[10px] border border-white rounded-full flex items-center justify-center">
-                8
-              </span>
+              {cartCount > 0 && (
+                <span className="absolute top-1.5 -right-0.5 w-4 h-4 bg-emerald-700 text-white text-[10px] border border-white rounded-full flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
             </button>
 
             <div className="flex items-center gap-3">
               <button
                 onClick={handleUserIconClick}
-                className={`transition-all cursor-pointer ${isDashboard
-                  ? 'text-[#E26E00] scale-110'
-                  : 'text-gray-700 hover:text-[#E26E00]'
-                  }`}
+                className={`transition-all cursor-pointer ${
+                  isDashboard
+                    ? "text-[#E26E00] scale-110"
+                    : "text-gray-700 hover:text-[#E26E00]"
+                }`}
               >
                 <UserIcon stroke="currentColor" />
               </button>
 
               {isAuthenticated && isDashboard && (
                 <div className="flex flex-col items-start -space-y-1">
-                  <p className="text-[15px] text-gray-500 font-medium">Welcome back!</p>
-                  <p className="text-lg font-bold text-gray-900 leading-tight">{userFullName}</p>
+                  <p className="text-[15px] text-gray-500 font-medium">
+                    Welcome back!
+                  </p>
+                  <p className="text-lg font-bold text-gray-900 leading-tight">
+                    {userFullName}
+                  </p>
                 </div>
               )}
-
             </div>
 
             {!isDashboard && (
@@ -179,25 +198,43 @@ const WebsiteHeaderComponent = () => {
                       <div
                         key={category.id}
                         onMouseEnter={() => setActiveCategory(category.id)}
-                        className={`text-lg cursor-pointer flex justify-between ${activeCategory === category.id
-                          ? "text-[#0C0F16] font-medium"
-                          : "text-gray-700 hover:text-[#0C0F16]"
-                          }`}>
+                        className={`text-lg cursor-pointer flex justify-between ${
+                          activeCategory === category.id
+                            ? "text-[#0C0F16] font-medium"
+                            : "text-gray-700 hover:text-[#0C0F16]"
+                        }`}
+                      >
                         <div className="flex items-center gap-3">
                           {Icon && (
                             <Icon
-                              stroke={activeCategory === category.id ? "#003625" : "#4B5563"}
+                              stroke={
+                                activeCategory === category.id
+                                  ? "#003625"
+                                  : "#4B5563"
+                              }
                               width={24}
                               height={24}
                             />
                           )}
-                          <span className={activeCategory === category.id ? "text-primary-color" : ""}>
+                          <span
+                            className={
+                              activeCategory === category.id
+                                ? "text-primary-color"
+                                : ""
+                            }
+                          >
                             {category.name}
                           </span>
                         </div>
 
                         <span>
-                          <ArrowRight stroke={activeCategory === category.id ? "#003625" : "#4B5563"} />
+                          <ArrowRight
+                            stroke={
+                              activeCategory === category.id
+                                ? "#003625"
+                                : "#4B5563"
+                            }
+                          />
                         </span>
                       </div>
                     );

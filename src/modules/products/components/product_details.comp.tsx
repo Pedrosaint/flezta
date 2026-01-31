@@ -17,6 +17,7 @@ import useProductDetailsHook from "../hook/useProductDetails.hook";
 import { useRouter } from "next/navigation";
 import { cartRoute } from "@/core/routes/routeNames";
 import BuyNowModal from "../modal/buy_now.modal";
+import useCart from "@/shared/ui/hooks/use_cart.hook";
 import { AnimatePresence, motion } from "framer-motion";
 import { IProduct } from "../types/product.type";
 
@@ -47,15 +48,20 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
     scrollToTopSmooth,
   } = useProductDetailsHook();
 
+  const { addToCart } = useCart();
+
   const productId = String(product.id);
   const isWishlisted = wishlist.includes(productId);
 
   const specifications = [
     { label: "SKU", value: "GE779FD3WOP7NNAFAMZ" },
-    { label: "Model", value: 'N/A' },
+    { label: "Model", value: "N/A" },
     { label: "Color", value: "Black" },
     { label: "Condition", value: "New" },
-    { label: "Measurement", value: "Height (100cm), Width (45cm), Breadth (60cm)" },
+    {
+      label: "Measurement",
+      value: "Height (100cm), Width (45cm), Breadth (60cm)",
+    },
     { label: "Main material", value: "Leather" },
     { label: "Weight", value: "25kg" },
   ];
@@ -243,7 +249,10 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
 
               {/*=== Add To Cart Button ===*/}
               <button
-                onClick={() => setIsBuyNowModal(true)}
+                onClick={() => {
+                  // Add current product to cart with selected quantity
+                  addToCart(productId, quantity);
+                }}
                 className="group w-45 p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
               >
                 <div className="relative w-full rounded-[14px] overflow-hidden bg-gradient">

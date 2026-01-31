@@ -1,48 +1,51 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import  useWishlist  from "@/shared/ui/hooks/wish_list.hook";
+import useWishlist from "@/shared/ui/hooks/wish_list.hook";
 
 const useListProductHook = () => {
-    const router = useRouter();
-    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-     const { wishlist, toggleWishlist } = useWishlist();
-    const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
+  const router = useRouter();
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const { wishlist, toggleWishlist } = useWishlist();
+  const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
+  const [isNegotiatePriceModal, setIsNegotiatePriceModal] = useState(false);
 
-    const scrollToTopSmooth = () => {
-        if (typeof window !== "undefined") {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    };
+  const scrollToTopSmooth = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
-    const handleWishlistClick = (productId: string) => {
-      const isAlreadyWishlisted = wishlist.includes(productId);
+  const handleWishlistClick = (productId: string) => {
+    const isAlreadyWishlisted = wishlist.includes(productId);
 
-      toggleWishlist(productId);
+    toggleWishlist(productId);
 
-      // Only animate when ADDING to wishlist
-      if (!isAlreadyWishlisted) {
-        const id = `${productId}-${Date.now()}`;
+    // Only animate when ADDING to wishlist
+    if (!isAlreadyWishlisted) {
+      const id = `${productId}-${Date.now()}`;
 
-        setFloatingHearts((prev) => [...prev, { id }]);
+      setFloatingHearts((prev) => [...prev, { id }]);
 
-        setTimeout(() => {
-          setFloatingHearts((prev) => prev.filter((h) => h.id !== id));
-        }, 900);
-      }
-    };
+      setTimeout(() => {
+        setFloatingHearts((prev) => prev.filter((h) => h.id !== id));
+      }, 900);
+    }
+  };
 
-
-    return {
-        hoveredCard,
-        setHoveredCard,
-        scrollToTopSmooth,
-        toggleWishlist,
-        wishlist,
-        setFloatingHearts,
-        handleWishlistClick,
-        floatingHearts,
-        router,
-    };
+  return {
+    hoveredCard,
+    setHoveredCard,
+    scrollToTopSmooth,
+    toggleWishlist,
+    wishlist,
+    setFloatingHearts,
+    handleWishlistClick,
+    floatingHearts,
+    router,
+    // Negotiate modal control
+    isNegotiatePriceModal,
+    setIsNegotiatePriceModal,
+  };
 };
 
 export default useListProductHook;

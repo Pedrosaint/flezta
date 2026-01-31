@@ -8,11 +8,12 @@ import {
 } from "@/assets/svg/svg_icon";
 import { products2 } from "@/modules/products/data/products.data";
 import useWishListHook from "../hooks/wishList.hook";
+import useCart from "@/shared/ui/hooks/use_cart.hook";
 
 const WhishlistComp = () => {
   const { hoveredCard, setHoveredCard } = useWishListHook();
+  const { addToCart } = useCart();
 
-  
   return (
     <div className="relative mt-10 ">
       <div className="container mx-auto  border-t-2 border-gray-300 py-20">
@@ -78,7 +79,10 @@ const WhishlistComp = () => {
                 >
                   <div className="backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10">
                     <div className="flex gap-3">
-                      <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
+                      <button
+                        onClick={() => addToCart(String(product.id), 1)}
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
+                      >
                         <AddToCartIcon />
                         <span className="text-[13px]  text-secondary-color">
                           Add To Cart

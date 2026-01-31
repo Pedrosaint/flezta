@@ -1,3 +1,4 @@
+import useWishlist from "@/shared/ui/hooks/wish_list.hook";
 import { useState } from "react";
 
 const useCategoriesHook = () => {
@@ -7,6 +8,8 @@ const useCategoriesHook = () => {
   const [showPrice, setShowPrice] = useState(true);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [isNegotiatePriceModal, setIsNegotiatePriceModal] = useState(false);
+  const { wishlist, toggleWishlist } = useWishlist();
+  const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
 
   const MIN = 50;
   const MAX = 50000;
@@ -26,6 +29,25 @@ const useCategoriesHook = () => {
     "Computing",
   ];
 
+   const handleWishlistClick = (productId: string) => {
+     const isAlreadyWishlisted = wishlist.includes(productId);
+
+     toggleWishlist(productId);
+
+     // Only animate when ADDING to wishlist
+     if (!isAlreadyWishlisted) {
+       const id = `${productId}-${Date.now()}`;
+
+       setFloatingHearts((prev) => [...prev, { id }]);
+
+       setTimeout(() => {
+         setFloatingHearts((prev) => prev.filter((h) => h.id !== id));
+       }, 900);
+     }
+   };
+
+
+
   return {
     MIN,
     MAX,
@@ -43,6 +65,9 @@ const useCategoriesHook = () => {
     isNegotiatePriceModal,
     setIsNegotiatePriceModal,
     scrollToTopSmooth,
+    handleWishlistClick,
+    wishlist,
+    floatingHearts,
   };
 };
 

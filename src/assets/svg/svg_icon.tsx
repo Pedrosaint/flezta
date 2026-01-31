@@ -1492,3 +1492,26 @@ export const ShieldIcon = ({ stroke = "#077D58", width = 24, height = 24, ...pro
 
 );
 
+export const ArrowDownIcon = ({
+  stroke = "#0C0F16",
+  width = 14,
+  height = 8, 
+  ...props
+}: CustomSVGIconProps) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 14 8"
+    fill="none"
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.75 0.75005C12.75 0.75005 8.3311 6.75 6.75 6.75C5.1688 6.75 0.75 0.75 0.75 0.75"
+      stroke={stroke}
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);

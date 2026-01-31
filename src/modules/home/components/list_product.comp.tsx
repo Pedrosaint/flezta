@@ -1,8 +1,15 @@
-'use client';
+"use client";
 
-import { AddToCartIcon, AshHeartIcon, NegotiateIcon, RedHeartIcon } from "../../../assets/svg/svg_icon";
+import {
+  AddToCartIcon,
+  AshHeartIcon,
+  NegotiateIcon,
+  RedHeartIcon,
+} from "../../../assets/svg/svg_icon";
 import newProducts from "../../products/data/products.data";
 import useListProductHook from "../hooks/useListProduct.hook";
+import useCart from "@/shared/ui/hooks/use_cart.hook";
+import NegotiatePriceModal from "@/modules/products/modal/negotiate_price.modal";
 import { productDetailsRoute } from "../../../core/routes/routeNames";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -15,8 +22,11 @@ const ListProductsComp = () => {
     handleWishlistClick,
     wishlist,
     router,
+    isNegotiatePriceModal,
+    setIsNegotiatePriceModal,
   } = useListProductHook();
 
+  const { addToCart } = useCart();
 
   const FloatingHeart = ({ id }: { id: string }) => (
     <motion.div
@@ -30,7 +40,6 @@ const ListProductsComp = () => {
       <RedHeartIcon />
     </motion.div>
   );
-
 
   return (
     <div className="bg-white py-12">
@@ -102,22 +111,29 @@ const ListProductsComp = () => {
                   <div
                     className={`
                     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                    ${hoveredCard === product.id
+                    ${
+                      hoveredCard === product.id
                         ? "translate-y-0 opacity-100"
                         : "translate-y-8 opacity-0"
-                      }
+                    }
                 `}
                   >
                     <div className="backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10">
                       <div className="flex gap-3">
-                        <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
+                        <button
+                          onClick={() => addToCart(String(product.id), 1)}
+                          className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
+                        >
                           <AddToCartIcon />
                           <span className="text-[13px]  text-secondary-color">
                             Add To Cart
                           </span>
                         </button>
 
-                        <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer">
+                        <button
+                          onClick={() => setIsNegotiatePriceModal(true)}
+                          className="flex-1 flex items-center justify-center gap-2 px-4 py-3 border border-[#FDA106] bg-tertiary-color rounded-2xl  transition-colors font-medium cursor-pointer"
+                        >
                           <NegotiateIcon />
                           <span className="text-[13px] gradient-text">
                             Negotiate
@@ -131,7 +147,10 @@ const ListProductsComp = () => {
             );
           })}
         </div>
-      </div>
+      </div>{" "}
+      {isNegotiatePriceModal && (
+        <NegotiatePriceModal onClose={() => setIsNegotiatePriceModal(false)} />
+      )}{" "}
     </div>
   );
 };

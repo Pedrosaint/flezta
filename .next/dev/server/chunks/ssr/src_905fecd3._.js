@@ -296,6 +296,8 @@ const useCategoriesHook = ()=>{
     const [showPrice, setShowPrice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [hoveredCard, setHoveredCard] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isNegotiatePriceModal, setIsNegotiatePriceModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const { wishlist, toggleWishlist } = useWishlist();
+    const [floatingHearts, setFloatingHearts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const MIN = 50;
     const MAX = 50000;
     const scrollToTopSmooth = ()=>{
@@ -310,6 +312,23 @@ const useCategoriesHook = ()=>{
         "Health & Beauty",
         "Computing"
     ];
+    const handleWishlistClick = (productId)=>{
+        const isAlreadyWishlisted = wishlist.includes(productId);
+        toggleWishlist(productId);
+        // Only animate when ADDING to wishlist
+        if (!isAlreadyWishlisted) {
+            const id = `${productId}-${Date.now()}`;
+            setFloatingHearts((prev)=>[
+                    ...prev,
+                    {
+                        id
+                    }
+                ]);
+            setTimeout(()=>{
+                setFloatingHearts((prev)=>prev.filter((h)=>h.id !== id));
+            }, 900);
+        }
+    };
     return {
         MIN,
         MAX,
@@ -326,7 +345,8 @@ const useCategoriesHook = ()=>{
         categories,
         isNegotiatePriceModal,
         setIsNegotiatePriceModal,
-        scrollToTopSmooth
+        scrollToTopSmooth,
+        handleWishlistClick
     };
 };
 const __TURBOPACK__default__export__ = useCategoriesHook;
@@ -799,7 +819,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$rou
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$hook$2f$useCategories$2e$hook$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/modules/products/hook/useCategories.hook.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$modal$2f$negotiate_price$2e$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/modules/products/modal/negotiate_price.modal.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -811,7 +834,36 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2
 ;
 const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    const { isNegotiatePriceModal, setIsNegotiatePriceModal, priceFrom, setPriceFrom, priceTo, setPriceTo, showCategories, setShowCategories, showPrice, setShowPrice, hoveredCard, setHoveredCard, categories, scrollToTopSmooth, MIN, MAX } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$hook$2f$useCategories$2e$hook$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
+    const { isNegotiatePriceModal, setIsNegotiatePriceModal, priceFrom, setPriceFrom, priceTo, setPriceTo, showCategories, setShowCategories, showPrice, setShowPrice, hoveredCard, setHoveredCard, categories, scrollToTopSmooth, MIN, MAX, handleWishlistClick } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$hook$2f$useCategories$2e$hook$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])();
+    const FloatingHeart = ({ id })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+            initial: {
+                y: 0,
+                opacity: 1,
+                scale: 0.8
+            },
+            animate: {
+                y: -40,
+                opacity: 0,
+                scale: 1.4
+            },
+            exit: {
+                opacity: 0
+            },
+            transition: {
+                duration: 0.8,
+                ease: "easeOut"
+            },
+            className: "absolute top-0 right-7 pointer-events-none",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
+                fileName: "[project]/src/modules/products/components/categories.comp.tsx",
+                lineNumber: 56,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0))
+        }, id, false, {
+            fileName: "[project]/src/modules/products/components/categories.comp.tsx",
+            lineNumber: 48,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "p-6",
         children: [
@@ -833,23 +885,23 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                 children: "Filter"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                lineNumber: 54,
+                                                lineNumber: 69,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FilterIcon"], {}, void 0, false, {
                                                 fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                lineNumber: 55,
+                                                lineNumber: 70,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -867,20 +919,20 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                             children: "Categories"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 66,
+                                                            lineNumber: 81,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                             className: `w-5 h-5 transition-transform ${showCategories ? "rotate-180" : ""}`
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 67,
+                                                            lineNumber: 82,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 77,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 showCategories && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -897,7 +949,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     className: "custom-radio"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 80,
+                                                                    lineNumber: 95,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -905,24 +957,24 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     children: category
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 89,
+                                                                    lineNumber: 104,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, index, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 76,
+                                                            lineNumber: 91,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -937,20 +989,20 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                             children: "Price"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 117,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                                             className: `w-5 h-5 transition-transform ${showPrice ? "rotate-180" : ""}`
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 118,
                                                             columnNumber: 19
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 113,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 showPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -963,7 +1015,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     className: "absolute top-1/2 -translate-y-1/2 w-full h-1 rounded bg-gray-200"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 114,
+                                                                    lineNumber: 129,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -974,7 +1026,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 117,
+                                                                    lineNumber: 132,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -986,7 +1038,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     className: "price-range z-40"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 128,
+                                                                    lineNumber: 143,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -998,13 +1050,13 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     className: "price-range z-30"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 142,
+                                                                    lineNumber: 157,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 112,
+                                                            lineNumber: 127,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1017,7 +1069,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 172,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1031,7 +1083,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             children: "$"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 165,
+                                                                            lineNumber: 180,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1041,13 +1093,13 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             className: "price-input"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 168,
+                                                                            lineNumber: 183,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 164,
+                                                                    lineNumber: 179,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1058,7 +1110,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             children: "$"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 177,
+                                                                            lineNumber: 192,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1068,43 +1120,43 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             className: "price-input"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 180,
+                                                                            lineNumber: 195,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 176,
+                                                                    lineNumber: 191,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 163,
+                                                            lineNumber: 178,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 125,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                            lineNumber: 97,
+                                            lineNumber: 112,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                            lineNumber: 51,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1120,7 +1172,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                     children: "300"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 214,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1128,13 +1180,13 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                     children: "Total products found"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 215,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                            lineNumber: 198,
+                                            lineNumber: 213,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1144,7 +1196,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                     children: "Sort by:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 203,
+                                                    lineNumber: 218,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1153,24 +1205,24 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                         children: "Select option"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 220,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 204,
+                                                    lineNumber: 219,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                            lineNumber: 202,
+                                            lineNumber: 217,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1181,15 +1233,33 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                             onMouseLeave: ()=>setHoveredCard(null),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    onClick: ()=>handleWishlistClick(String(product.id)),
                                                     className: "absolute top-3 right-3 z-10 w-8 h-8 flex items-center justify-center text-gray-300 hover:text-red-500 transition-colors cursor-pointer",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AshHeartIcon"], {}, void 0, false, {
+                                                    children: isWishlisted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RedHeartIcon"], {}, void 0, false, {
                                                         fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                        lineNumber: 221,
-                                                        columnNumber: 21
+                                                        lineNumber: 239,
+                                                        columnNumber: 37
+                                                    }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AshHeartIcon"], {}, void 0, false, {
+                                                        fileName: "[project]/src/modules/products/components/categories.comp.tsx",
+                                                        lineNumber: 239,
+                                                        columnNumber: 56
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 220,
+                                                    lineNumber: 235,
+                                                    columnNumber: 19
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                                                    children: floatingHearts.filter((h)=>h.id.startsWith(String(product.id))).map((h)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingHeart, {
+                                                            id: h.id
+                                                        }, h.id, false, {
+                                                            fileName: "[project]/src/modules/products/components/categories.comp.tsx",
+                                                            lineNumber: 247,
+                                                            columnNumber: 25
+                                                        }, ("TURBOPACK compile-time value", void 0)))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/modules/products/components/categories.comp.tsx",
+                                                    lineNumber: 243,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1204,12 +1274,12 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                         className: "h-50 object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                        lineNumber: 232,
+                                                        lineNumber: 259,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 225,
+                                                    lineNumber: 252,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1220,7 +1290,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                             children: product.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 241,
+                                                            lineNumber: 268,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1230,7 +1300,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     className: "w-6 h-6 bg-gray-300 rounded-full"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 247,
+                                                                    lineNumber: 274,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1238,13 +1308,13 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                     children: product.vendor
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 248,
+                                                                    lineNumber: 275,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 246,
+                                                            lineNumber: 273,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1255,7 +1325,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 254,
+                                                            lineNumber: 281,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1273,7 +1343,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AddToCartIcon"], {}, void 0, false, {
                                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                                    lineNumber: 272,
+                                                                                    lineNumber: 299,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1281,13 +1351,13 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                                     children: "Add To Cart"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                                    lineNumber: 273,
+                                                                                    lineNumber: 300,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 271,
+                                                                            lineNumber: 298,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1296,7 +1366,7 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NegotiateIcon"], {}, void 0, false, {
                                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                                    lineNumber: 282,
+                                                                                    lineNumber: 309,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1304,81 +1374,81 @@ const CategoriesComp = ({ selectedCategory, setSelectedCategory })=>{
                                                                                     children: "Negotiate"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                                    lineNumber: 283,
+                                                                                    lineNumber: 310,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                            lineNumber: 278,
+                                                                            lineNumber: 305,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                    lineNumber: 270,
+                                                                    lineNumber: 297,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                                lineNumber: 269,
+                                                                lineNumber: 296,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                            lineNumber: 259,
+                                                            lineNumber: 286,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                                    lineNumber: 240,
+                                                    lineNumber: 267,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, product.id, true, {
                                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                            lineNumber: 213,
+                                            lineNumber: 228,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)))
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                    lineNumber: 211,
+                                    lineNumber: 226,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$pagination$2e$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 322,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                            lineNumber: 195,
+                            lineNumber: 210,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                    lineNumber: 49,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                lineNumber: 48,
+                lineNumber: 63,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             isNegotiatePriceModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$modal$2f$negotiate_price$2e$modal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 onClose: ()=>setIsNegotiatePriceModal(false)
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-                lineNumber: 301,
+                lineNumber: 328,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/modules/products/components/categories.comp.tsx",
-        lineNumber: 47,
+        lineNumber: 62,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

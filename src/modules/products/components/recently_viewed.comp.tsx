@@ -7,9 +7,11 @@ import {
 } from "@/assets/svg/svg_icon";
 import { products2 } from "../data/products.data";
 import useRecentlyViewedHook from "../hook/useRecentlyViewed.hook";
+import useCart from "@/shared/ui/hooks/use_cart.hook";
 
 const RecentlyViewedComp = () => {
   const { hoveredCard, setHoveredCard } = useRecentlyViewedHook();
+  const { addToCart } = useCart();
   return (
     <div className="relative mt-10 py-20 border-t-2 border-gray-300">
       <h1 className="text-2xl font-semibold mb-10">Recently Viewed Items</h1>
@@ -70,7 +72,10 @@ const RecentlyViewedComp = () => {
               >
                 <div className="backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10">
                   <div className="flex gap-3">
-                    <button className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer">
+                    <button
+                      onClick={() => addToCart(String(product.id), 1)}
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
+                    >
                       <AddToCartIcon />
                       <span className="text-[13px]  text-secondary-color">
                         Add To Cart
