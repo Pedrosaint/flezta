@@ -1,6 +1,6 @@
-"use client";
+ "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import { HomeIcon } from "@/assets/svg/svg_icon";
 import ProductImage from "@/assets/images/product_header.png";
@@ -23,6 +23,7 @@ import Link from "next/link";
 
 const PortalHeader = () => {
     const pathname = usePathname();
+    const searchParams = useSearchParams();
 
     // Parse path segments and filter out empty strings
     const pathSegments = pathname.split("/").filter(Boolean);
@@ -35,15 +36,28 @@ const PortalHeader = () => {
     // Special handling for Order Details
     const isOrderDetails = pathname.includes("/order_history/") && displaySegments.some(s => s === "order_history");
 
+    const section = searchParams.get("section");
+    const settingsLabel =
+        section === "security"
+            ? "Security settings"
+            : section === "notification"
+                ? "Notification settings"
+                : "Security Settings";
+
     // Derive page title
     let pageTitle = "Dashboard";
     if (isOrderDetails) {
         pageTitle = "Order History";
     } else {
         const lastSegment = displaySegments[displaySegments.length - 1];
-        pageTitle = lastSegment
-            ? lastSegment.charAt(0).toUpperCase() + lastSegment.slice(1).replace(/[-_]/g, " ")
-            : "Dashboard";
+        if (lastSegment === "settings") {
+            // Always keep the main title as "Settings" for the settings page
+            pageTitle = "Settings";
+        } else {
+            pageTitle = lastSegment
+                ? lastSegment.charAt(0).toUpperCase() + lastSegment.slice(1).replace(/[-_]/g, " ")
+                : "Dashboard";
+        }
     }
 
     return (
@@ -97,7 +111,10 @@ const PortalHeader = () => {
                             const actualSegmentIndex = pathSegments.indexOf(segment);
                             const href = "/" + pathSegments.slice(0, actualSegmentIndex + 1).join("/");
 
-                            const label = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/[-_]/g, " ");
+                            let label = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/[-_]/g, " ");
+                            if (segment === "settings") {
+                                label = settingsLabel;
+                            }
                             const isLast = index === displaySegments.length - 1;
 
                             return (

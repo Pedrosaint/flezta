@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import LogoImage from "@/assets/images/website_logo.png";
 import {
@@ -25,6 +26,12 @@ import {
 import useWebsiteHeaderHook from "../hooks/website_header.hook";
 
 const WebsiteHeaderComponent = () => {
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
   const {
     showMegaMenu,
     setShowMegaMenu,
@@ -137,7 +144,7 @@ const WebsiteHeaderComponent = () => {
                 <UserIcon stroke="currentColor" />
               </button>
 
-              {isAuthenticated && isDashboard && (
+              {hasMounted && isAuthenticated && isDashboard && (
                 <div className="flex flex-col items-start -space-y-1">
                   <p className="text-[15px] text-gray-500 font-medium">
                     Welcome back!

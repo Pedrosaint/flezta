@@ -149,6 +149,42 @@ body {
 }
 
 
+.notificationCheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Checked state background */
+.notificationCheckbox:checked {
+  background: #003625;
+  border: none;
+}
+
+/* Tick */
+.notificationCheckbox::before {
+  content: "✓";
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff; /* make tick white */
+  transform: scale(0);
+  transition: transform 0.15s ease-in-out;
+}
+
+.notificationCheckbox:checked::before {
+  transform: scale(1);
+}
+
+
+
 
 /* ===== Price Range Slider ===== */
 .price-range {

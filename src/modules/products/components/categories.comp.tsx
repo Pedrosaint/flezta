@@ -16,6 +16,7 @@ import useCategoriesHook from "../hook/useCategories.hook";
 import NegotiatePriceModal from "../modal/negotiate_price.modal";
 import { AnimatePresence, motion } from "framer-motion";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import BuyNowModal from "../modal/buy_now.modal";
 
 const CategoriesComp = ({
   selectedCategory,
@@ -45,6 +46,8 @@ const CategoriesComp = ({
     handleWishlistClick,
     wishlist,
     floatingHearts,
+    selectedProduct,
+    setSelectedProduct,
   } = useCategoriesHook();
 
   const { addToCart } = useCart();
@@ -303,7 +306,10 @@ const CategoriesComp = ({
                         <div className="backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10">
                           <div className="flex gap-3">
                             <button
-                              onClick={() => addToCart(String(product.id), 1)}
+                              onClick={() => {
+                                setSelectedProduct(product);
+                                addToCart(String(product.id), 1);
+                              }}
                               className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
                             >
                               <AddToCartIcon />
@@ -334,6 +340,10 @@ const CategoriesComp = ({
           </div>
         </div>
       </div>
+
+      {selectedProduct && (
+        <BuyNowModal onClose={() => setSelectedProduct(null)} />
+      )}
 
       {isNegotiatePriceModal && (
         <NegotiatePriceModal onClose={() => setIsNegotiatePriceModal(false)} />

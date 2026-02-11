@@ -180,6 +180,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/buyer_portal/settings/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/buyer_portal/settings">> = Specific
+  const handler = {} as typeof import("../../../src/app/buyer_portal/settings/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/buyer_portal/wallet/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/buyer_portal/wallet">> = Specific

@@ -1,13 +1,7 @@
 {
-  "/(website)/cart/page": "app/(website)/cart/page.js",
-  "/(website)/home/page": "app/(website)/home/page.js",
-  "/(website)/products/details/[id]/page": "app/(website)/products/details/[id]/page.js",
-  "/(website)/products/page": "app/(website)/products/page.js",
-  "/buyer_portal/chat/page": "app/buyer_portal/chat/page.js",
-  "/buyer_portal/dashboard/page": "app/buyer_portal/dashboard/page.js",
   "/buyer_portal/order_history/[id]/page": "app/buyer_portal/order_history/[id]/page.js",
   "/buyer_portal/order_history/page": "app/buyer_portal/order_history/page.js",
-  "/buyer_portal/profile/page": "app/buyer_portal/profile/page.js",
+  "/buyer_portal/settings/page": "app/buyer_portal/settings/page.js",
   "/buyer_portal/wallet/page": "app/buyer_portal/wallet/page.js",
   "/buyer_portal/wishlist/page": "app/buyer_portal/wishlist/page.js"
 }

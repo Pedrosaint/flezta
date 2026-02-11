@@ -251,6 +251,7 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
               <button
                 onClick={() => {
                   // Add current product to cart with selected quantity
+                  setIsBuyNowModal(true);
                   addToCart(productId, quantity);
                 }}
                 className="group w-45 p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer"

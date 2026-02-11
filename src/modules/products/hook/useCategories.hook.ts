@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import useWishlist from "@/shared/ui/hooks/wish_list.hook";
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ const useCategoriesHook = () => {
   const [isNegotiatePriceModal, setIsNegotiatePriceModal] = useState(false);
   const { wishlist, toggleWishlist } = useWishlist();
   const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
   const MIN = 50;
   const MAX = 50000;
@@ -68,6 +70,9 @@ const useCategoriesHook = () => {
     handleWishlistClick,
     wishlist,
     floatingHearts,
+    setFloatingHearts,
+    selectedProduct,
+    setSelectedProduct,
   };
 };
 

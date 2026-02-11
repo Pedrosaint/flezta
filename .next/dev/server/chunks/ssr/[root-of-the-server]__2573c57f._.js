@@ -114,6 +114,8 @@ __turbopack_context__.s([
     ()=>authRoute,
     "cartRoute",
     ()=>cartRoute,
+    "chatRoute",
+    ()=>chatRoute,
     "checkoutRoute",
     ()=>checkoutRoute,
     "contactRoute",
@@ -128,16 +130,28 @@ __turbopack_context__.s([
     ()=>homeRoute,
     "loginRoute",
     ()=>loginRoute,
+    "orderDetailsRoute",
+    ()=>orderDetailsRoute,
+    "orderHistoryRoute",
+    ()=>orderHistoryRoute,
     "paymentRoute",
     ()=>paymentRoute,
     "productDetailsRoute",
     ()=>productDetailsRoute,
     "productsRoute",
     ()=>productsRoute,
+    "profileRoute",
+    ()=>profileRoute,
     "resetPasswordRoute",
     ()=>resetPasswordRoute,
+    "settingsRoute",
+    ()=>settingsRoute,
     "verifyOtpRoute",
-    ()=>verifyOtpRoute
+    ()=>verifyOtpRoute,
+    "walletRoute",
+    ()=>walletRoute,
+    "wishlistRoute",
+    ()=>wishlistRoute
 ]);
 const authRoute = "/auths";
 const loginRoute = "/auths/login";
@@ -157,6 +171,13 @@ const aboutRoute = "/about";
 const contactRoute = "/contact";
 // Dashboard
 const dashboardRoute = "/buyer_portal/dashboard";
+const profileRoute = "/buyer_portal/profile";
+const chatRoute = "/buyer_portal/chat";
+const orderHistoryRoute = "/buyer_portal/order_history";
+const orderDetailsRoute = "/buyer_portal/order_history/:id";
+const walletRoute = "/buyer_portal/wallet";
+const wishlistRoute = "/buyer_portal/wishlist";
+const settingsRoute = "/buyer_portal/settings";
 ;
 }),
 "[project]/src/app/auths/layout.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
