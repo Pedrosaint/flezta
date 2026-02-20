@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/modules/seller_auth/page/identity_verification.comp.tsx"],"sourcesContent":["\"use client\"\r\n\r\nconst IdentityVerificationComp = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default IdentityVerificationComp\r\n"],"names":[],"mappings":";;;;;AAAA;;AAEA,MAAM,2BAA2B;IAC/B,qBACE,8OAAC;;;;;AAIL;uCAEe"}}]
+}

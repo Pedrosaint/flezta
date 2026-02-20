@@ -1,7 +1,10 @@
 {
-  "/buyer_portal/order_history/[id]/page": "app/buyer_portal/order_history/[id]/page.js",
-  "/buyer_portal/order_history/page": "app/buyer_portal/order_history/page.js",
-  "/buyer_portal/settings/page": "app/buyer_portal/settings/page.js",
-  "/buyer_portal/wallet/page": "app/buyer_portal/wallet/page.js",
-  "/buyer_portal/wishlist/page": "app/buyer_portal/wishlist/page.js"
+  "/(website)/home/page": "app/(website)/home/page.js",
+  "/(website)/products/details/[id]/page": "app/(website)/products/details/[id]/page.js",
+  "/(website)/products/page": "app/(website)/products/page.js",
+  "/page": "app/page.js",
+  "/seller_auths/account_setup/page": "app/seller_auths/account_setup/page.js",
+  "/seller_auths/identity_verification/page": "app/seller_auths/identity_verification/page.js",
+  "/seller_auths/store_setup/page": "app/seller_auths/store_setup/page.js",
+  "/seller_auths/verify/page": "app/seller_auths/verify/page.js"
 }

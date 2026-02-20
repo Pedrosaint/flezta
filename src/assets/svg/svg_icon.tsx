@@ -1645,3 +1645,49 @@ export const EyeIcon = ({
     />
   </svg>
 );
+
+export const FileIcon = ({
+  stroke = "#6B7280",
+  width = 32,
+  height = 32,
+  ...props
+}: CustomSVGIconProps) => (
+  <svg
+    width={width}
+    height={height}
+    viewBox="0 0 32 32"
+    fill="none"
+    stroke={stroke}
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M27.3332 14.0001V13.3334C27.3332 8.30509 27.3332 5.79095 25.7712 4.22884C24.2091 2.66675 21.695 2.66675 16.6666 2.66675H15.3334C10.3051 2.66675 7.79099 2.66675 6.2289 4.22883C4.66681 5.79091 4.66678 8.30504 4.66674 13.3333L4.66669 19.3334C4.66665 23.7166 4.66663 25.9083 5.87719 27.3834C6.09885 27.6535 6.3465 27.9011 6.61658 28.1229C8.09171 29.3334 10.2833 29.3334 14.6666 29.3334"
+      stroke={stroke}
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M10 9.33325H22"
+      stroke={stroke}
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M10 16H18"
+      stroke={stroke}
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M27.3333 26.6667V22.6667C27.3333 20.7609 25.5425 18.6667 23.3333 18.6667C21.1241 18.6667 19.3333 20.7609 19.3333 22.6667V27.3334C19.3333 28.4379 20.2288 29.3334 21.3333 29.3334C22.4378 29.3334 23.3333 28.4379 23.3333 27.3334V22.6667"
+      stroke={stroke}
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);

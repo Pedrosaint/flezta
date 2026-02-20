@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/modules/seller_auth/components/verify.comp.tsx"],"sourcesContent":["\"use client\"\r\n\r\nconst VerifyComp = () => {\r\n    return (\r\n        <div>\r\n            <h2>Verify</h2>\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default VerifyComp"],"names":[],"mappings":";;;;;AAAA;;AAEA,MAAM,aAAa;IACf,qBACI,8OAAC;kBACG,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGhB;uCAEe"}}]
+}

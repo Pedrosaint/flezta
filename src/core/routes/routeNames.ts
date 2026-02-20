@@ -7,6 +7,14 @@ const verifyOtpRoute = "/auths/verify_otp";
 const resetPasswordRoute = "/auths/reset_password";
 const createAccountRoute = "/auths/create_account";
 
+// Seller Auth
+const sellerAuthRoute = "/seller_auths";
+const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
+const sellerStoreSetupRoute = "/seller_auths/store_setup";
+const sellerAccountSetupRoute = "/seller_auths/account_setup";
+const sellerVerifyRoute = "/seller_auths/verify";
+
+
 // App
 const appRoute = "/";
 const homeRoute = "/home";
@@ -37,6 +45,14 @@ export {
   verifyOtpRoute,
   resetPasswordRoute,
   createAccountRoute,
+
+  // Seller Auth
+  sellerAuthRoute,
+  sellerIdentityVerificationRoute,
+  sellerStoreSetupRoute,
+  sellerAccountSetupRoute,
+  sellerVerifyRoute,
+
 
   // App
   appRoute,

@@ -1,0 +1,205 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/buyer_portal/order_history/[id]",
+      "regex": "^/buyer_portal/order_history/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/buyer_portal/order_history/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/products/details/[id]",
+      "regex": "^/products/details/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/products/details/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/auths/create_account",
+      "regex": "^/auths/create_account(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auths/create_account(?:/)?$"
+    },
+    {
+      "page": "/auths/forgot_password",
+      "regex": "^/auths/forgot_password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auths/forgot_password(?:/)?$"
+    },
+    {
+      "page": "/auths/login",
+      "regex": "^/auths/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auths/login(?:/)?$"
+    },
+    {
+      "page": "/auths/reset_password",
+      "regex": "^/auths/reset_password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auths/reset_password(?:/)?$"
+    },
+    {
+      "page": "/auths/verify_otp",
+      "regex": "^/auths/verify_otp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auths/verify_otp(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/chat",
+      "regex": "^/buyer_portal/chat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/chat(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/dashboard",
+      "regex": "^/buyer_portal/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/dashboard(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/order_history",
+      "regex": "^/buyer_portal/order_history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/order_history(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/profile",
+      "regex": "^/buyer_portal/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/profile(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/settings",
+      "regex": "^/buyer_portal/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/settings(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/wallet",
+      "regex": "^/buyer_portal/wallet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/wallet(?:/)?$"
+    },
+    {
+      "page": "/buyer_portal/wishlist",
+      "regex": "^/buyer_portal/wishlist(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buyer_portal/wishlist(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
+    },
+    {
+      "page": "/checkout",
+      "regex": "^/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/checkout(?:/)?$"
+    },
+    {
+      "page": "/home",
+      "regex": "^/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/payment",
+      "regex": "^/payment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/seller_auths/account_setup",
+      "regex": "^/seller_auths/account_setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller_auths/account_setup(?:/)?$"
+    },
+    {
+      "page": "/seller_auths/identity_verification",
+      "regex": "^/seller_auths/identity_verification(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller_auths/identity_verification(?:/)?$"
+    },
+    {
+      "page": "/seller_auths/store_setup",
+      "regex": "^/seller_auths/store_setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller_auths/store_setup(?:/)?$"
+    },
+    {
+      "page": "/seller_auths/verify",
+      "regex": "^/seller_auths/verify(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller_auths/verify(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,7 +1,5 @@
-import ResetPasswordComp from "@/modules/auth/components/reset_password.comp";
-
 const Page = () => {
-    return <ResetPasswordComp />;
-}
+    return null;
+};
 
 export default Page;

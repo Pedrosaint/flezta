@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
 import { ChevronRight } from "lucide-react";
@@ -26,7 +26,7 @@ const PortalHeader = () => {
     const searchParams = useSearchParams();
 
     // Parse path segments and filter out empty strings
-    const pathSegments = pathname.split("/").filter(Boolean);
+    const pathSegments = (pathname || "").split("/").filter(Boolean);
 
     // We identify segments after 'buyer_portal' for display purposes
     // We identify segments after 'buyer_portal' for display purposes
@@ -34,7 +34,7 @@ const PortalHeader = () => {
     const displaySegments = portalIndex !== -1 ? pathSegments.slice(portalIndex + 1) : pathSegments;
 
     // Special handling for Order Details
-    const isOrderDetails = pathname.includes("/order_history/") && displaySegments.some(s => s === "order_history");
+    const isOrderDetails = (pathname || "").includes("/order_history/") && displaySegments.some(s => s === "order_history");
 
     const section = searchParams.get("section");
     const settingsLabel =

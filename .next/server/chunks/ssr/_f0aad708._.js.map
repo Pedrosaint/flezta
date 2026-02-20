@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/app/auths/verify_otp/page.tsx"],"sourcesContent":["const Page = () => {\r\n    return null;\r\n};\r\n\r\nexport default Page;"],"names":[],"mappings":"0NAAa,IACF"}

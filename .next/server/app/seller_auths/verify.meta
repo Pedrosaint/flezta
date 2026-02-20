@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/seller_auths/layout,_N_T_/seller_auths/verify/layout,_N_T_/seller_auths/verify/page,_N_T_/seller_auths/verify"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/seller_auths/verify/__PAGE__",
+    "/seller_auths/verify",
+    "/seller_auths",
+    "/_index",
+    "/_head"
+  ]
+}

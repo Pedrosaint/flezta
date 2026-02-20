@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ArrowDownIcon, ArrowRightIcon } from "@/assets/svg/svg_icon";
 
 // Currency configuration
@@ -90,8 +90,8 @@ const WalletPage = () => {
                             key={currency.code}
                             onClick={() => handleCurrencySelect(currency.code)}
                             className={`w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors flex items-center justify-between ${selectedCurrency === currency.code
-                                ? "bg-gray-50 text-[#003625] font-medium"
-                                : "text-gray-700"
+                              ? "bg-gray-50 text-[#003625] font-medium"
+                              : "text-gray-700"
                               }`}
                           >
                             <div className="flex flex-col">

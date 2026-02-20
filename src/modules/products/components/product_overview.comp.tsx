@@ -26,10 +26,9 @@ const ProductOverviewComp = ({ product }: ProductDetailsCompProps) => {
               onClick={() => setActiveTab(tab.key)}
               className={`
                 pb-3 text-sm font-medium transition-colors relative cursor-pointer
-                ${
-                  activeTab === tab.key
-                    ? "text-emerald-600"
-                    : "text-gray-600 hover:text-gray-900"
+                ${activeTab === tab.key
+                  ? "text-emerald-600"
+                  : "text-gray-600 hover:text-gray-900"
                 }
               `}
             >

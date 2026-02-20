@@ -1,0 +1,89 @@
+﻿node.exe : [baseline-browser-mapping] The data in 
+this module is over two months old.  To ensure 
+accurate Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([basel 
+   ine-brows...ping@latest -D`:String) [], RemoteE  
+  xception
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module 
+is over two months old.  To ensure accurate 
+Baseline data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+ [31m[1mΓ¿»[22m[39m useSearchParams() should be 
+wrapped in a suspense boundary at page 
+"/buyer_portal/chat". Read more: https://nextjs.org/
+docs/messages/missing-suspense-with-csr-bailout
+    at S (C:\Users\4Core\Desktop\Flezta-app\.next\se
+rver\chunks\ssr\node_modules_1340dc78._.js:2:2111)
+    at p (C:\Users\4Core\Desktop\Flezta-app\.next\se
+rver\chunks\ssr\node_modules_1340dc78._.js:4:4847)
+    at C:\Users\4Core\Desktop\Flezta-app\.next\serve
+r\chunks\ssr\[root-of-the-server]__fa94986b._.js:1:6
+194
+    at ar (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:84366)
+    at aa (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:86185)
+    at aa (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:104714)
+    at as (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:107952)
+    at ao (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:105374)
+    at ap (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:112881)
+    at al (C:\Users\4Core\Desktop\Flezta-app\node_mo
+dules\next\dist\compiled\next-server\app-page-turbo.
+runtime.prod.js:2:109984)
+Error occurred prerendering page 
+"/buyer_portal/chat". Read more: 
+https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on 
+/buyer_portal/chat/page: /buyer_portal/chat, 
+exiting the build.
+ [31m[1mΓ¿»[22m[39m Next.js build worker exited 
+with code: 1 and signal: null
+[?25h

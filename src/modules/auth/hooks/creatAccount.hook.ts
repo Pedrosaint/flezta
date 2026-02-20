@@ -8,7 +8,8 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { toast } from "sonner";
-import loginValidationSchema, {
+import {
+  createAccountValidationSchema,
   LoginValidationType,
 } from "../../../shared/utils/validations/auth.validation";
 import { getBackendError, getFirebaseErrorMessage } from "@/shared/utils/firebase_errors.util";
@@ -52,7 +53,7 @@ const useCreateAccountHook = () => {
     try {
       // ===== 1. Validate form data =====
       const validatedData: LoginValidationType =
-        await loginValidationSchema.validate(
+        await createAccountValidationSchema.validate(
           {
             email,
             password,
@@ -159,79 +160,80 @@ const useCreateAccountHook = () => {
     }
   };
 
-const handleGoogleLogin = async () => {
-   if (isGoogleLoading) return;
+  const handleGoogleLogin = async () => {
+    if (isGoogleLoading) return;
 
-  try {
-    setIsGoogleLoading(true);
+    try {
+      setIsGoogleLoading(true);
 
-    const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider);
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
 
-    const user = result.user;
-    const token = await user.getIdToken();
+      const user = result.user;
+      const token = await user.getIdToken();
 
-    console.log("Google User:", user);
+      console.log("Google User:", user);
 
-    // ===== Split displayName =====
-    const displayName = user.displayName ?? "";
-    const nameParts = displayName.trim().split(" ");
+      // ===== Split displayName =====
+      const displayName = user.displayName ?? "";
+      const nameParts = displayName.trim().split(" ");
 
-    const firstName = nameParts[0] ?? "";
-    const lastName = nameParts.length > 1
-      ? nameParts.slice(1).join(" ")
-      : "";
+      const firstName = nameParts[0] ?? "";
+      const lastName = nameParts.length > 1
+        ? nameParts.slice(1).join(" ")
+        : "";
 
-    // ===== Store token =====
-    secureLocalStorage.setItem("access_token", token);
+      // ===== Store token =====
+      secureLocalStorage.setItem("access_token", token);
 
-    // ===== Create user in backend =====
-    const backendResponse = await createAccount({
-      firstName,
-      lastName,
-      phoneNumber: user.phoneNumber ?? "",
-      email: user.email ?? "",
-    }).unwrap();
+      // ===== Create user in backend =====
+      const backendResponse = await createAccount({
+        firstName,
+        lastName,
+        phoneNumber: user.phoneNumber ?? "",
+        email: user.email ?? "",
+      }).unwrap();
 
-    console.log("Backend user created:", backendResponse);
+      console.log("Backend user created:", backendResponse);
 
-   setShowSuccessModal(true);
-
-    setTimeout(() => {
-      router.push(dashboardRoute);
-    }, 2000);
-  } catch (error: any) {
-  console.error("Google login error:", error);
-
-  // ===== Backend / RTK Query errors =====
-  if (error?.data?.error) {
-    const backendError = getBackendError(error.data.error);
-
-    if (backendError.type === "info") {
-      toast.info(backendError.message);
+      setShowSuccessModal(true);
 
       setTimeout(() => {
         router.push(dashboardRoute);
-      }, 1500);
+      }, 2000);
+    } catch (error: any) {
+      console.error("Google login error:", error);
 
-      return;
+      // ===== Backend / RTK Query errors =====
+      if (error?.data?.error) {
+        const backendError = getBackendError(error.data.error);
+
+        if (backendError.type === "info") {
+          toast.info(backendError.message);
+
+          setTimeout(() => {
+            router.push(dashboardRoute);
+          }, 1500);
+
+          return;
+        }
+
+        toast.error(backendError.message);
+        return;
+      }
+
+      // ===== Firebase errors =====
+      if (error.code) {
+        const friendlyMessage = getFirebaseErrorMessage(error.code);
+        toast.error(friendlyMessage);
+        return;
+      }
+
+      toast.error("Google login failed");
+    } finally {
+      setIsGoogleLoading(false);
     }
-
-    toast.error(backendError.message);
-    return;
-  }
-
-  // ===== Firebase errors =====
-  if (error.code) {
-    const friendlyMessage = getFirebaseErrorMessage(error.code);
-    toast.error(friendlyMessage);
-    return;
-  }
-
-  toast.error("Google login failed");
-} finally {
-  setIsGoogleLoading(false);
-}};
+  };
 
 
   return {

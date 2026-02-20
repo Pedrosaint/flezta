@@ -17,6 +17,7 @@ import {
   cartRoute,
   checkoutRoute,
   paymentRoute,
+  sellerIdentityVerificationRoute,
 } from "@/core/routes/routeNames";
 import {
   IMegaMenuItem,
@@ -83,7 +84,7 @@ const WebsiteHeaderComponent = () => {
             {navLinks.map((nav) => {
               const isActive =
                 pathname === nav.path ||
-                pathname.startsWith(`${nav.path}/`) ||
+                pathname?.startsWith(`${nav.path}/`) ||
                 (nav.name === "Products" &&
                   (pathname === cartRoute ||
                     pathname === checkoutRoute ||
@@ -93,9 +94,8 @@ const WebsiteHeaderComponent = () => {
                 <Link
                   key={nav.path}
                   href={nav.path}
-                  className={`text-lg font-medium transition-colors hover-gradient-text ${
-                    isActive ? "gradient-text" : "text-tertiary-color"
-                  }`}
+                  className={`text-lg font-medium transition-colors hover-gradient-text ${isActive ? "gradient-text" : "text-tertiary-color"
+                    }`}
                 >
                   {nav.name}
                 </Link>
@@ -135,11 +135,10 @@ const WebsiteHeaderComponent = () => {
             <div className="flex items-center gap-3">
               <button
                 onClick={handleUserIconClick}
-                className={`transition-all cursor-pointer ${
-                  isDashboard
+                className={`transition-all cursor-pointer ${isDashboard
                     ? "text-[#E26E00] scale-110"
                     : "text-gray-700 hover:text-[#E26E00]"
-                }`}
+                  }`}
               >
                 <UserIcon stroke="currentColor" />
               </button>
@@ -157,7 +156,10 @@ const WebsiteHeaderComponent = () => {
             </div>
 
             {!isDashboard && (
-              <button className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
+              <button
+                onClick={() => router.push(sellerIdentityVerificationRoute)}
+                //  disabled={!isAuthenticated}
+                className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
                 <div className="w-45 bg-primary-color text-white py-4 rounded-[14px] font-semibold">
                   Sell Now
                 </div>
@@ -205,11 +207,10 @@ const WebsiteHeaderComponent = () => {
                       <div
                         key={category.id}
                         onMouseEnter={() => setActiveCategory(category.id)}
-                        className={`text-lg cursor-pointer flex justify-between ${
-                          activeCategory === category.id
+                        className={`text-lg cursor-pointer flex justify-between ${activeCategory === category.id
                             ? "text-[#0C0F16] font-medium"
                             : "text-gray-700 hover:text-[#0C0F16]"
-                        }`}
+                          }`}
                       >
                         <div className="flex items-center gap-3">
                           {Icon && (

@@ -144,6 +144,10 @@ __turbopack_context__.s([
     ()=>profileRoute,
     "resetPasswordRoute",
     ()=>resetPasswordRoute,
+    "sellerAuthRoute",
+    ()=>sellerAuthRoute,
+    "sellerIdentityVerificationRoute",
+    ()=>sellerIdentityVerificationRoute,
     "settingsRoute",
     ()=>settingsRoute,
     "verifyOtpRoute",
@@ -159,6 +163,9 @@ const forgotPasswordRoute = "/auths/forgot_password";
 const verifyOtpRoute = "/auths/verify_otp";
 const resetPasswordRoute = "/auths/reset_password";
 const createAccountRoute = "/auths/create_account";
+// Seller Auth
+const sellerAuthRoute = "/seller_auths";
+const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
 // App
 const appRoute = "/";
 const homeRoute = "/home";

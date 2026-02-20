@@ -29,7 +29,7 @@ const PortalSidebar = () => {
           const Icon = item.icon;
           // Check if active: either exact match or the pathname starts with this path (for sub-routes)
           // We use startsWith but ensure we don't accidentally match "/" to everything or similar cases
-          const isActive = item.path === pathname || (item.path !== "/buyer_portal/dashboard" && pathname.startsWith(item.path));
+          const isActive = item.path === pathname || (item.path !== "/buyer_portal/dashboard" && pathname?.startsWith(item.path));
 
           return (
             <Link
