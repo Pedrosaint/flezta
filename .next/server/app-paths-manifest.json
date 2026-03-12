@@ -23,6 +23,7 @@
   "/page": "app/page.js",
   "/seller_auths/account_setup/page": "app/seller_auths/account_setup/page.js",
   "/seller_auths/identity_verification/page": "app/seller_auths/identity_verification/page.js",
+  "/seller_auths/preview/page": "app/seller_auths/preview/page.js",
   "/seller_auths/store_setup/page": "app/seller_auths/store_setup/page.js",
-  "/seller_auths/verify/page": "app/seller_auths/verify/page.js"
+  "/seller_portal/dashboard/page": "app/seller_portal/dashboard/page.js"
 }

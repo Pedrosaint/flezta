@@ -714,7 +714,7 @@ const LoginComp = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/modules/auth/components/login.comp.tsx",
                                 lineNumber: 122,
-                                columnNumber: 11
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/modules/auth/components/login.comp.tsx",
@@ -790,7 +790,7 @@ const LoginComp = ()=>{
                                     },
                                     type: "button",
                                     className: "text-secondary-color font-semibold cursor-pointer",
-                                    children: isLoading ? "Please wait..." : "Register New Account"
+                                    children: "Register New Account"
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/auth/components/login.comp.tsx",
                                     lineNumber: 147,

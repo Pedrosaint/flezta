@@ -171,16 +171,22 @@
       "namedRegex": "^/seller_auths/identity_verification(?:/)?$"
     },
     {
+      "page": "/seller_auths/preview",
+      "regex": "^/seller_auths/preview(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/seller_auths/preview(?:/)?$"
+    },
+    {
       "page": "/seller_auths/store_setup",
       "regex": "^/seller_auths/store_setup(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/seller_auths/store_setup(?:/)?$"
     },
     {
-      "page": "/seller_auths/verify",
-      "regex": "^/seller_auths/verify(?:/)?$",
+      "page": "/seller_portal/dashboard",
+      "regex": "^/seller_portal/dashboard(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/seller_auths/verify(?:/)?$"
+      "namedRegex": "^/seller_portal/dashboard(?:/)?$"
     }
   ],
   "dataRoutes": [],

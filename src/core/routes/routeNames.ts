@@ -12,8 +12,17 @@ const sellerAuthRoute = "/seller_auths";
 const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
 const sellerStoreSetupRoute = "/seller_auths/store_setup";
 const sellerAccountSetupRoute = "/seller_auths/account_setup";
-const sellerVerifyRoute = "/seller_auths/verify";
+const sellerPreviewRoute = "/seller_auths/preview";
 
+// Seller Dashboard
+const sellerDashboardRoute = "/seller_portal/dashboard";
+const sellerProfileRoute = "/seller_portal/profile";
+const sellerChatRoute = "/seller_portal/chat";
+const sellerOrderHistoryRoute = "/seller_portal/order_history";
+const sellerOrderDetailsRoute = "/seller_portal/order_history/:id";
+const sellerWalletRoute = "/seller_portal/wallet";
+const sellerWishlistRoute = "/seller_portal/wishlist";
+const sellerSettingsRoute = "/seller_portal/settings";
 
 // App
 const appRoute = "/";
@@ -51,8 +60,18 @@ export {
   sellerIdentityVerificationRoute,
   sellerStoreSetupRoute,
   sellerAccountSetupRoute,
-  sellerVerifyRoute,
+  sellerPreviewRoute,
 
+
+  // Seller Dashboard
+  sellerDashboardRoute,
+  sellerProfileRoute,
+  sellerChatRoute,
+  sellerOrderHistoryRoute,
+  sellerOrderDetailsRoute,
+  sellerWalletRoute,
+  sellerWishlistRoute,
+  sellerSettingsRoute,
 
   // App
   appRoute,

@@ -5,7 +5,7 @@ const useProductOverviewHook = () => {
 
   const tabs = [
     { key: "description", label: "Product Description" },
-    { key: "review", label: "Product Review" },
+    // { key: "review", label: "Product Review" },
     { key: "shipping", label: "Shipping & Returns" },
   ];
 

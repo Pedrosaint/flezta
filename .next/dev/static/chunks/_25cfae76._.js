@@ -138,10 +138,32 @@ __turbopack_context__.s([
     ()=>profileRoute,
     "resetPasswordRoute",
     ()=>resetPasswordRoute,
+    "sellerAccountSetupRoute",
+    ()=>sellerAccountSetupRoute,
     "sellerAuthRoute",
     ()=>sellerAuthRoute,
+    "sellerChatRoute",
+    ()=>sellerChatRoute,
+    "sellerDashboardRoute",
+    ()=>sellerDashboardRoute,
     "sellerIdentityVerificationRoute",
     ()=>sellerIdentityVerificationRoute,
+    "sellerOrderDetailsRoute",
+    ()=>sellerOrderDetailsRoute,
+    "sellerOrderHistoryRoute",
+    ()=>sellerOrderHistoryRoute,
+    "sellerPreviewRoute",
+    ()=>sellerPreviewRoute,
+    "sellerProfileRoute",
+    ()=>sellerProfileRoute,
+    "sellerSettingsRoute",
+    ()=>sellerSettingsRoute,
+    "sellerStoreSetupRoute",
+    ()=>sellerStoreSetupRoute,
+    "sellerWalletRoute",
+    ()=>sellerWalletRoute,
+    "sellerWishlistRoute",
+    ()=>sellerWishlistRoute,
     "settingsRoute",
     ()=>settingsRoute,
     "verifyOtpRoute",
@@ -160,6 +182,18 @@ const createAccountRoute = "/auths/create_account";
 // Seller Auth
 const sellerAuthRoute = "/seller_auths";
 const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
+const sellerStoreSetupRoute = "/seller_auths/store_setup";
+const sellerAccountSetupRoute = "/seller_auths/account_setup";
+const sellerPreviewRoute = "/seller_auths/preview";
+// Seller Dashboard
+const sellerDashboardRoute = "/seller_portal/dashboard";
+const sellerProfileRoute = "/seller_portal/profile";
+const sellerChatRoute = "/seller_portal/chat";
+const sellerOrderHistoryRoute = "/seller_portal/order_history";
+const sellerOrderDetailsRoute = "/seller_portal/order_history/:id";
+const sellerWalletRoute = "/seller_portal/wallet";
+const sellerWishlistRoute = "/seller_portal/wishlist";
+const sellerSettingsRoute = "/seller_portal/settings";
 // App
 const appRoute = "/";
 const homeRoute = "/home";

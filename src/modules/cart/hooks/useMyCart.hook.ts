@@ -51,6 +51,11 @@ const handleCheckout = () => {
   }, 300);
 };
 
+const statusColor = {
+  "In-stock": "text-emerald-600",
+  "Out of stock": "text-red-500",
+};
+
 
 
   return {
@@ -61,6 +66,7 @@ const handleCheckout = () => {
     calculateTotal,
     totalItems,
     handleCheckout,
+    statusColor,
   };
 };
 

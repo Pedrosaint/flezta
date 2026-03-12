@@ -8,6 +8,7 @@ const useListProductHook = () => {
   const { wishlist, toggleWishlist } = useWishlist();
   const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
   const [isNegotiatePriceModal, setIsNegotiatePriceModal] = useState(false);
+  const [isBuyNowModal, setIsBuyNowModal] = useState(false);
 
   const scrollToTopSmooth = () => {
     if (typeof window !== "undefined") {
@@ -45,6 +46,8 @@ const useListProductHook = () => {
     // Negotiate modal control
     isNegotiatePriceModal,
     setIsNegotiatePriceModal,
+    isBuyNowModal,
+    setIsBuyNowModal,
   };
 };
 

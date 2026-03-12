@@ -8,12 +8,13 @@ import {
 import { products2 } from "../data/products.data";
 import useRecentlyViewedHook from "../hook/useRecentlyViewed.hook";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import { formatNaira } from "@/shared/utils/currency.util";
 
 const RecentlyViewedComp = () => {
   const { hoveredCard, setHoveredCard } = useRecentlyViewedHook();
   const { addToCart } = useCart();
   return (
-    <div className="relative mt-10 py-20 border-t-2 border-gray-300">
+    <div className="relative mt-10 py-10 border-t-2 border-gray-300">
       <h1 className="text-2xl font-semibold mb-10">Recently Viewed Items</h1>
       {/*==== Left Arrow ====*/}
       <button className="absolute -left-2 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 border border-[#003625] bg-secondary-color rounded-xl flex items-center justify-center transition-colors">
@@ -56,7 +57,7 @@ const RecentlyViewedComp = () => {
 
               {/* Price */}
               <div className="text-xl font-semibold gradient-text">
-                ${product.price.toFixed(2)}
+                {formatNaira(product.price)}
               </div>
 
               {/* Hover Action Buttons */}

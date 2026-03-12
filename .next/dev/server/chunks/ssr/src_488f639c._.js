@@ -28,11 +28,11 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$app_logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$app_logo$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/images/app_logo.png.mjs { IMAGE => "[project]/src/assets/images/app_logo.png (static in ecmascript, tag client)" } [app-ssr] (structured image object with data url, ecmascript)');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/shared/ui/components/button.ui.tsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -88,16 +88,8 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                     lineNumber: 76,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: onClose,
-                                    className: "w-10 h-10 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors cursor-pointer",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                        size: 24
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 17
-                                    }, ("TURBOPACK compile-time value", void 0))
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["IconCloseButton"], {
+                                    onClick: onClose
                                 }, void 0, false, {
                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
                                     lineNumber: 79,
@@ -127,7 +119,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             className: "w-10 h-10"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 93,
+                                                            lineNumber: 88,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -135,13 +127,13 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: "FLEZTA"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 94,
+                                                            lineNumber: 89,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 92,
+                                                    lineNumber: 87,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -149,13 +141,13 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                     children: "Order Receipt"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 91,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -166,7 +158,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                     children: "Order summary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -197,7 +189,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                         children: row.label
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                        lineNumber: 118,
+                                                                        lineNumber: 113,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -205,13 +197,13 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                         children: row.value
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                        lineNumber: 119,
+                                                                        lineNumber: 114,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, i, true, {
                                                                 fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                lineNumber: 117,
+                                                                lineNumber: 112,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -222,7 +214,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                     children: "Order total"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 125,
+                                                                    lineNumber: 120,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -230,25 +222,25 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                     children: formatCurrency(orderData.orderTotal)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 126,
+                                                                    lineNumber: 121,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 124,
+                                                            lineNumber: 119,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 99,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 95,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -259,7 +251,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                     children: "Shipping address"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 130,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -270,7 +262,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: orderData.shippingAddress.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 134,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -278,7 +270,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: orderData.shippingAddress.phone
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 137,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -286,19 +278,19 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: orderData.shippingAddress.address
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 145,
+                                                            lineNumber: 140,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 138,
+                                                    lineNumber: 133,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 129,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -309,7 +301,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                     children: "Payment method"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 148,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -320,7 +312,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: "FLEZTA is committed to protecting your payment information"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 152,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -328,13 +320,13 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: "We use strong encryption and perform regular reviews of its system to protect your privacy"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 160,
+                                                            lineNumber: 155,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 151,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -353,20 +345,20 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                                     className: "w-4 h-4 bg-red-600 rounded-full opacity-80"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 169,
+                                                                                    lineNumber: 164,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "w-4 h-4 bg-yellow-500 rounded-full opacity-80 -ml-2"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 170,
+                                                                                    lineNumber: 165,
                                                                                     columnNumber: 27
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 168,
+                                                                            lineNumber: 163,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -374,13 +366,13 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             children: "master card"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 172,
+                                                                            lineNumber: 167,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 167,
+                                                                    lineNumber: 162,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -395,7 +387,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 177,
+                                                                            lineNumber: 172,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -406,19 +398,19 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 181,
+                                                                            lineNumber: 176,
                                                                             columnNumber: 25
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 176,
+                                                                    lineNumber: 171,
                                                                     columnNumber: 23
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 161,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -426,19 +418,19 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                             children: formatCurrency(orderData.paymentMethod.amount)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 186,
+                                                            lineNumber: 181,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 160,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 152,
+                                            lineNumber: 147,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -453,7 +445,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 189,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -465,7 +457,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                     className: "w-20 h-20 bg-gray-300 border border-gray-400 rounded-xl shrink-0"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 200,
+                                                                    lineNumber: 195,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -476,7 +468,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             children: item.name
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 202,
+                                                                            lineNumber: 197,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -486,14 +478,14 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                                     children: "By:"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 206,
+                                                                                    lineNumber: 201,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "w-5 h-5 bg-gray-200 border border-gray-300 rounded-full flex items-center justify-center font-bold text-[10px]"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 207,
+                                                                                    lineNumber: 202,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -501,7 +493,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                                     children: item.seller
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 208,
+                                                                                    lineNumber: 203,
                                                                                     columnNumber: 29
                                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                                 item.sellerVerified && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -509,24 +501,24 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                                         width: 14
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                        lineNumber: 211,
+                                                                                        lineNumber: 206,
                                                                                         columnNumber: 33
                                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                                    lineNumber: 210,
+                                                                                    lineNumber: 205,
                                                                                     columnNumber: 31
                                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 205,
+                                                                            lineNumber: 200,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 201,
+                                                                    lineNumber: 196,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -537,7 +529,7 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             children: formatCurrency(item.price)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 217,
+                                                                            lineNumber: 212,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -548,30 +540,30 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                            lineNumber: 220,
+                                                                            lineNumber: 215,
                                                                             columnNumber: 27
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                                    lineNumber: 216,
+                                                                    lineNumber: 211,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, item.id, true, {
                                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                            lineNumber: 199,
+                                                            lineNumber: 194,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0)))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                    lineNumber: 197,
+                                                    lineNumber: 192,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 193,
+                                            lineNumber: 188,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -581,63 +573,51 @@ const OrderReceiptModal = ({ isOpen, onClose, orderData, items, formatCurrency }
                                                 children: "To prevent excess packaging waste, we do not include paper receipts. However, you can always print one out for your records."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 226,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 230,
+                                            lineNumber: 225,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 84,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "fixed bottom-0 right-0 w-full max-w-175 bg-white border-t border-gray-100 p-6 flex gap-4 z-20",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-full bg-[#003625] text-white py-4 rounded-[14px] font-semibold text-sm",
-                                                children: "Download Receipt"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                lineNumber: 242,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0))
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PrimaryButton"], {
+                                            fullWidth: true,
+                                            size: "lg",
+                                            children: "Download Receipt"
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 236,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "w-full p-0.5 border backdrop-blur-[10px] border-[#FDA106] rounded-[18px] transition cursor-pointer",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-full bg-[#FFF4EA] text-[#FDA106] py-4 rounded-[14px] font-semibold text-sm",
-                                                children: "Share Receipt"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                                lineNumber: 247,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0))
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WarningButton"], {
+                                            fullWidth: true,
+                                            size: "lg",
+                                            children: "Share Receipt"
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 242,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 235,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/modules/order_history/modal/receipt.modal.tsx",
-                            lineNumber: 88,
+                            lineNumber: 83,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]

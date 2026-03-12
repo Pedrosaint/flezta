@@ -79,6 +79,8 @@ __turbopack_context__.s([
     ()=>EyeOffIcon,
     "FastShippingIcon",
     ()=>FastShippingIcon,
+    "FileIcon",
+    ()=>FileIcon,
     "FilterIcon",
     ()=>FilterIcon,
     "GameIcon",
@@ -2740,6 +2742,65 @@ const EyeIcon = ({ stroke = "#6B7280", width = 24, height = 24, ...props })=>/*#
         lineNumber: 1627,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
+const FileIcon = ({ stroke = "#6B7280", width = 32, height = 32, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+        width: width,
+        height: height,
+        viewBox: "0 0 32 32",
+        fill: "none",
+        stroke: stroke,
+        ...props,
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M27.3332 14.0001V13.3334C27.3332 8.30509 27.3332 5.79095 25.7712 4.22884C24.2091 2.66675 21.695 2.66675 16.6666 2.66675H15.3334C10.3051 2.66675 7.79099 2.66675 6.2289 4.22883C4.66681 5.79091 4.66678 8.30504 4.66674 13.3333L4.66669 19.3334C4.66665 23.7166 4.66663 25.9083 5.87719 27.3834C6.09885 27.6535 6.3465 27.9011 6.61658 28.1229C8.09171 29.3334 10.2833 29.3334 14.6666 29.3334",
+                stroke: stroke,
+                "stroke-width": "2",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1664,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M10 9.33325H22",
+                stroke: stroke,
+                "stroke-width": "2",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1671,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M10 16H18",
+                stroke: stroke,
+                "stroke-width": "2",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1678,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                d: "M27.3333 26.6667V22.6667C27.3333 20.7609 25.5425 18.6667 23.3333 18.6667C21.1241 18.6667 19.3333 20.7609 19.3333 22.6667V27.3334C19.3333 28.4379 20.2288 29.3334 21.3333 29.3334C22.4378 29.3334 23.3333 28.4379 23.3333 27.3334V22.6667",
+                stroke: stroke,
+                "stroke-width": "2",
+                "stroke-linecap": "round",
+                "stroke-linejoin": "round"
+            }, void 0, false, {
+                fileName: "[project]/src/assets/svg/svg_icon.tsx",
+                lineNumber: 1685,
+                columnNumber: 5
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/assets/svg/svg_icon.tsx",
+        lineNumber: 1655,
+        columnNumber: 3
+    }, ("TURBOPACK compile-time value", void 0));
 }),
 "[project]/src/assets/images/product_header.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
 
@@ -2799,13 +2860,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSearchParams"])();
     // Parse path segments and filter out empty strings
-    const pathSegments = pathname.split("/").filter(Boolean);
-    // We identify segments after 'buyer_portal' for display purposes
+    const pathSegments = (pathname || "").split("/").filter(Boolean);
     // We identify segments after 'buyer_portal' for display purposes
     const portalIndex = pathSegments.indexOf("buyer_portal");
     const displaySegments = portalIndex !== -1 ? pathSegments.slice(portalIndex + 1) : pathSegments;
     // Special handling for Order Details
-    const isOrderDetails = pathname.includes("/order_history/") && displaySegments.some((s)=>s === "order_history");
+    const isOrderDetails = (pathname || "").includes("/order_history/") && displaySegments.some((s)=>s === "order_history");
     const section = searchParams.get("section");
     const settingsLabel = section === "security" ? "Security settings" : section === "notification" ? "Notification settings" : "Security Settings";
     // Derive page title
@@ -2832,14 +2892,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                 priority: true
             }, void 0, false, {
                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                lineNumber: 66,
+                lineNumber: 65,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-[#04241A]/90"
             }, void 0, false, {
                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                lineNumber: 75,
+                lineNumber: 74,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2850,7 +2910,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                         children: pageTitle
                     }, void 0, false, {
                         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                        lineNumber: 79,
+                        lineNumber: 78,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2865,19 +2925,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                     height: 20
                                 }, void 0, false, {
                                     fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 89,
                                     columnNumber: 25
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                lineNumber: 85,
+                                lineNumber: 84,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                 className: "w-4 h-4 text-gray-400"
                             }, void 0, false, {
                                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                lineNumber: 93,
+                                lineNumber: 92,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0)),
                             isOrderDetails ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2889,14 +2949,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                         children: "Order History"
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 96,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                         className: "w-4 h-4 text-gray-400"
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 102,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2904,13 +2964,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                         children: "Order Details"
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 103,
                                         columnNumber: 29
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                lineNumber: 96,
+                                lineNumber: 95,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0)) : displaySegments.length > 0 ? displaySegments.map((segment, index)=>{
                                 // Construct the href for this breadcrumb
@@ -2929,7 +2989,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                             children: label
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 122,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: href,
@@ -2937,20 +2997,20 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                             children: label
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 126,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         !isLast && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                             className: "w-4 h-4 text-gray-400"
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 135,
                                             columnNumber: 41
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 120,
                                     columnNumber: 33
                                 }, ("TURBOPACK compile-time value", void 0));
                             }) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2958,25 +3018,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
                                 children: "Dashboard"
                             }, void 0, false, {
                                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                                lineNumber: 142,
+                                lineNumber: 141,
                                 columnNumber: 25
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                        lineNumber: 84,
+                        lineNumber: 83,
                         columnNumber: 17
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/shared/ui/layout/portal_header.tsx",
-        lineNumber: 64,
+        lineNumber: 63,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -3025,6 +3085,32 @@ __turbopack_context__.s([
     ()=>profileRoute,
     "resetPasswordRoute",
     ()=>resetPasswordRoute,
+    "sellerAccountSetupRoute",
+    ()=>sellerAccountSetupRoute,
+    "sellerAuthRoute",
+    ()=>sellerAuthRoute,
+    "sellerChatRoute",
+    ()=>sellerChatRoute,
+    "sellerDashboardRoute",
+    ()=>sellerDashboardRoute,
+    "sellerIdentityVerificationRoute",
+    ()=>sellerIdentityVerificationRoute,
+    "sellerOrderDetailsRoute",
+    ()=>sellerOrderDetailsRoute,
+    "sellerOrderHistoryRoute",
+    ()=>sellerOrderHistoryRoute,
+    "sellerPreviewRoute",
+    ()=>sellerPreviewRoute,
+    "sellerProfileRoute",
+    ()=>sellerProfileRoute,
+    "sellerSettingsRoute",
+    ()=>sellerSettingsRoute,
+    "sellerStoreSetupRoute",
+    ()=>sellerStoreSetupRoute,
+    "sellerWalletRoute",
+    ()=>sellerWalletRoute,
+    "sellerWishlistRoute",
+    ()=>sellerWishlistRoute,
     "settingsRoute",
     ()=>settingsRoute,
     "verifyOtpRoute",
@@ -3040,6 +3126,21 @@ const forgotPasswordRoute = "/auths/forgot_password";
 const verifyOtpRoute = "/auths/verify_otp";
 const resetPasswordRoute = "/auths/reset_password";
 const createAccountRoute = "/auths/create_account";
+// Seller Auth
+const sellerAuthRoute = "/seller_auths";
+const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
+const sellerStoreSetupRoute = "/seller_auths/store_setup";
+const sellerAccountSetupRoute = "/seller_auths/account_setup";
+const sellerPreviewRoute = "/seller_auths/preview";
+// Seller Dashboard
+const sellerDashboardRoute = "/seller_portal/dashboard";
+const sellerProfileRoute = "/seller_portal/profile";
+const sellerChatRoute = "/seller_portal/chat";
+const sellerOrderHistoryRoute = "/seller_portal/order_history";
+const sellerOrderDetailsRoute = "/seller_portal/order_history/:id";
+const sellerWalletRoute = "/seller_portal/wallet";
+const sellerWishlistRoute = "/seller_portal/wishlist";
+const sellerSettingsRoute = "/seller_portal/settings";
 // App
 const appRoute = "/";
 const homeRoute = "/home";
@@ -3195,7 +3296,7 @@ const PortalSidebar = ()=>{
                         const Icon = item.icon;
                         // Check if active: either exact match or the pathname starts with this path (for sub-routes)
                         // We use startsWith but ensure we don't accidentally match "/" to everything or similar cases
-                        const isActive = item.path === pathname || item.path !== "/buyer_portal/dashboard" && pathname.startsWith(item.path);
+                        const isActive = item.path === pathname || item.path !== "/buyer_portal/dashboard" && pathname?.startsWith(item.path);
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: item.path,
                             className: `
@@ -3713,7 +3814,7 @@ const WebsiteHeaderComponent = ()=>{
                             className: "w-20 h-20 cursor-pointer"
                         }, void 0, false, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 60,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3727,7 +3828,7 @@ const WebsiteHeaderComponent = ()=>{
                                         className: "flex-1 px-4 py-4 focus:outline-none"
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3736,42 +3837,42 @@ const WebsiteHeaderComponent = ()=>{
                                             className: "w-6 h-6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 77,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                lineNumber: 69,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 68,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: "flex items-center gap-8 text-lg font-medium text-tertiary-color",
                             children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$nav_links$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navLinks"].map((nav)=>{
-                                const isActive = pathname === nav.path || pathname.startsWith(`${nav.path}/`) || nav.name === "Products" && (pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cartRoute"] || pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["checkoutRoute"] || pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["paymentRoute"]);
+                                const isActive = pathname === nav.path || pathname?.startsWith(`${nav.path}/`) || nav.name === "Products" && (pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cartRoute"] || pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["checkoutRoute"] || pathname === __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["paymentRoute"]);
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: nav.path,
                                     className: `text-lg font-medium transition-colors hover-gradient-text ${isActive ? "gradient-text" : "text-tertiary-color"}`,
                                     children: nav.name
                                 }, nav.path, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 95,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0));
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 82,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3782,7 +3883,7 @@ const WebsiteHeaderComponent = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LoveIcon"], {}, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 110,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         wishlistCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3790,25 +3891,25 @@ const WebsiteHeaderComponent = ()=>{
                                             children: wishlistCount
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 112,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 !isDashboard && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     className: "relative text-gray-700 hover:text-emerald-700 cursor-pointer",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WalletIcon"], {}, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 120,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 119,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3817,7 +3918,7 @@ const WebsiteHeaderComponent = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BagIcon"], {}, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         cartCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3825,13 +3926,13 @@ const WebsiteHeaderComponent = ()=>{
                                             children: cartCount
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 130,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3849,7 +3950,7 @@ const WebsiteHeaderComponent = ()=>{
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 137,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         hasMounted && isAuthenticated && isDashboard && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3880,39 +3981,55 @@ const WebsiteHeaderComponent = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                !isDashboard && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                isAuthenticated ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sellerDashboardRoute"]),
                                     className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-45 bg-primary-color text-white py-4 rounded-[14px] font-semibold",
-                                        children: "Sell Now"
+                                        className: "w-45 bg-gradient text-white py-4 rounded-[14px] font-semibold",
+                                        children: "My Shop"
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 163,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
                                     lineNumber: 160,
                                     columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>router.push(`/auth?redirect=${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sellerIdentityVerificationRoute"]}`),
+                                    className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-45 bg-primary-color text-white py-4 rounded-[14px] font-semibold",
+                                        children: "Sell Now"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
+                                        lineNumber: 171,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
+                                    fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
+                                    lineNumber: 168,
+                                    columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 107,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                    lineNumber: 58,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                lineNumber: 57,
+                lineNumber: 59,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             !isDashboard && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3930,17 +4047,17 @@ const WebsiteHeaderComponent = ()=>{
                                     children: item.name
                                 }, item.id, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 180,
+                                    lineNumber: 190,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)))
                         }, void 0, false, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 178,
+                            lineNumber: 188,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                        lineNumber: 177,
+                        lineNumber: 187,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     showMegaMenu && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3967,7 +4084,7 @@ const WebsiteHeaderComponent = ()=>{
                                                             height: 24
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                            lineNumber: 216,
+                                                            lineNumber: 225,
                                                             columnNumber: 29
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3975,13 +4092,13 @@ const WebsiteHeaderComponent = ()=>{
                                                             children: category.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                            lineNumber: 226,
+                                                            lineNumber: 235,
                                                             columnNumber: 27
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                    lineNumber: 214,
+                                                    lineNumber: 223,
                                                     columnNumber: 25
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3989,24 +4106,24 @@ const WebsiteHeaderComponent = ()=>{
                                                         stroke: activeCategory === category.id ? "#003625" : "#4B5563"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 247,
                                                         columnNumber: 27
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                    lineNumber: 237,
+                                                    lineNumber: 246,
                                                     columnNumber: 25
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, category.id, true, {
                                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                            lineNumber: 205,
+                                            lineNumber: 215,
                                             columnNumber: 23
                                         }, ("TURBOPACK compile-time value", void 0));
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 200,
+                                    lineNumber: 210,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4019,40 +4136,40 @@ const WebsiteHeaderComponent = ()=>{
                                                 children: sub.name
                                             }, sub.id, false, {
                                                 fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                                lineNumber: 255,
+                                                lineNumber: 264,
                                                 columnNumber: 23
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                        lineNumber: 253,
+                                        lineNumber: 262,
                                         columnNumber: 19
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                                    lineNumber: 252,
+                                    lineNumber: 261,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                            lineNumber: 198,
+                            lineNumber: 208,
                             columnNumber: 15
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                        lineNumber: 193,
+                        lineNumber: 203,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-                lineNumber: 172,
+                lineNumber: 182,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/shared/ui/layout/website_header.layout.tsx",
-        lineNumber: 56,
+        lineNumber: 58,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

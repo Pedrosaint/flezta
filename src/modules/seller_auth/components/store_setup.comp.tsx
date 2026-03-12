@@ -1,6 +1,5 @@
 "use client"
 
-import { FileIcon } from "@/assets/svg/svg_icon"
 import { sellerAccountSetupRoute } from "@/core/routes/routeNames"
 import { useRouter } from "next/navigation"
 
@@ -73,17 +72,6 @@ const StoreSetupComp = () => {
                             placeholder="Enter zip code"
                             className="mt-2 w-full border border-[#C4C8CE] rounded-[16px] px-4 py-3 outline-none"
                         />
-                    </div>
-                </div>
-
-                {/* Upload Box */}
-                <div>
-                    <label className="text-sm text-gray-600">Store logo</label>
-                    <div className="mt-2 border border-[#C4C8CE] rounded-[16px] h-32 flex flex-col items-center justify-center text-gray-500 cursor-pointer">
-                        <input type="file" className="hidden" />
-                        <FileIcon />
-                        <label className="text-sm">Click here to upload</label>
-                        <span className="text-xs mt-1">Format: PDF, JPG, PNG</span>
                     </div>
                 </div>
 

@@ -8,12 +8,13 @@ import {
 import { products2 } from "../data/products.data";
 import useCustomerWhoViewedHook from "../hook/useCustomerWhoViewed.hook";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import { formatNaira } from "@/shared/utils/currency.util";
 
 const CustomerWhoViewedComp = () => {
   const { hoveredCard, setHoveredCard } = useCustomerWhoViewedHook();
   const { addToCart } = useCart();
   return (
-    <div className="relative mt-30 py-20 border-t-2 border-gray-300">
+    <div className="relative mt-10 py-10 border-t-2 border-gray-300">
       <h1 className="text-2xl font-semibold mb-10">
         Customers who viewed this also viewed
       </h1>
@@ -58,7 +59,7 @@ const CustomerWhoViewedComp = () => {
 
               {/* Price */}
               <div className="text-xl font-semibold gradient-text">
-                ${product.price.toFixed(2)}
+                {formatNaira(product.price)}
               </div>
 
               {/* Hover Action Buttons */}

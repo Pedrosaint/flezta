@@ -23,6 +23,7 @@
   "/page": "/",
   "/seller_auths/account_setup/page": "/seller_auths/account_setup",
   "/seller_auths/identity_verification/page": "/seller_auths/identity_verification",
+  "/seller_auths/preview/page": "/seller_auths/preview",
   "/seller_auths/store_setup/page": "/seller_auths/store_setup",
-  "/seller_auths/verify/page": "/seller_auths/verify"
+  "/seller_portal/dashboard/page": "/seller_portal/dashboard"
 }

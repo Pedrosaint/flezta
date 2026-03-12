@@ -18,8 +18,10 @@ import { useRouter } from "next/navigation";
 import { cartRoute } from "@/core/routes/routeNames";
 import BuyNowModal from "../modal/buy_now.modal";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import { DarkButton, GradientButton, PrimaryButton } from "@/shared/ui/components/button.ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { IProduct } from "../types/product.type";
+import { formatNaira } from "@/shared/utils/currency.util";
 
 interface ProductDetailsCompProps {
   product: IProduct;
@@ -167,7 +169,7 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
 
             {/* Price */}
             <div className="text-4xl font-medium gradient-text mb-3">
-              ${product.price}
+              {formatNaira(product.price)}
             </div>
 
             {/* Color Selection */}
@@ -226,77 +228,41 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
             </div>
 
             {/* Action Buttons */}
-            {/* Action Buttons */}
             <div className="flex flex-wrap gap-3 mt-auto">
               {/*=== Negotiate Price Button ===*/}
-              {/* <button 
-              onClick={() => setIsNegotiatePriceModal(true)}
-              className="px-6 py-3 border border-[#FDA106] rounded-[18px] flex items-center gap-2 transition-colors cursor-pointer">
-                <ChatIcon2 />
-                <h1 className="gradient-text"> Negotiate Price</h1>
-              </button> */}
-
-              {/*=== Negotiate Price Button ===*/}
-              <button
+              <DarkButton
                 onClick={() => setIsNegotiatePriceModal(true)}
-                className="p-0.5 border backdrop-blur-[10px] border-[#FDA106] rounded-[18px] cursor-pointer"
+                className="w-auto"
               >
-                <div className=" bg-[#263238] text-white py-4 px-5 rounded-[14px] font-semibold flex items-center gap-2">
+                <div className="flex items-center gap-2 px-2">
                   <ChatIcon3 />
-                  <h1 className=""> Negotiate Price</h1>
+                  Negotiate Price
                 </div>
-              </button>
+              </DarkButton>
 
               {/*=== Add To Cart Button ===*/}
-              <button
+              <GradientButton
                 onClick={() => {
-                  // Add current product to cart with selected quantity
                   setIsBuyNowModal(true);
                   addToCart(productId, quantity);
                 }}
-                className="group w-45 p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
+                className="w-45"
               >
-                <div className="relative w-full rounded-[14px] overflow-hidden bg-gradient">
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                    <span className="text-[#FDA106] flex gap-2 items-center">
-                      <AddToCartIcon2 stroke="#FDA106" />
-                      Add To Cart
-                    </span>
-                  </div>
-
-                  {/* Default State */}
-                  <div className="relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
-                    <AddToCartIcon2 />
-                    Add To Cart
-                  </div>
-                </div>
-              </button>
+                <AddToCartIcon2 stroke="currentColor" />
+                Add To Cart
+              </GradientButton>
 
               {/*=== Buy Now Button ===*/}
-              <button
+              <PrimaryButton
                 onClick={() => {
                   scrollToTopSmooth();
                   router.push(cartRoute);
                 }}
-                className="group w-45 p-0.5 border border-[#003625] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
+                className="w-45"
               >
-                <div className="relative w-full rounded-[14px] overflow-hidden bg-[#003625]">
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-[#DDFFF4] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                    <span className="text-[#003625] font-semibold flex gap-2 items-center">
-                      <SecurePaymentIcon stroke="#003625" />
-                      Buy Now
-                    </span>
-                  </div>
-
-                  {/* Default State */}
-                  <div className="relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
-                    <SecurePaymentIcon stroke="white" />
-                    Buy Now
-                  </div>
-                </div>
-              </button>
+                <SecurePaymentIcon stroke="currentColor" />
+                Buy Now
+              </PrimaryButton>
             </div>
           </div>
 
@@ -352,10 +318,12 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
               </div>
 
               {/* Action Button */}
-              <button className="w-full py-3 rounded-2xl text-white bg-[#263238] font-medium transition-colors flex items-center gap-2 justify-center cursor-pointer">
-                <ChatIcon3 />
-                Message Seller
-              </button>
+              <DarkButton onClick={() => {}} fullWidth>
+                <div className="flex items-center gap-2">
+                  <ChatIcon3 />
+                  Message Seller
+                </div>
+              </DarkButton>
             </div>
           </div>
         </div>
@@ -365,7 +333,11 @@ const ProductDetailsComp = ({ product }: ProductDetailsCompProps) => {
         <NegotiatePriceModal onClose={() => setIsNegotiatePriceModal(false)} />
       )}
 
-      {isBuyNowModal && <BuyNowModal onClose={() => setIsBuyNowModal(false)} />}
+      <AnimatePresence>
+        {isBuyNowModal && (
+          <BuyNowModal onClose={() => setIsBuyNowModal(false)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 };

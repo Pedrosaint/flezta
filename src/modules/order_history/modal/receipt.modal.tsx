@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Logo from "@/assets/images/app_logo.png";
 import { VerifiedBadge } from "@/assets/svg/svg_icon";
+import { PrimaryButton, WarningButton, IconCloseButton } from "@/shared/ui/components/button.ui";
 
 interface ReceiptItem {
   id: string;
@@ -76,12 +76,7 @@ const OrderReceiptModal: React.FC<OrderReceiptModalProps> = ({
               <h2 className="text-2xl font-semibold text-gray-900">
                 Order Receipt
               </h2>
-              <button
-                onClick={onClose}
-                className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors cursor-pointer"
-              >
-                <X size={24} />
-              </button>
+              <IconCloseButton onClick={onClose} />
             </div>
 
             {/* Content */}
@@ -238,16 +233,18 @@ const OrderReceiptModal: React.FC<OrderReceiptModalProps> = ({
 
               {/* Action Buttons */}
               <div className="fixed bottom-0 right-0 w-full max-w-175 bg-white border-t border-gray-100 p-6 flex gap-4 z-20">
-                <button className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition cursor-pointer">
-                  <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] font-semibold text-sm">
-                    Download Receipt
-                  </div>
-                </button>
-                <button className="w-full p-0.5 border backdrop-blur-[10px] border-[#FDA106] rounded-[18px] transition cursor-pointer">
-                  <div className="w-full bg-[#FFF4EA] text-[#FDA106] py-4 rounded-[14px] font-semibold text-sm">
-                    Share Receipt
-                  </div>
-                </button>
+                <PrimaryButton
+                  fullWidth
+                  size="lg"
+                >
+                  Download Receipt
+                </PrimaryButton>
+                <WarningButton
+                  fullWidth
+                  size="lg"
+                >
+                  Share Receipt
+                </WarningButton>
               </div>
             </div>
           </motion.div>

@@ -61,25 +61,26 @@ const useTopDealsHook = (totalProducts: number) => {
   const router = useRouter();
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const { wishlist, toggleWishlist } = useWishlist();
+  const [isBuyNowModal, setIsBuyNowModal] = useState(false);
   const [floatingHearts, setFloatingHearts] = useState<{ id: string }[]>([]);
 
   // Carousel state
   const [currentIndex, setCurrentIndex] = useState(0);
-   const [direction, setDirection] = useState<1 | -1>(1);
+  const [direction, setDirection] = useState<1 | -1>(1);
 
   const canGoNext = currentIndex + ITEMS_PER_VIEW < totalProducts;
   const canGoPrev = currentIndex > 0;
 
   const handleNext = () => {
     if (canGoNext) {
-       setDirection(1);
+      setDirection(1);
       setCurrentIndex((prev) => prev + 1);
     }
   };
 
   const handlePrev = () => {
     if (canGoPrev) {
-       setDirection(-1);
+      setDirection(-1);
       setCurrentIndex((prev) => prev - 1);
     }
   };
@@ -112,6 +113,8 @@ const useTopDealsHook = (totalProducts: number) => {
     handleWishlistClick,
     scrollToTopSmooth,
     router,
+    isBuyNowModal,
+    setIsBuyNowModal,
 
     // carousel
     currentIndex,

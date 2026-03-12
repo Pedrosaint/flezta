@@ -9,6 +9,7 @@ import {
 import { products2 } from "@/modules/products/data/products.data";
 import useWishListHook from "../hooks/wishList.hook";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import { formatNaira } from "@/shared/utils/currency.util";
 
 const WhishlistComp = () => {
   const { hoveredCard, setHoveredCard } = useWishListHook();
@@ -63,7 +64,7 @@ const WhishlistComp = () => {
 
                 {/* Price */}
                 <div className="text-xl font-semibold gradient-text">
-                  ${product.price.toFixed(2)}
+                  {formatNaira(product.price)}
                 </div>
 
                 {/* Hover Action Buttons */}

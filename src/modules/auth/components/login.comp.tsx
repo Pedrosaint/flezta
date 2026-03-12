@@ -118,10 +118,10 @@ const LoginComp = () => {
             type="button"
             onClick={handleSubmitLoginForm}
             disabled={isLoading}
-          className="group w-full p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mb-5">
-          <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-          {isLoading ? "Logging in..." : "Login"}
-          </div>
+            className="group w-full p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed mb-5">
+            <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
+              {isLoading ? "Logging in..." : "Login"}
+            </div>
           </button>
 
           <div className="relative">
@@ -145,14 +145,14 @@ const LoginComp = () => {
           <p className="text-center text-sm text-primary-color">
             Don't have an account?{" "}
             <button
-              onClick={() => {  
+              onClick={() => {
                 scrollToTopSmooth();
                 router.push(createAccountRoute);
               }}
               type="button"
               className="text-secondary-color font-semibold cursor-pointer"
             >
-              {isLoading ? "Please wait..." : "Register New Account"}
+              {"Register New Account"}
             </button>
           </p>
         </div>

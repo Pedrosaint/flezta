@@ -46,12 +46,28 @@ __turbopack_context__.s([
     ()=>sellerAccountSetupRoute,
     "sellerAuthRoute",
     ()=>sellerAuthRoute,
+    "sellerChatRoute",
+    ()=>sellerChatRoute,
+    "sellerDashboardRoute",
+    ()=>sellerDashboardRoute,
     "sellerIdentityVerificationRoute",
     ()=>sellerIdentityVerificationRoute,
+    "sellerOrderDetailsRoute",
+    ()=>sellerOrderDetailsRoute,
+    "sellerOrderHistoryRoute",
+    ()=>sellerOrderHistoryRoute,
+    "sellerPreviewRoute",
+    ()=>sellerPreviewRoute,
+    "sellerProfileRoute",
+    ()=>sellerProfileRoute,
+    "sellerSettingsRoute",
+    ()=>sellerSettingsRoute,
     "sellerStoreSetupRoute",
     ()=>sellerStoreSetupRoute,
-    "sellerVerifyRoute",
-    ()=>sellerVerifyRoute,
+    "sellerWalletRoute",
+    ()=>sellerWalletRoute,
+    "sellerWishlistRoute",
+    ()=>sellerWishlistRoute,
     "settingsRoute",
     ()=>settingsRoute,
     "verifyOtpRoute",
@@ -72,7 +88,16 @@ const sellerAuthRoute = "/seller_auths";
 const sellerIdentityVerificationRoute = "/seller_auths/identity_verification";
 const sellerStoreSetupRoute = "/seller_auths/store_setup";
 const sellerAccountSetupRoute = "/seller_auths/account_setup";
-const sellerVerifyRoute = "/seller_auths/verify";
+const sellerPreviewRoute = "/seller_auths/preview";
+// Seller Dashboard
+const sellerDashboardRoute = "/seller_portal/dashboard";
+const sellerProfileRoute = "/seller_portal/profile";
+const sellerChatRoute = "/seller_portal/chat";
+const sellerOrderHistoryRoute = "/seller_portal/order_history";
+const sellerOrderDetailsRoute = "/seller_portal/order_history/:id";
+const sellerWalletRoute = "/seller_portal/wallet";
+const sellerWishlistRoute = "/seller_portal/wishlist";
+const sellerSettingsRoute = "/seller_portal/settings";
 // App
 const appRoute = "/";
 const homeRoute = "/home";
@@ -237,7 +262,7 @@ const AccountSetupComp = ()=>{
                             className: "flex gap-3 mt-10",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sellerVerifyRoute"]),
+                                    onClick: ()=>router.push(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$core$2f$routes$2f$routeNames$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["sellerPreviewRoute"]),
                                     className: "group w-full p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "relative w-full rounded-[14px] overflow-hidden bg-gradient",

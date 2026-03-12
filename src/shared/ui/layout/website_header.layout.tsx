@@ -10,13 +10,16 @@ import {
   UserIcon,
   WalletIcon,
 } from "../../../assets/svg/svg_icon";
+import { GradientButton, PrimaryButton } from "../components/button.ui";
 import Link from "next/link";
 import { navLinks } from "../../../core/routes/nav_links";
 import {
   appRoute,
   cartRoute,
   checkoutRoute,
+  createAccountRoute,
   paymentRoute,
+  sellerDashboardRoute,
   sellerIdentityVerificationRoute,
 } from "@/core/routes/routeNames";
 import {
@@ -25,6 +28,7 @@ import {
   ISubCategory,
 } from "./data/mega_menu.data";
 import useWebsiteHeaderHook from "../hooks/website_header.hook";
+import secureLocalStorage from "react-secure-storage";
 
 const WebsiteHeaderComponent = () => {
   const [hasMounted, setHasMounted] = useState(false);
@@ -136,8 +140,8 @@ const WebsiteHeaderComponent = () => {
               <button
                 onClick={handleUserIconClick}
                 className={`transition-all cursor-pointer ${isDashboard
-                    ? "text-[#E26E00] scale-110"
-                    : "text-gray-700 hover:text-[#E26E00]"
+                  ? "text-[#E26E00] scale-110"
+                  : "text-gray-700 hover:text-[#E26E00]"
                   }`}
               >
                 <UserIcon stroke="currentColor" />
@@ -155,15 +159,24 @@ const WebsiteHeaderComponent = () => {
               )}
             </div>
 
-            {!isDashboard && (
-              <button
-                onClick={() => router.push(sellerIdentityVerificationRoute)}
-                //  disabled={!isAuthenticated}
-                className="w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer">
-                <div className="w-45 bg-primary-color text-white py-4 rounded-[14px] font-semibold">
-                  Sell Now
-                </div>
-              </button>
+            {isAuthenticated ? (
+              <GradientButton
+                onClick={() => router.push(sellerDashboardRoute)}
+                borderVariant="green"
+                className="w-40"
+              >
+                My Shop
+              </GradientButton>
+            ) : (
+              <PrimaryButton
+                onClick={() => {
+                  secureLocalStorage.setItem("return_url", sellerIdentityVerificationRoute);
+                  router.push(createAccountRoute);
+                }}
+                className="w-40"
+              >
+                Sell Now
+              </PrimaryButton>
             )}
           </div>
         </div>
@@ -208,8 +221,8 @@ const WebsiteHeaderComponent = () => {
                         key={category.id}
                         onMouseEnter={() => setActiveCategory(category.id)}
                         className={`text-lg cursor-pointer flex justify-between ${activeCategory === category.id
-                            ? "text-[#0C0F16] font-medium"
-                            : "text-gray-700 hover:text-[#0C0F16]"
+                          ? "text-[#0C0F16] font-medium"
+                          : "text-gray-700 hover:text-[#0C0F16]"
                           }`}
                       >
                         <div className="flex items-center gap-3">

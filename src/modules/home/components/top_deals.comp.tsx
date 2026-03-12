@@ -19,6 +19,7 @@ import useTopDealsHook from "../hooks/useTopDeals.hook";
 import { useState } from "react";
 import NegotiatePriceModal from "@/modules/products/modal/negotiate_price.modal";
 import useCart from "@/shared/ui/hooks/use_cart.hook";
+import BuyNowModal from "@/modules/products/modal/buy_now.modal";
 
 const products = [
   {
@@ -93,6 +94,8 @@ export default function TopDealsComp() {
     handlePrev,
     canGoNext,
     canGoPrev,
+    isBuyNowModal,
+    setIsBuyNowModal,
   } = useTopDealsHook(products.length);
 
   const { addToCart } = useCart();
@@ -199,17 +202,19 @@ export default function TopDealsComp() {
                       <div
                         className={`
                     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                    ${
-                      hoveredCard === product.id
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-8 opacity-0"
-                    }
+                    ${hoveredCard === product.id
+                            ? "translate-y-0 opacity-100"
+                            : "translate-y-8 opacity-0"
+                          }
                 `}
                       >
                         <div className="backdrop-blur-lg border border-gray-200 p-3 rounded-2xl bg-white/10">
                           <div className="flex gap-3">
                             <button
-                              onClick={() => addToCart(String(product.id), 1)}
+                              onClick={() => {
+                                setIsBuyNowModal(true);
+                                addToCart(String(product.id), 1);
+                              }}
                               className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
                             >
                               <AddToCartIcon />
@@ -252,6 +257,8 @@ export default function TopDealsComp() {
               onClose={() => setIsNegotiatePriceModal(false)}
             />
           )}
+
+          {isBuyNowModal && <BuyNowModal onClose={() => setIsBuyNowModal(false)} />}
         </div>
 
         {/*==== Category Cards ====*/}

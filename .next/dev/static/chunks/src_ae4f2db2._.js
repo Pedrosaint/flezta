@@ -3445,49 +3445,54 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2
 ;
 const ProductDetailsPage = ()=>{
     const productData = {
-        id: 1,
+        id: "1",
         name: "Ergonomic Office Chair",
-        category: {
-            main: "Home & Office",
-            sub: "Ergonomic Office Chair"
-        },
-        price: 350.0
+        description: "High-quality ergonomic office chair with lumbar support.",
+        price: 350.0,
+        rating: 4.5,
+        reviewCount: 98,
+        imageUrl: "/assets/images/chair.png",
+        category: "Home & Office",
+        inStock: true,
+        sku: "CHAIR-001",
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$categories_header$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 pageTitle: "Product Details",
-                selectedCategory: productData.category.main,
+                selectedCategory: productData.category,
                 productName: productData.name,
                 showProductDetails: true
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 21,
+                lineNumber: 25,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$product_details$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 product: productData
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 28,
+                lineNumber: 32,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$add_bundle$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$products$2f$components$2f$product_overview$2e$comp$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 product: productData
             }, void 0, false, {
                 fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-                lineNumber: 30,
+                lineNumber: 34,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/modules/products/page/product_details.page.tsx",
-        lineNumber: 20,
+        lineNumber: 24,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

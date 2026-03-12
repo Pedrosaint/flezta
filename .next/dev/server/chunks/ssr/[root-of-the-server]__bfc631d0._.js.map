@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/4Core/Desktop/Flezta-app/src/app/seller_portal/dashboard/page.tsx"],"sourcesContent":["\r\n\r\n\r\nconst Page = () => {\r\n    return (\r\n        <div className=\"text-2xl font-bold text-center\">\r\n            <h1>Dashboard</h1>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default Page;"],"names":[],"mappings":";;;;;;AAGA,MAAM,OAAO;IACT,qBACI,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGhB;uCAEe"}}]
+}

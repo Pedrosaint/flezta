@@ -12,6 +12,7 @@ import useCart from "@/shared/ui/hooks/use_cart.hook";
 import NegotiatePriceModal from "@/modules/products/modal/negotiate_price.modal";
 import { productDetailsRoute } from "../../../core/routes/routeNames";
 import { AnimatePresence, motion } from "framer-motion";
+import BuyNowModal from "@/modules/products/modal/buy_now.modal";
 
 const ListProductsComp = () => {
   const {
@@ -24,6 +25,8 @@ const ListProductsComp = () => {
     router,
     isNegotiatePriceModal,
     setIsNegotiatePriceModal,
+    isBuyNowModal,
+    setIsBuyNowModal,
   } = useListProductHook();
 
   const { addToCart } = useCart();
@@ -111,17 +114,19 @@ const ListProductsComp = () => {
                   <div
                     className={`
                     absolute left-0 right-0 bottom-2 px-2 transition-all duration-300
-                    ${
-                      hoveredCard === product.id
+                    ${hoveredCard === product.id
                         ? "translate-y-0 opacity-100"
                         : "translate-y-8 opacity-0"
-                    }
+                      }
                 `}
                   >
                     <div className="backdrop-blur-sm border border-gray-200 p-3 rounded-2xl bg-white/10">
                       <div className="flex gap-3">
                         <button
-                          onClick={() => addToCart(String(product.id), 1)}
+                          onClick={() => {
+                            setIsBuyNowModal(true);
+                            addToCart(String(product.id), 1);
+                          }}
                           className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-secondary-color border border-[#003625] rounded-2xl transition-colors font-medium cursor-pointer"
                         >
                           <AddToCartIcon />
@@ -147,10 +152,14 @@ const ListProductsComp = () => {
             );
           })}
         </div>
-      </div>{" "}
+      </div>
       {isNegotiatePriceModal && (
         <NegotiatePriceModal onClose={() => setIsNegotiatePriceModal(false)} />
-      )}{" "}
+      )}
+
+      <AnimatePresence>
+        {isBuyNowModal && <BuyNowModal onClose={() => setIsBuyNowModal(false)} />}
+      </AnimatePresence>
     </div>
   );
 };

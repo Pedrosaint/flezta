@@ -2,7 +2,6 @@
 "use client";
 
 import ProductDescriptionComp from "./product_description.comp";
-import ProductReviewComp from "./product_review.comp";
 import ProductShippingComp from "./product_shipping.comp";
 import CustomerWhoViewedComp from "./customer_who_viewed.comp";
 import RecentlyViewedComp from "./recently_viewed.comp";
@@ -19,7 +18,7 @@ const ProductOverviewComp = ({ product }: ProductDetailsCompProps) => {
     <section className="container mx-auto px-6 mt-14 mb-14">
       {/*=== Tabs ===*/}
       <div className="border-b border-gray-200 mb-8">
-        <div className="flex justify-center gap-8">
+        <div className="flex justify-center md:gap-48">
           {tabs.map((tab) => (
             <button
               key={tab.key}
@@ -44,7 +43,7 @@ const ProductOverviewComp = ({ product }: ProductDetailsCompProps) => {
       {/*=== Content ===*/}
       {activeTab === "description" && <ProductDescriptionComp />}
 
-      {activeTab === "review" && <ProductReviewComp />}
+      {/* {activeTab === "review" && <ProductReviewComp />} */}
 
       {activeTab === "shipping" && <ProductShippingComp />}
 

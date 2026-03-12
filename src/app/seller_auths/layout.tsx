@@ -16,7 +16,7 @@ export default function SellerAuthLayout({
     { label: "Identity verification", key: "identity" },
     { label: "Store setup", key: "store" },
     { label: "Account setup", key: "account" },
-    { label: "Verify  & Submit", key: "verify" },
+    { label: "Preview & Submit", key: "preview" },
   ];
 
   const currentIndex = steps.findIndex((step) =>
@@ -25,7 +25,7 @@ export default function SellerAuthLayout({
 
 
   return (
-    <div className="h-screen grid lg:grid-cols-[43%_57%] overflow-hidden">
+    <div className="h-screen grid lg:grid-cols-[43%_57%] overflow-hidden p-12">
       {/* LEFT SIDE */}
       <div className="bg-[#DDFFF4] px-10 xl:px-20 py-20 flex flex-col justify-between">
         <div>
@@ -68,7 +68,7 @@ export default function SellerAuthLayout({
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="bg-white overflow-y-auto flex justify-center pt-20">
+      <div className="bg-white overflow-y-auto custom-scrollbar flex justify-center pt-20">
         <div className="w-full px-10 xl:px-30">
           {children}
         </div>

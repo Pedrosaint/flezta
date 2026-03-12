@@ -3,6 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import { formatDollar } from "@/shared/utils/currency.util";
 import { ArrowLeftIcon } from "@/assets/svg/svg_icon";
+import { DarkButton, PrimaryButton, GradientButton } from "@/shared/ui/components/button.ui";
 import { ordersData, getStatusColor, OrderItem } from "../data/orders.data";
 import { useState } from "react";
 import { useModal } from "../hooks/useModal";
@@ -225,15 +226,12 @@ const OrderDetailsPage = () => {
                     Status: {item.status}
                   </span>
                   {item.status === "Delivered" && (
-                    <button
+                    <DarkButton
                       onClick={() => leaveReview.open()}
-                      type="button"
-                      className="group w-52 p-0.5 border border-[#E26E00] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-52"
                     >
-                      <div className="w-full bg-[#263238] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-                        Leave Seller Review
-                      </div>
-                    </button>
+                      Leave Seller Review
+                    </DarkButton>
                   )}
                 </div>
 
@@ -258,48 +256,30 @@ const OrderDetailsPage = () => {
                   {/* Action Buttons based on Status */}
                   <div className="flex gap-4">
                     {item.status === "Processing" ||
-                    item.status === "Shipped" ? (
-                      <button
+                      item.status === "Shipped" ? (
+                      <PrimaryButton
                         onClick={() => cancelOrder.open()}
-                        type="button"
-                        className="group w-52 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-52"
                       >
-                        <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-                          Cancel Order
-                        </div>
-                      </button>
+                        Cancel Order
+                      </PrimaryButton>
                     ) : item.status === "Delivered" ? (
-                      <button
-                        type="button"
-                        className="group w-52 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                      <PrimaryButton
+                        className="w-52"
                       >
-                        <div className="w-full bg-[#003625] text-white py-4 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-                          Buy Again
-                        </div>
-                      </button>
+                        Buy Again
+                      </PrimaryButton>
                     ) : null}
 
-                    <button
+                    <GradientButton
                       onClick={() => {
                         setSelectedItem(item);
                         statusHistoryModal.open();
                       }}
-                      className="group w-52 p-0.5 border border-[#FDA106] rounded-[18px] cursor-pointer"
+                      className="w-52"
                     >
-                      <div className="relative w-full rounded-[14px] overflow-hidden bg-gradient transition-all duration-300 hover:scale-[1.02]">
-                        {/* Hover Overlay */}
-                        <div className="absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                          <span className="text-[#FDA106] font-semibold">
-                            See Status History
-                          </span>
-                        </div>
-
-                        {/* Default State */}
-                        <div className="relative z-10 py-4 font-semibold flex items-center justify-center text-black transition-opacity duration-300 group-hover:opacity-0">
-                          See Status History
-                        </div>
-                      </div>
-                    </button>
+                      See Status History
+                    </GradientButton>
                   </div>
                 </div>
               </div>

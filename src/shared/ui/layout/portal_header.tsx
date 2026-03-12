@@ -29,7 +29,6 @@ const PortalHeader = () => {
     const pathSegments = (pathname || "").split("/").filter(Boolean);
 
     // We identify segments after 'buyer_portal' for display purposes
-    // We identify segments after 'buyer_portal' for display purposes
     const portalIndex = pathSegments.indexOf("buyer_portal");
     const displaySegments = portalIndex !== -1 ? pathSegments.slice(portalIndex + 1) : pathSegments;
 

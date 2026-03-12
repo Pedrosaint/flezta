@@ -552,6 +552,31 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/seller_auths/preview": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/seller_auths/preview",
+      "dataRoute": "/seller_auths/preview.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/seller_auths/store_setup": {
       "experimentalBypassFor": [
         {
@@ -577,7 +602,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/seller_auths/verify": {
+    "/seller_portal/dashboard": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -590,8 +615,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/seller_auths/verify",
-      "dataRoute": "/seller_auths/verify.rsc",
+      "srcRoute": "/seller_portal/dashboard",
+      "dataRoute": "/seller_portal/dashboard.rsc",
       "prefetchDataRoute": null,
       "allowHeader": [
         "host",
@@ -606,8 +631,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "6f978ccaf5541eeb646d788f1cceb87a",
-    "previewModeSigningKey": "cf240b0be9ddb8cf1bcce222b50dc5faa465dad871afb9d49c9fa5c35cd48346",
-    "previewModeEncryptionKey": "1cd863215b1f3ff1b2cacca776efc0a105066e4a2ed44ac5739e29dedf4eedf7"
+    "previewModeId": "8b386920bd3df36a5b61d04685ba57a7",
+    "previewModeSigningKey": "8dde3b436d02653c2834b5c63e344677fb1a83c466288b5f1a84918ed7ed3776",
+    "previewModeEncryptionKey": "1ff0bdd09876b943b727fa2feaf62f83863ca5174ca9d4bee09e540168afec8f"
   }
 }

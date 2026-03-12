@@ -180,10 +180,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$minus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Minus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/minus.js [app-client] (ecmascript) <export default as Minus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-client] (ecmascript) <export default as Plus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/svg/svg_icon.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/shared/ui/components/button.ui.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$modules$2f$cart$2f$hooks$2f$useMyCart$2e$hook$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/modules/cart/hooks/useMyCart.hook.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -201,7 +203,7 @@ const MyCartComp = ()=>{
                     children: "My Cart"
                 }, void 0, false, {
                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                    lineNumber: 26,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -220,7 +222,7 @@ const MyCartComp = ()=>{
                                                 children: "Product"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 34,
+                                                lineNumber: 35,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -228,7 +230,7 @@ const MyCartComp = ()=>{
                                                 children: "Price"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 36,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -236,7 +238,7 @@ const MyCartComp = ()=>{
                                                 children: "Quantity"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 36,
+                                                lineNumber: 37,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -244,20 +246,20 @@ const MyCartComp = ()=>{
                                                 children: "Subtotal"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 37,
+                                                lineNumber: 38,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "col-span-1"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 38,
+                                                lineNumber: 39,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 34,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -277,12 +279,12 @@ const MyCartComp = ()=>{
                                                                     className: "rounded-md object-cover"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 51,
+                                                                    lineNumber: 52,
                                                                     columnNumber: 25
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 50,
+                                                                lineNumber: 51,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -292,7 +294,7 @@ const MyCartComp = ()=>{
                                                                         children: item.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 60,
+                                                                        lineNumber: 61,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -303,7 +305,7 @@ const MyCartComp = ()=>{
                                                                                 children: item.type
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                                lineNumber: 64,
+                                                                                lineNumber: 65,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -311,25 +313,25 @@ const MyCartComp = ()=>{
                                                                                 children: item.badge
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                                lineNumber: 65,
+                                                                                lineNumber: 66,
                                                                                 columnNumber: 27
                                                                             }, ("TURBOPACK compile-time value", void 0))
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 63,
+                                                                        lineNumber: 64,
                                                                         columnNumber: 25
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 59,
+                                                                lineNumber: 60,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 49,
+                                                        lineNumber: 50,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -343,7 +345,7 @@ const MyCartComp = ()=>{
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 74,
+                                                                lineNumber: 75,
                                                                 columnNumber: 23
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             item.negotiatedPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -355,7 +357,7 @@ const MyCartComp = ()=>{
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 78,
+                                                                lineNumber: 79,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             item.isStrikethrough && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -366,13 +368,13 @@ const MyCartComp = ()=>{
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 83,
+                                                                lineNumber: 84,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 73,
+                                                        lineNumber: 74,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -383,17 +385,17 @@ const MyCartComp = ()=>{
                                                                 className: "w-26 h-10 text-center text-xl flex items-center justify-center",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$minus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Minus$3e$__["Minus"], {}, void 0, false, {
                                                                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 94,
+                                                                    lineNumber: 95,
                                                                     columnNumber: 29
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 93,
+                                                                lineNumber: 94,
                                                                 columnNumber: 27
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 92,
+                                                            lineNumber: 93,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex items-center gap-2",
@@ -405,12 +407,12 @@ const MyCartComp = ()=>{
                                                                         className: "w-4 h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 103,
+                                                                        lineNumber: 104,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 99,
+                                                                    lineNumber: 100,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -418,7 +420,7 @@ const MyCartComp = ()=>{
                                                                     children: item.quantity
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 105,
+                                                                    lineNumber: 106,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -428,23 +430,23 @@ const MyCartComp = ()=>{
                                                                         className: "w-4 h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 112,
+                                                                        lineNumber: 113,
                                                                         columnNumber: 29
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 108,
+                                                                    lineNumber: 109,
                                                                     columnNumber: 27
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 98,
+                                                            lineNumber: 99,
                                                             columnNumber: 25
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 91,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -455,7 +457,7 @@ const MyCartComp = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 119,
+                                                        lineNumber: 120,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -465,160 +467,82 @@ const MyCartComp = ()=>{
                                                             className: "p-2 border-2 border-gray-200 rounded-lg cursor-pointer",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DeleteIcon2"], {}, void 0, false, {
                                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 129,
+                                                                lineNumber: 130,
                                                                 columnNumber: 25
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 125,
+                                                            lineNumber: 126,
                                                             columnNumber: 23
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 125,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, item.id, true, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 44,
+                                                lineNumber: 45,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 42,
+                                        lineNumber: 43,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex gap-3 border-t border-gray-200 p-5",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "group w-75 p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "relative w-full rounded-[14px] overflow-hidden bg-gradient",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[#FDA106] flex gap-2 items-center",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DeleteCartIcon"], {
-                                                                        stroke: "#FDA106"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 142,
-                                                                        columnNumber: 25
-                                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                                    "Clear Cart"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 141,
-                                                                columnNumber: 23
-                                                            }, ("TURBOPACK compile-time value", void 0))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 140,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DeleteCartIcon"], {}, void 0, false, {
-                                                                    fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 149,
-                                                                    columnNumber: 23
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                "Clear Cart"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 148,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                    lineNumber: 138,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GradientButton"], {
+                                                className: "w-75",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DeleteCartIcon"], {
+                                                        stroke: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    "Clear Cart"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 138,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "group w-75 p-0.5 border border-[#003625] backdrop-blur-[10px] rounded-[18px] cursor-pointer",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "relative w-full rounded-[14px] overflow-hidden bg-[#003625]",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "absolute inset-0 bg-[#DDFFF4] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-[#003625] font-semibold flex gap-2 items-center",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AddToCartIcon2"], {
-                                                                        stroke: "#003625"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                        lineNumber: 160,
-                                                                        columnNumber: 25
-                                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                                    "Continue Shopping"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                lineNumber: 159,
-                                                                columnNumber: 23
-                                                            }, ("TURBOPACK compile-time value", void 0))
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 158,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0)),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AddToCartIcon2"], {
-                                                                    stroke: "white"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                                    lineNumber: 167,
-                                                                    columnNumber: 23
-                                                                }, ("TURBOPACK compile-time value", void 0)),
-                                                                "Continue Shopping"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                            lineNumber: 166,
-                                                            columnNumber: 21
-                                                        }, ("TURBOPACK compile-time value", void 0))
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                    lineNumber: 156,
-                                                    columnNumber: 19
-                                                }, ("TURBOPACK compile-time value", void 0))
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PrimaryButton"], {
+                                                className: "w-75",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$svg$2f$svg_icon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AddToCartIcon2"], {
+                                                        stroke: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
+                                                        lineNumber: 144,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    "Continue Shopping"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 143,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 137,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                lineNumber: 31,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -631,7 +555,7 @@ const MyCartComp = ()=>{
                                         children: "Cart Summary"
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -648,7 +572,7 @@ const MyCartComp = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 185,
+                                                        lineNumber: 160,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -659,13 +583,13 @@ const MyCartComp = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 186,
+                                                        lineNumber: 161,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 159,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -675,7 +599,7 @@ const MyCartComp = ()=>{
                                                         children: "Subtotal"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 164,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -685,70 +609,64 @@ const MyCartComp = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                        lineNumber: 190,
+                                                        lineNumber: 165,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 188,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 183,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mt-40 p-5",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$shared$2f$ui$2f$components$2f$button$2e$ui$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PrimaryButton"], {
                                             onClick: handleCheckout,
-                                            className: "w-full p-0.5 border backdrop-blur-[10px] border-[#003625] rounded-[18px] cursor-pointer",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-full bg-primary-color text-white py-4 rounded-[14px] text-center font-semibold",
-                                                children: "Proceed To Checkout"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                                lineNumber: 198,
-                                                columnNumber: 19
-                                            }, ("TURBOPACK compile-time value", void 0))
+                                            fullWidth: true,
+                                            className: "",
+                                            children: "Proceed To Checkout"
                                         }, void 0, false, {
                                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                            lineNumber: 195,
+                                            lineNumber: 170,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 169,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                                lineNumber: 178,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         }, void 0, false, {
                             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                            lineNumber: 177,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/modules/cart/components/my_cart.comp.tsx",
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1148,11 +1066,8 @@ const WhishlistComp = ()=>{
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "text-xl font-semibold gradient-text",
-                                            children: [
-                                                "$",
-                                                product.price.toFixed(2)
-                                            ]
-                                        }, void 0, true, {
+                                            children: formatNaira(product.price)
+                                        }, void 0, false, {
                                             fileName: "[project]/src/modules/cart/components/wishlist.comp.tsx",
                                             lineNumber: 65,
                                             columnNumber: 17

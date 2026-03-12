@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { Delete, EditIcon } from "@/assets/svg/svg_icon";
+import { GradientButton, DangerButton } from "@/shared/ui/components/button.ui";
 import EditDeliveryAddressModal from "../modal/edit_address.modal";
 import WarningModal from "../modal/delete.modal";
 import { useDeliveryAddressCardHook } from "../hooks/delivery_address_card.hook";
@@ -43,59 +43,27 @@ const DeliveryAddressCard = ({ address }: DeliveryAddressCardProps) => {
                 </p>
 
                 <div className="flex gap-3">
-                    <button
+                    <GradientButton
                         onClick={handleEditOpen}
-                        className="group w-[150px] p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
+                        className="w-[180px]"
+                        size="md"
                     >
-                        <motion.div
-                            whileHover="hovered"
-                            className="relative w-full rounded-[14px] overflow-hidden bg-gradient"
-                        >
-                            {/* Hover Overlay */}
-                            <div className="absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                                <div className="flex items-center gap-2 text-[#FDA106] font-semibold">
-                                    <motion.p
-                                        variants={{
-                                            hovered: { x: -6 }
-                                        }}
-                                        transition={{ type: "spring", stiffness: 200, damping: 10 }}>
-                                        <EditIcon stroke={"#FDA106"} />
-                                    </motion.p>
-                                    <motion.p
-                                        variants={{
-                                            hovered: { x: 6 }
-                                        }}
-                                        transition={{ type: "spring", stiffness: 200, damping: 10 }}
-                                        className="text-sm"
-                                    >
-                                        Edit Address
-                                    </motion.p>
-                                </div>
-                            </div>
+                        <span className="transition-transform duration-300 group-hover:-translate-x-1.5 flex items-center">
+                            <EditIcon stroke="currentColor" />
+                        </span>
+                        <span className="transition-transform duration-300 group-hover:translate-x-1.5">
+                            Edit Address
+                        </span>
+                    </GradientButton>
 
-                            {/* Default State */}
-                            <div className="flex items-center gap-2 relative z-10 py-2.5 font-semibold flex items-center justify-center text-black transition-opacity duration-300 group-hover:opacity-0">
-                                <EditIcon />
-                                <motion.span
-                                    variants={{
-                                        hovered: { x: -6 }
-                                    }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                                    className="text-sm"
-                                >
-                                    Edit Address
-                                </motion.span>
-                            </div>
-                        </motion.div>
-                    </button>
-
-                    <button
+                    <DangerButton
                         onClick={handleDeleteOpen}
-                        className="border border-red-500 text-[#D24545] cursor-pointer px-5 py-2 rounded-[18px] text-sm font-medium flex items-center gap-2 transition-colors"
+                        size="md"
+                        className="w-[180px]"
                     >
                         <Delete />
                         Delete Address
-                    </button>
+                    </DangerButton>
                 </div>
             </div>
 

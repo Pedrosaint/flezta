@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/seller_portal/layout,_N_T_/seller_portal/dashboard/layout,_N_T_/seller_portal/dashboard/page,_N_T_/seller_portal/dashboard"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/seller_portal/dashboard/__PAGE__",
+    "/seller_portal/dashboard",
+    "/seller_portal",
+    "/_index",
+    "/_head"
+  ]
+}

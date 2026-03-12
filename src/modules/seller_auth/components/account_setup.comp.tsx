@@ -1,6 +1,7 @@
 "use client"
 
-import { sellerVerifyRoute } from "@/core/routes/routeNames"
+import { sellerPreviewRoute } from "@/core/routes/routeNames"
+import { GradientButton, PrimaryButton } from "@/shared/ui/components/button.ui"
 import { useRouter } from "next/navigation"
 
 const AccountSetupComp = () => {
@@ -48,43 +49,16 @@ const AccountSetupComp = () => {
 
                     {/* Button */}
                     <div className="flex gap-3 mt-10">
-                        <button
-                            onClick={() => router.push(sellerVerifyRoute)}
-                            className="group w-full p-0.5 border border-[#FDA106] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
+                        <GradientButton
+                            onClick={() => router.push(sellerPreviewRoute)}
+                            fullWidth
                         >
-                            <div className="relative w-full rounded-[14px] overflow-hidden bg-gradient">
-                                {/* Hover Overlay */}
-                                <div className="absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                                    <span className="text-[#FDA106] flex gap-2 items-center">
-                                        Save & Continue
-                                    </span>
-                                </div>
+                            Save & Continue
+                        </GradientButton>
 
-                                {/* Default State */}
-                                <div className="relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
-                                    Save & Continue
-                                </div>
-                            </div>
-                        </button>
-
-                        {/*=== Skip Button ===*/}
-                        <button
-                            className="group w-full p-0.5 border border-[#003625] backdrop-blur-[10px] rounded-[18px] cursor-pointer"
-                        >
-                            <div className="relative w-full rounded-[14px] overflow-hidden bg-[#003625]">
-                                {/* Hover Overlay */}
-                                <div className="absolute inset-0 bg-[#DDFFF4] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                                    <span className="text-[#003625] font-semibold flex gap-2 items-center">
-                                        Skip
-                                    </span>
-                                </div>
-
-                                {/* Default State */}
-                                <div className="relative z-10 py-4 font-semibold flex gap-2 items-center justify-center text-white transition-opacity duration-300 group-hover:opacity-0">
-                                    Skip
-                                </div>
-                            </div>
-                        </button>
+                        <PrimaryButton fullWidth>
+                            Skip
+                        </PrimaryButton>
                     </div>
 
                     <div className="bg-[#DDFFF4] text-black p-6 mt-40 rounded-[20px]">

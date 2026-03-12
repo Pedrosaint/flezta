@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { GradientButton, PrimaryButton } from "@/shared/ui/components/button.ui";
 import { useNotificationSettingsHook } from "../hooks/notification.hook";
 import type { NotificationOption } from "../types/notification.types";
 
@@ -29,29 +30,15 @@ const NotificationSettings: React.FC = () => {
           </p>
         </div>
         <div className="flex gap-3">
-          <button className="group w-45 p-0.5 border border-[#FDA106] rounded-[18px] cursor-pointer">
-            <div className="relative w-full rounded-[14px] overflow-hidden bg-gradient transition-all duration-300 hover:scale-[1.02]">
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-[#FFF4EA] opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                <span className="text-[#FDA106] font-semibold">
-                  Restore To Default
-                </span>
-              </div>
-
-              {/* Default State */}
-              <div className="relative z-10 py-3 font-semibold flex items-center justify-center text-black transition-opacity duration-300 group-hover:opacity-0">
-                Restore To Default
-              </div>
-            </div>
-          </button>
-          <button
+          <GradientButton className="w-45">
+            Restore To Default
+          </GradientButton>
+          <PrimaryButton
             type="button"
-            className="group w-45 p-0.5 border border-[#003625] rounded-[18px] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-45"
           >
-            <div className="w-full bg-[#003625] text-white py-3 rounded-[14px] text-center font-semibold transition-colors duration-200 group-hover:bg-emerald-100 group-hover:text-[#052214]">
-              Save Updates
-            </div>
-          </button>
+            Save Updates
+          </PrimaryButton>
         </div>
       </div>
 
@@ -88,11 +75,10 @@ const NotificationSettings: React.FC = () => {
 
             {/* Email Notification Options */}
             <div
-              className={`space-y-4 transition-opacity duration-200 ${
-                !emailNotificationsEnabled
-                  ? "opacity-30 pointer-events-none"
-                  : "opacity-100"
-              }`}
+              className={`space-y-4 transition-opacity duration-200 ${!emailNotificationsEnabled
+                ? "opacity-30 pointer-events-none"
+                : "opacity-100"
+                }`}
             >
               {emailNotifications.map((notification: NotificationOption) => (
                 <label
@@ -155,11 +141,10 @@ const NotificationSettings: React.FC = () => {
 
             {/* Email Notification Options */}
             <div
-              className={`space-y-4 transition-opacity duration-200 ${
-                !inAppNotificationsEnabled
-                  ? "opacity-30 pointer-events-none"
-                  : "opacity-100"
-              }`}
+              className={`space-y-4 transition-opacity duration-200 ${!inAppNotificationsEnabled
+                ? "opacity-30 pointer-events-none"
+                : "opacity-100"
+                }`}
             >
               {inAppNotifications.map((notification: NotificationOption) => (
                 <label
